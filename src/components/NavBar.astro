@@ -1,0 +1,30 @@
+---
+interface Props {
+  active: string;
+}
+
+const { active } = Astro.props;
+
+const tabs = ["home", "the team", "departments", "fauna finder"];
+---
+
+<nav
+  class="sticky top-0 left-0 w-full py-6 flex flex-row justify-between bg-palette-600 text-white uppercase"
+>
+  <a class="mx-4 my-auto" href={import.meta.env.BASE_URL}>Penelope LTD.</a>
+  <ul class="list-none my-auto">
+    {
+      tabs.map((tab) => (
+        <li
+          class={`mx-4 inline-block border-b-white ${
+            tab === active && "border-b-2"
+          }`}
+        >
+          <a href={`${import.meta.env.BASE_URL}${tab.replace(" ", "")}`}>
+            {tab}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

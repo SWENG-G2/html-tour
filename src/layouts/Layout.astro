@@ -1,0 +1,51 @@
+---
+import NavBar from "../components/NavBar.astro";
+
+interface Props {
+  title: string;
+  active: string;
+}
+
+const { title, active } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="bg-palette-100 font-kameron">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    {/* Google Fonts */}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-scroll">
+    <div
+      class="absolute top-0 left-0 bottom-0 right-0 bg-palette-100 w-full h-[300dvh]"
+    >
+      <div
+        class="baseCircle w-[50dvw] h-[45dvw] max-w-[1000px] max-h-[900px] bg-palette-300 -left-1/2 translate-x-1/2"
+      >
+      </div>
+
+      <div class="baseCircle w-[20dvw] h-[20dvw] max-w-[380px] mah-h-[350px] bg-palette-400 left-3/4 top-5"></div>
+
+      <div class="baseCircle w-[50dvw] h-[45dvw] max-w-[1000px] max-h-[900px] left-full -translate-x-1/2 bg-palette-500 top-1/3"></div>
+    </div>
+
+    <NavBar active={active} />
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  .baseCircle {
+    @apply absolute rounded-full blur-md;
+  }
+</style>
