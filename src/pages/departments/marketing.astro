@@ -1,0 +1,23 @@
+---
+import DepartmentLayout from "../../layouts/DepartmentLayout.astro";
+
+const items = [
+    {
+        title: "Marketing research",
+        icon: "ic:baseline-shopping-cart",
+        href: "tmp",
+    },
+    {
+        title: "Marketing plan",
+        icon: "ic:baseline-document-scanner",
+        href: "tmp",
+    },
+];
+---
+
+<DepartmentLayout
+    title="Marketing"
+    content="The marketing team at Penelope is responsible for promoting the software development projects to potential clients and end-users. Their main goal is to create a marketing strategy that highlights the features and benefits of the software and communicates them effectively to the target audience. They work closely with the project manager and programming department to understand the unique value proposition of the software and collaborate with the design team to create marketing materials. The marketing team plays a critical role in ensuring the success of software development projects by creating and executing effective marketing strategies that drive adoption and usage."
+    imageUrl="/links/marketing.png"
+    items={items}
+/>

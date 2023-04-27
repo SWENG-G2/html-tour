@@ -1,0 +1,28 @@
+---
+import DepartmentLayout from "../../layouts/DepartmentLayout.astro";
+
+const items = [
+    {
+        title: "App screen mockups",
+        icon: "ic:baseline-smartphone",
+        href: "tmp",
+    },
+    {
+        title: "App designs",
+        icon: "ic:baseline-draw",
+        href: "tmp",
+    },
+    {
+        title: "App design research",
+        icon: "ic:baseline-find-in-page",
+        href: "tmp",
+    },
+];
+---
+
+<DepartmentLayout
+    title="Design & media"
+    content="The design and media team at Penelope LTD is responsible for creating the visual elements of software development projects. Their main goal is to design and coordinate the graphical elements of the app, create mock-up app screens, and source original media for the app. they work closely with the programming team to ensure that the graphical design of the app is consistent with its intended functionality. They also collaborate with other departments such as the project management and documentation teams to ensure that all graphical elements are documented and communicated effectively. The design and media team plays a critical role in creating visually appealing and functional software that meets the needs and expectations of clients and end-users."
+    imageUrl="/links/design.png"
+    items={items}
+/>

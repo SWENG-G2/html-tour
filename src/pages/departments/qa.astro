@@ -1,0 +1,23 @@
+---
+import DepartmentLayout from "../../layouts/DepartmentLayout.astro";
+
+const items = [
+    {
+        title: "QA Manual",
+        icon: "ic:baseline-menu-book",
+        href: "tmp",
+    },
+    {
+        title: "Testing & Integration",
+        icon: "ic:baseline-phonelink-setup",
+        href: "tmp",
+    },
+];
+---
+
+<DepartmentLayout
+    title="Quality Assurance"
+    content="The QA department at Penelope LTD is responsible for ensuring the quality of the software product. Their main goal is to identify and eliminate defects, bugs, and errors before the software is released to clients and end-users. They work closely with the programming team to define and execute test plans, identify and report defects, and verify that defects have been resolved. The team also provides feedback on the usability, functionality, and overall user experience of the software. The QA team plays a critical role in ensuring the success of software development projects by providing objective and thorough assessments of the software's quality, reliability, and performance."
+    imageUrl="/links/qa.png"
+    items={items}
+/>

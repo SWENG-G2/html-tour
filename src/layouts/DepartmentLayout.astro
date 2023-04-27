@@ -1,0 +1,45 @@
+---
+import Card from "../components/Card.astro";
+import LinkCard from "../components/LinkCard.astro";
+import Layout from "./Layout.astro";
+
+interface Props {
+    title: string;
+    content: string;
+    imageUrl: string;
+    items: {
+        title: string;
+        icon: string;
+        href: string;
+    }[];
+}
+
+const { title, content, items, imageUrl } = Astro.props;
+---
+
+<Layout title={title} active="departments" header={title}>
+    <main class="w-full flex flex-col mt-10">
+        <Card
+            title={title}
+            content={content}
+            imageUrl={imageUrl}
+            imageFirst={true}
+            imageSpan={5}
+        />
+
+        <div class="flex flex-col gap-5 lg:flex-row w-3/4 mx-auto mb-10">
+            {
+                items.map((item) => (
+                    <LinkCard
+                        title={item.title}
+                        icon={item.icon}
+                        href={item.href}
+                        imageAspectRatio="aspect-square"
+                        width="w-full lg:w-1/5"
+                        imageWidth="w-full"
+                    />
+                ))
+            }
+        </div>
+    </main>
+</Layout>

@@ -1,21 +1,44 @@
 ---
+import { Icon } from "astro-icon";
 interface Props {
   title: string;
-  imageUrl: string;
+  imageUrl?: string;
+  icon?: string;
   imageAspectRatio: string;
+  extraContainerClasses?: string;
+  href: string;
+  width?: string;
+  imageWidth?: string;
 }
 
-const { title, imageUrl, imageAspectRatio } = Astro.props;
+const {
+  title,
+  imageUrl,
+  icon,
+  imageAspectRatio,
+  extraContainerClasses,
+  href,
+  width,
+} = Astro.props;
 ---
 
-<div class="bg-white rounded-md shadow-md shadow-palette-500 gap-2 w-max p-2 flex flex-col">
-  <img
-    src={imageUrl}
-    class={`max-w-[25dvw] max-w-[25vw] ${imageAspectRatio} mx-auto`}
-  />
-  <h2
-    class="uppercase font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl mx-auto "
-  >
+<a
+  class={`bg-white rounded-md shadow-md shadow-palette-500 gap-2 ${
+    width ? width : "w-full md:w-1/2 lg:w-[30dvw] lg:w-[30vw]"
+  } h-min mx-auto p-2 flex flex-col ${extraContainerClasses}`}
+  href={href}
+>
+  {
+    icon ? (
+      <Icon name={icon} class="text-black w-full" />
+    ) : (
+      <img
+        src={imageUrl}
+        class={`max-w-[25dvw] max-w-[25vw] ${imageAspectRatio} mx-auto`}
+      />
+    )
+  }
+  <h2 class="uppercase font-bold text-lg md:text-2xl 2xl:text-4xl mx-auto text-center">
     {title}
   </h2>
-</div>
+</a>
