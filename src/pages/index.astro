@@ -1,5 +1,39 @@
 ---
+import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Penelope LTD." active="home" />
+<Layout title="Penelope LTD." active="home">
+  <main class="flex flex-col my-10">
+    <h1 class="text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-9xl uppercase mx-auto">Penelope LTD.</h1>
+    <Card
+      title="Who are we"
+      content="Penelope was founded in the UK at the University of York in 2022. The organisation was built from the ground up by students, focused on developing high-quality android applications. here at Penelope, we utilise effective project management strategies that facilitate innovation and communication in the work environment. Striving to provide  customers with a high-quality product that our employees are proud of..."
+      imageUrl="/whoAreWe.png"
+      imageFirst={true}
+      buttonUrl="/test"
+      imageSpan={7}
+    />
+
+    <Card
+      title="Our work and departments"
+      content="Our aim is to develop and sell an educational Android application to provide students of campus-based universities, and local members of the public, a means of identifying and learning about the local wildlife. By providing potential future students with information on the wildlife that exists on campus, we are giving them the opportunity to fall in love with the university even prior to beginning their studies..."
+      buttonUrl="/test"
+      buttonBg="bg-palette-500"
+      buttonTextColour="text-white"
+      imageUrl="/departments.png"
+      imageSpan={7}
+    />
+
+    <Card
+      title="Our product"
+      content="Fauna Finder is a mobile application designed to help users identify and learn about the wildlife in their local environment (their university). The app provides information about birds in the university’s vicinity and it aims to provide more information about other animals and creatures. This app could be useful for nature enthusiasts, researchers, and anyone interested in learning more about the natural world around them, as it includes a database of different species, including pictures, descriptions, and behavioural information. It also provides an amazing opportunity to promote eco-tourism and bring awareness to wildlife conservation..."
+      buttonUrl="/test"
+      buttonBg="bg-palette-600"
+      buttonTextColour="text-white"
+      imageUrl="/app.png"
+      imageSpan={4}
+      imageFirst={true}
+    />
+  </main>
+</Layout>

@@ -1,0 +1,56 @@
+---
+interface Props {
+  imageUrl?: string;
+  imageFirst?: boolean;
+  imageSpan?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
+  buttonUrl?: string;
+  title: string;
+  content: string;
+  buttonBg?: `bg-palette-${number}`;
+  buttonTextColour?: `text-${string}` | `text-${string}-${number}`;
+}
+
+const {
+  imageUrl,
+  imageFirst,
+  buttonUrl,
+  buttonBg = "bg-palette-300",
+  buttonTextColour = "text-black",
+  imageSpan = imageUrl ? 3 : 0,
+  title,
+  content,
+} = Astro.props;
+---
+
+<div
+  class="flex flex-col lg:grid md:grid-rows-1 lg:grid-cols-12 p-2 rounded-md w-3/4 bg-white mx-auto shadow-md shadow-palette-500 mt-10 gap-2"
+>
+  {
+    imageUrl && (
+      <img
+        class={`${
+          imageFirst ? "order-1" : "order-2"
+        } w-full h-full object-cover lg:col-span-${imageSpan} lg:row-span-1`}
+        src={imageUrl}
+      />
+    )
+  }
+  <div
+    class={`${
+      imageFirst ? "order-2" : "order-1"
+    } flex flex-col gap-4 lg:col-span-${12 - imageSpan} lg:row-span-1`}
+  >
+    <h2 class="uppercase font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl mx-4">{title}</h2>
+    <p class="text-justify break-all hyphens-auto text-sm sm:text-lg md:text-xl lg:text-2xl 2xl:text-4xl mx-4">{content}</p>
+    {
+      buttonUrl && (
+        <a
+          class={`py-4 md:py-6 text-center text-3xl w-full mx-auto align-bottom ${buttonBg} ${buttonTextColour} rounded-md text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl shadow-palette-600 shadow-sm hover:shadow-md hover:shadow-palette-600 transition-shadow duration-75 ease-in`}
+          href={buttonUrl}
+        >
+          read more...
+        </a>
+      )
+    }
+  </div>
+</div>

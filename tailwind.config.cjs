@@ -16,7 +16,16 @@ module.exports = {
       fontFamily: {
         kameron: "Kameron, sans-serif",
       },
+      gridTemplateRows: {
+        12: "repeat(12, minmax(0, 1fr))",
+      },
     },
   },
+  safelist: [
+    {
+      pattern: /(col|row)-span-[1-9]|1[0-1]]/,
+      variants: ["lg"],
+    },
+  ],
   plugins: [],
 };
