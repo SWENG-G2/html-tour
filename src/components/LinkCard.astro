@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  imageUrl: string;
+  imageAspectRatio: string;
+}
+
+const { title, imageUrl, imageAspectRatio } = Astro.props;
+---
+
+<div class="bg-white rounded-md shadow-md shadow-palette-500 gap-2 w-max p-2 flex flex-col">
+  <img
+    src={imageUrl}
+    class={`max-w-[25dvw] max-w-[25vw] ${imageAspectRatio} mx-auto`}
+  />
+  <h2
+    class="uppercase font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl mx-auto "
+  >
+    {title}
+  </h2>
+</div>

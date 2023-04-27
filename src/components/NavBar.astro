@@ -20,7 +20,7 @@ const tabs = ["home", "the team", "departments", "fauna finder"];
             tab === active && "border-b-2"
           }`}
         >
-          <a href={`${import.meta.env.BASE_URL}${tab.replace(" ", "")}`}>
+          <a href={`${import.meta.env.BASE_URL}${tab !== "home" ? tab.replace(" ", "") : ""}`}>
             {tab}
           </a>
         </li>

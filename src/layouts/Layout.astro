@@ -4,9 +4,10 @@ import NavBar from "../components/NavBar.astro";
 interface Props {
   title: string;
   active: string;
+  header?: string;
 }
 
-const { title, active } = Astro.props;
+const { title, active, header } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -25,10 +26,20 @@ const { title, active } = Astro.props;
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="flex flex-col">
     <NavBar active={active} />
+    {
+      header && (
+        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl mx-auto mt-10">
+          {header}
+        </h1>
+      )
+    }
     <slot />
-    <img src="/duck.png" class="fixed top-full left-full -translate-x-full -translate-y-full"/>
+    <img
+      src="/duck.png"
+      class="fixed top-full left-full -translate-x-full -translate-y-full"
+    />
   </body>
 </html>
 
