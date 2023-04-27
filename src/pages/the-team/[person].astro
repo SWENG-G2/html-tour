@@ -1,0 +1,11 @@
+---
+import { people } from "../people.json";
+export async function getStaticPaths() {
+  return people.map((person) => {
+    return {
+      params: { person: person.name.replace(" ", "-").toLowerCase() },
+      props: { name: person.name, image: person.image, role: person.role },
+    };
+  });
+}
+---

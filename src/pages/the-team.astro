@@ -1,0 +1,111 @@
+---
+import LinkCard from "../components/LinkCard.astro";
+import PersonCard from "../components/PersonCard.astro";
+import Layout from "../layouts/Layout.astro";
+
+const people = [
+  {
+    name: "Connall Shurey",
+    image: "https://placehold.co/400?text=Connall+Shurey",
+    role: "Project Manager",
+  },
+  {
+    name: "Giuseppe Barillari",
+    image: "https://placehold.co/400?text=Giuseppe+Barillari",
+    role: "Lead Developer",
+  },
+  {
+    name: "Harry Harrison",
+    image: "https://placehold.co/400?text=Harry+Harrison",
+    role: "Developer",
+  },
+  {
+    name: "Dawid Zaborowski",
+    image: "https://placehold.co/400?text=Dawid+Zaborowski",
+    role: "Design Manager",
+  },
+  {
+    name: "Ana Monteiro",
+    image: "https://placehold.co/400?text=Ana+Monteiro",
+    role: "Documentation & Communication",
+  },
+  {
+    name: "Ophelia Korontini",
+    image: "https://placehold.co/400?text=Ophelia+Korontini",
+    role: "Documentation & Communication, Finance",
+  },
+  {
+    name: "Oscar Goefron",
+    image: "https://placehold.co/400?text=Oscar+Goefron",
+    role: "Media Manager, Marketing Manager",
+  },
+  {
+    name: "Thomas Richardson",
+    image: "https://placehold.co/400?text=Thomas+Richardson",
+    role: "Finance Manager, Marketing",
+  },
+  {
+    name: "Roman Kulev",
+    image: "https://placehold.co/400?text=Roman+Kulev",
+    role: "QA Manager",
+  },
+  {
+    name: "Ethan Cude",
+    image: "https://placehold.co/400?text=Ethan+Cude",
+    role: "QA",
+  },
+  {
+    name: "Alan Brookes",
+    image: "https://placehold.co/400?text=Alan+Brookes",
+    role: "Developer",
+  },
+];
+---
+
+<Layout
+  title="The Team - Penelope LTD."
+  header="Meet the team..."
+  active="the team"
+>
+  <main class="w-full md:w-3/4 mx-auto mt-10">
+    <div class="w-full flex flex-col lg:flex-row mt-10 gap-4">
+      {
+        people
+          .slice(0, 4)
+          .map((person) => (
+            <PersonCard
+              name={person.name}
+              imageUrl={person.image}
+              role={person.role}
+            />
+          ))
+      }
+    </div>
+    <div class="w-full flex flex-col lg:flex-row mt-10 gap-4">
+      {
+        people
+          .slice(4, 8)
+          .map((person) => (
+            <PersonCard
+              name={person.name}
+              imageUrl={person.image}
+              role={person.role}
+            />
+          ))
+      }
+    </div>
+    <div class="w-full flex flex-col lg:flex-row mt-10 mb-10 gap-4">
+      {
+        people
+          .slice(8)
+          .map((person) => (
+            <PersonCard
+              name={person.name}
+              imageUrl={person.image}
+              role={person.role}
+            />
+          ))
+      }
+    </div>
+  </main>
+</Layout>
