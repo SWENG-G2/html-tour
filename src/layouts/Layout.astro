@@ -5,9 +5,11 @@ interface Props {
   title: string;
   active: string;
   header?: string;
+  backTo?: string;
+  backToLink?: string;
 }
 
-const { title, active, header } = Astro.props;
+const { title, active, header, backTo, backToLink } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -27,7 +29,7 @@ const { title, active, header } = Astro.props;
     />
   </head>
   <body class="flex flex-col">
-    <NavBar active={active} />
+    <NavBar active={active} backTo={backTo} backToLink={backToLink}/>
     {
       header && (
         <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl mx-auto mt-10">

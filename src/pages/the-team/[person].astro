@@ -1,11 +1,75 @@
 ---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
 import { people } from "../people.json";
 export async function getStaticPaths() {
   return people.map((person) => {
     return {
       params: { person: person.name.replace(" ", "-").toLowerCase() },
-      props: { name: person.name, image: person.image, role: person.role },
+      props: {
+        name: person.name,
+        image: person.image,
+        role: person.role,
+        age: person.age,
+        course: person.course,
+        time: person.time,
+        description: person.description,
+      },
     };
   });
 }
+
+const { name, image, role, age, course, time, description } = Astro.props;
 ---
+
+<Layout title={`${name} - Penelope LTD.`} active="the team" backTo="Meet the team" backToLink={`${import.meta.env.BASE_URL}the-team`}>
+  <main
+    class="w-3/4 sm:w-3/5 md:w-1/2 flex flex-col md:grid md:grid-cols-2 md:grid-rows-[repeat(3,auto)] gap-10 mx-auto mt-20 mb-10"
+  >
+    <div
+      class="w-full p-4 rounded-xl bg-white shadow-md shadow-palette-500 mx-auto flex"
+    >
+      <img src={image} class="aspect-square w-full" />
+    </div>
+    <div
+      class="w-full p-4 h-min bg-white rounded-xl shadow-md shadow-palette-500 mx-auto"
+    >
+      <h1
+        class="uppercase font-bold text-xl md:text-xl lg:text-2xl 2xl:text-5xl mx-auto text-center my-4"
+      >
+        {name}
+      </h1>
+      <h2
+        class="uppercase text-lg md:text-base lg:text-2xl 2xl:text-4xl mx-auto text-center my-4"
+      >
+        {role}
+      </h2>
+    </div>
+
+    <div
+      class="bg-white rounded-xl p-4 flex flex-col col-span-full md:ml-[25%] shadow-md h-max shadow-palette-500"
+    >
+      <h3
+        class="uppercase font-bold text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl"
+      >
+        About me
+      </h3>
+      <p
+        class="uppercase text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl"
+      >
+        Age: {age}
+      </p>
+      <p
+        class="uppercase text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl"
+      >
+        Course: {course}
+      </p>
+      <p
+        class="uppercase text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl"
+      >
+        Time at penelope: {time ? time : 8} months
+      </p>
+    </div>
+    <Card title="My role at penelope" content={description} extraContainerClasses="col-span-full w-full rounded-xl"/>
+  </main>
+</Layout>

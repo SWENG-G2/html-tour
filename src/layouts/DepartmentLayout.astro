@@ -17,7 +17,7 @@ interface Props {
 const { title, content, items, imageUrl } = Astro.props;
 ---
 
-<Layout title={title} active="departments" header={title}>
+<Layout title={title} active="departments" header={title} backTo="Departments" backToLink={`${import.meta.env.BASE_URL}departments`}>
     <main class="w-full flex flex-col mt-10">
         <Card
             title={title}

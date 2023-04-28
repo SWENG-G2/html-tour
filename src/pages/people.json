@@ -3,57 +3,91 @@
     {
       "name": "Connall Shurey",
       "image": "https://placehold.co/400?text=Connall+Shurey",
-      "role": "Project Manager"
+      "role": "Project Manager",
+      "age": 21,
+      "course": "EE",
+      "description": "As the Project Manager of Penelope LTD, I am responsible for ensuring the successful implementation of the company's quality control system. This includes promoting a culture of quality throughout the organisation, delegating authority for managing the system, overseeing communication and progress updates, delegating tasks effectively, managing time, tracking roadblocks, and ensuring that quality control policies and procedures are adopted, implemented, and monitored by Penelope personnel. Additionally, I collaborate with other departments to ensure that project timelines are met, budgets are maintained, and that all members of the team are kept informed of project progress. As a leader, I work to foster a collaborative and productive work environment and encourage team members to share their ideas and expertise to achieve project success. Through effective project management, Penelope LTD can continue to deliver high-quality software development projects that meet or exceed client expectations."
     },
     {
       "name": "Giuseppe Barillari",
       "image": "https://placehold.co/400?text=Giuseppe+Barillari",
-      "role": "Lead Developer"
+      "role": "Lead Developer",
+      "age": 21,
+      "course": "EE",
+      "description": "As the Programming manager at Penelope LTD, my responsibilities include overseeing the overall coding of the app, delegating programming tasks to other programmers, and communicating and collaborating with other team members to ensure project success. Additionally, I work to ensure that programming standards are met and that code is optimised for performance, security, and scalability. I am responsible for ensuring that project deadlines are met, and that quality standards are maintained throughout the software development lifecycle. As a Manager, I foster a collaborative and supportive work environment and encourage team members to share their ideas and expertise to achieve project success. By leading the programming team at Penelope LTD, I ensure that our software development projects are of high quality, meet or exceed client expectations, and are delivered on time and within budget."
     },
     {
       "name": "Harry Harrison",
       "image": "https://placehold.co/400?text=Harry+Harrison",
-      "role": "Developer"
+      "role": "Developer",
+      "age": 21,
+      "course": "EE",
+      "description": "As a programmer at Penelope LTD, my role is to contribute to the coding and development of the app in accordance with project requirements and programming standards. This includes collaborating with the Lead Programmer and other team members to identify technical requirements, develop efficient and scalable code, and resolve any coding issues or bugs. I am responsible for following coding standards and best practices, and for ensuring that code is optimised for performance and maintainability. Additionally, I am responsible for accurately documenting my code and contributing to the team's shared knowledge base. As a team member, I work collaboratively and communicate effectively with my colleagues, providing support and input to ensure that project deadlines are met and that the final product meets or exceeds client expectations."
     },
     {
       "name": "Dawid Zaborowski",
       "image": "https://placehold.co/400?text=Dawid+Zaborowski",
-      "role": "Design Manager"
+      "role": "Design Manager",
+      "age": 21,
+      "course": "EE",
+      "description": "As the Design and Media Manager at Penelope LTD, my responsibilities include overseeing the design and media team's efforts to create mock-up app ideas, source original media, and coordinate the graphical design of the app. I work closely with other team members, including the Project Manager, to ensure that design requirements are clearly defined and that project milestones are achieved on time and within budget. I am responsible for managing the design and media team's workload, delegating tasks effectively, and maintaining a high level of quality in the team's work. Additionally, I stay up-to-date with design and media trends and tools, and provide guidance and mentorship to team members to help them develop their skills and achieve their goals. By leading the design and media team at Penelope LTD, I help to ensure that our app development projects are visually stunning, intuitive to use, and exceed client expectations."
     },
     {
       "name": "Ana Monteiro",
       "image": "https://placehold.co/400?text=Ana+Monteiro",
-      "role": "Documentation & Communication"
+      "role": "Documentation & Communication",
+      "age": 21,
+      "course": "EE",
+      "description": "As one of the Documentation and Communication team managers I'm responsible for overseeing technical documents for Penelope and ensuring that they represent a cohesive voice for the company. My responsibilities include creating, maintaining, and releasing company documents and reports, tracking meetings, creating templates and style guides, managing technical writers, setting project-wide standards for document creation, ensuring documents are of good quality and completed on time, assisting the Project Manager with drafting essential documents, maintaining consistency of tone across documents, ensuring adherence to style guides and templates, publishing documents on time, archiving old documents, uploading new documents, ensuring efficient and productive assignment workflows, maintaining proper document structure, and ensuring online records link to the correct locations."
     },
     {
       "name": "Ophelia Korontini",
       "image": "https://placehold.co/400?text=Ophelia+Korontini",
-      "role": "Documentation & Communication, Finance"
+      "role": "Documentation & Communication, Finance",
+      "age": 21,
+      "course": "EE",
+      "description": "As one of the Documentation and Communication team managers and a link between this team and the Finance team, I support Ana Monteiro in her role by managing technical documents to maintain consistency in the company's voice. I also create, maintain, and release documents, manage technical writers, set project standards, ensure quality and adherence to guidelines, publish documents on time, and maintain archives and online records. Additionally, I am a part of the Finance team which is responsible for tracking the project finances and act as a consultant on financial decisions. By being both on the Finance and Documentation & Communications team I directly supervise financial documents and make sure they are up to standard with our organisation guidelines."
     },
     {
       "name": "Oscar Goefron",
       "image": "https://placehold.co/400?text=Oscar+Goefron",
-      "role": "Media Manager, Marketing Manager"
+      "role": "Media Manager, Marketing Manager",
+      "age": 21,
+      "course": "EE",
+      "description": "As the Marketing Manager for Penelope, I play a crucial role in promoting our single product to our target market. My responsibility is to ensure that our product is reaching and impacting the intended audience through comprehensive research and strategic planning. My focus is on developing and implementing marketing plans that help us attract and retain clients, increase awareness and demand of our product, increase profitability, and develop an engaged audience which includes conducting market research, producing marketing strategies and developing new ideas to improve our brand marketing and exposure. By working with other departments, I ensure that we are all aligned on the goals and objectives of our marketing efforts and are consistently communicating our messaging to potential clients."
     },
     {
       "name": "Thomas Richardson",
       "image": "https://placehold.co/400?text=Thomas+Richardson",
-      "role": "Finance Manager, Marketing"
+      "role": "Finance Manager, Marketing",
+      "age": 21,
+      "course": "EE",
+      "description": "As the Finance Manager at Penelope LTD, my primary responsibility is to oversee the financial operations of the company, including budgeting, forecasting, and financial reporting. I work closely with other department managers, to ensure that financial goals are aligned with the company's overall strategy. I manage the Finance team's workload, ensuring that transactions are recorded accurately and in a timely manner. Additionally, I provide financial analysis and recommendations to help guide the company's decision-making process. By leading the finance team at Penelope LTD, I help to ensure that the company's financial health is strong and that we are well-positioned to achieve our goals and continue to grow."
     },
     {
       "name": "Roman Kulev",
       "image": "https://placehold.co/400?text=Roman+Kulev",
-      "role": "QA Manager"
+      "role": "QA Manager",
+      "age": 21,
+      "course": "EE",
+      "description": "As the Quality Assurance Manager at Penelope LTD, I am responsible for ensuring the high quality of our software products. I work closely with all other departments to establish testing procedures and standards, oversee the testing process, and identify and resolve issues before product release. I create and execute test plans to identify defects and ensure that they are fixed before release. I also monitor product performance and customer feedback to identify areas for improvement and provide feedback to the development team. I stay up-to-date with industry trends and emerging technologies to ensure that our testing practices remain current and effective. By leading the QA team at Penelope LTD, I help to ensure that our software products are reliable, efficient, and meet the needs and expectations of our clients."
     },
     {
       "name": "Ethan Cude",
       "image": "https://placehold.co/400?text=Ethan+Cude",
-      "role": "QA"
+      "role": "QA",
+      "age": 21,
+      "course": "EE",
+      "description": "As a member of the Quality Assurance team at Penelope LTD, my responsibilities involve ensuring the quality and reliability of the software products that we develop. I work closely with the QA lead and other team members to create test plans, execute test cases, and identify and report any defects or issues found during the testing process. I also collaborate with our programmers to help resolve any issues that arise and ensure that the software meets the required specifications and quality standards. I am responsible for documenting testing processes and results, and providing feedback to the QA lead to help improve the testing process and the quality of the final product. By working as a member of the QA team, I play a vital role in helping to ensure that the software products we develop meet the high standards of quality and reliability expected by our clients."
     },
     {
       "name": "Alan Brookes",
       "image": "https://placehold.co/400?text=Alan+Brookes",
-      "role": "Developer"
+      "role": "Developer",
+      "age": 21,
+      "course": "EE",
+      "time": 6,
+      "description": "As a programmer at Penelope LTD, my role is to contribute to the coding and development of the app in accordance with project requirements and programming standards. This includes collaborating with the Lead Programmer and other team members to identify technical requirements, develop efficient and scalable code, and resolve any coding issues or bugs. I am responsible for following coding standards and best practices, and for ensuring that code is optimized for performance, security, and maintainability. Additionally, I am responsible for accurately documenting my code and contributing to the team's shared knowledge base. As a team member, I work collaboratively and communicate effectively with my colleagues, providing support and input to ensure that project deadlines are met and that the final product meets or exceeds client expectations."
     }
   ]
 }
