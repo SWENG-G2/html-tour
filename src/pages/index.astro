@@ -8,7 +8,7 @@ import Layout from "../layouts/Layout.astro";
     <Card
       title="Who are we"
       content="Penelope was founded in the UK at the University of York in 2022. The organisation was built from the ground up by students, focused on developing high-quality android applications. here at Penelope, we utilise effective project management strategies that facilitate innovation and communication in the work environment. Striving to provide  customers with a high-quality product that our employees are proud of..."
-      imageUrl="/whoAreWe.png"
+      imageUrl={`${import.meta.env.BASE_URL}whoAreWe.png`}
       imageFirst={true}
       buttonUrl={`${import.meta.env.BASE_URL}the-team`}
       imageSpan={7}
@@ -20,7 +20,7 @@ import Layout from "../layouts/Layout.astro";
       buttonUrl={`${import.meta.env.BASE_URL}departments`}
       buttonBg="bg-palette-500"
       buttonTextColour="text-white"
-      imageUrl="/departments.png"
+      imageUrl={`${import.meta.env.BASE_URL}departments.png`}
       imageSpan={7}
     />
 
@@ -30,7 +30,7 @@ import Layout from "../layouts/Layout.astro";
       buttonUrl={`${import.meta.env.BASE_URL}fauna-finder`}
       buttonBg="bg-palette-600"
       buttonTextColour="text-white"
-      imageUrl="/app.png"
+      imageUrl={`${import.meta.env.BASE_URL}app.png`}
       imageSpan={4}
       imageFirst={true}
     />

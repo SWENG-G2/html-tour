@@ -1,7 +1,7 @@
 ---
 import Card from "../../components/Card.astro";
-import Layout from "../../layouts/Layout.astro";
 import { people } from "../../data/people.json";
+import Layout from "../../layouts/Layout.astro";
 export async function getStaticPaths() {
   return people.map((person) => {
     return {
@@ -22,7 +22,12 @@ export async function getStaticPaths() {
 const { name, image, role, age, course, time, description } = Astro.props;
 ---
 
-<Layout title={`${name} - Penelope LTD.`} active="the team" backTo="Meet the team" backToLink={`${import.meta.env.BASE_URL}the-team`}>
+<Layout
+  title={`${name} - Penelope LTD.`}
+  active="the team"
+  backTo="Meet the team"
+  backToLink={`${import.meta.env.BASE_URL}the-team`}
+>
   <main
     class="w-3/4 sm:w-3/5 md:w-1/2 flex flex-col md:grid md:grid-cols-2 md:grid-rows-[repeat(3,auto)] gap-10 mx-auto mt-20 mb-10"
   >
@@ -70,6 +75,10 @@ const { name, image, role, age, course, time, description } = Astro.props;
         Time at penelope: {time ? time : 8} months
       </p>
     </div>
-    <Card title="My role at penelope" content={description} extraContainerClasses="col-span-full w-full rounded-xl"/>
+    <Card
+      title="My role at penelope"
+      content={description}
+      extraContainerClasses="col-span-full w-full rounded-xl"
+    />
   </main>
 </Layout>
