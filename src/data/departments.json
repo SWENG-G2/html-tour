@@ -1,0 +1,148 @@
+{
+  "departments": [
+    {
+      "name": "Project managment",
+      "imageUrl": "links/project.png",
+      "content": "The project management department at Penelope LTD oversees software development projects for clients. they work closely with the all the departments, plan and manage resources, and communicate progress and changes to all members of our team. their responsibilities include identifying project requirements, assessing risks, and creating a roadmap for development. they aim to deliver a product that meets client needs and expectations. Effective resource management ensures projects are completed on time and within budget. Communication with clients and team members helps to ensure everyone is informed and projects stay on track. The project management department plays a critical role in ensuring successful project completion.",
+      "items": [
+        {
+          "title": "Gantt chart",
+          "icon": "ic:baseline-insert-chart-outlined",
+          "href": "tmp"
+        },
+        {
+          "title": "Roadmap",
+          "icon": "ic:baseline-map",
+          "href": "tmp"
+        },
+        {
+          "title": "Work breakdown structure",
+          "icon": "ic:baseline-work-outline",
+          "href": "tmp"
+        },
+        {
+          "title": "Sprint breakdown",
+          "icon": "ic:baseline-directions-run",
+          "href": "tmp"
+        }
+      ]
+    },
+    {
+      "name": "Documentation",
+      "imageUrl": "links/docs.png",
+      "content": "The documentation department at Penelope is responsible for creating and managing technical and non-technical documents related to software development projects. Their main goal is to ensure that all documents are accurate, up-to-date, and easily accessible to all members. They work closely with all departments to create technical documentation such as the functional specification and user manuals. they also create non-technical documentation such as project plans, meeting minutes, and other documents. The documentation department plays a critical role in ensuring that projects are well-documented and that members have access to the information they need to make informed decisions. Effective document management helps to improve collaboration, reduce errors, and increase efficiency.",
+      "items": [
+        {
+          "title": "Meeting minutes",
+          "icon": "ic:baseline-edit-note",
+          "href": "tmp"
+        },
+        {
+          "title": "Timesheet",
+          "icon": "ic:baseline-access-time",
+          "href": "tmp"
+        },
+        {
+          "title": "Functional spec",
+          "icon": "ic:baseline-text-snippet",
+          "href": "tmp"
+        },
+        {
+          "title": "Contracts",
+          "icon": "ic:baseline-currency-pound",
+          "href": "tmp"
+        }
+      ]
+    },
+    {
+      "name": "Design & media",
+      "imageUrl": "links/design.png",
+      "content": "The design and media team at Penelope LTD is responsible for creating the visual elements of software development projects. Their main goal is to design and coordinate the graphical elements of the app, create mock-up app screens, and source original media for the app. they work closely with the programming team to ensure that the graphical design of the app is consistent with its intended functionality. They also collaborate with other departments such as the project management and documentation teams to ensure that all graphical elements are documented and communicated effectively. The design and media team plays a critical role in creating visually appealing and functional software that meets the needs and expectations of clients and end-users.",
+      "items": [
+        {
+          "title": "App screen mockups",
+          "icon": "ic:baseline-smartphone",
+          "href": "tmp"
+        },
+        {
+          "title": "App designs",
+          "icon": "ic:baseline-draw",
+          "href": "tmp"
+        },
+        {
+          "title": "App design research",
+          "icon": "ic:baseline-find-in-page",
+          "href": "tmp"
+        }
+      ]
+    },
+    {
+      "name": "Marketing",
+      "imageUrl": "links/marketing.png",
+      "content": "The marketing team at Penelope is responsible for promoting the software development projects to potential clients and end-users. Their main goal is to create a marketing strategy that highlights the features and benefits of the software and communicates them effectively to the target audience. They work closely with the project manager and programming department to understand the unique value proposition of the software and collaborate with the design team to create marketing materials. The marketing team plays a critical role in ensuring the success of software development projects by creating and executing effective marketing strategies that drive adoption and usage.",
+      "items": [
+        {
+          "title": "Marketing research",
+          "icon": "ic:baseline-shopping-cart",
+          "href": "tmp"
+        },
+        {
+          "title": "Marketing plan",
+          "icon": "ic:baseline-document-scanner",
+          "href": "tmp"
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "imageUrl": "links/finance.png",
+      "content": "The finance department at Penelope LTD is responsible for managing the financial aspects of the software development projects. their main goal is to ensure that projects are completed within budget and that all financial transactions are accurately recorded and reported. They work closely with the project management team to create and manage project budgets, track expenses, and forecast financial performance. The team also works with the other departments to ensure that all costs related to the project are accounted for. The finance team plays a critical role in ensuring the financial success of software development projects by providing accurate and timely financial reporting, managing cash flow, and ensuring that projects are financially sustainable.",
+      "items": [
+        {
+          "title": "Financial report",
+          "icon": "ic:baseline-account-balance-wallet",
+          "href": "tmp"
+        },
+        {
+          "title": "Cashflow forecast",
+          "icon": "ic:baseline-ssid-chart",
+          "href": "tmp"
+        }
+      ]
+    },
+    {
+      "name": "Quality Assurance",
+      "imageUrl": "links/qa.png",
+      "content": "The QA department at Penelope LTD is responsible for ensuring the quality of the software product. Their main goal is to identify and eliminate defects, bugs, and errors before the software is released to clients and end-users. They work closely with the programming team to define and execute test plans, identify and report defects, and verify that defects have been resolved. The team also provides feedback on the usability, functionality, and overall user experience of the software. The QA team plays a critical role in ensuring the success of software development projects by providing objective and thorough assessments of the software's quality, reliability, and performance.",
+      "items": [
+        {
+          "title": "QA Manual",
+          "icon": "ic:baseline-menu-book",
+          "href": "tmp"
+        },
+        {
+          "title": "Testing & Integration",
+          "icon": "ic:baseline-phonelink-setup",
+          "href": "tmp"
+        }
+      ]
+    },
+    {
+      "name": "Programming",
+      "imageUrl": "links/programming.png",
+      "content": "The programming department at Penelope LTD creates and maintains software that meets client needs, is reliable, and scalable. They work closely with project management and design teams to understand requirements, estimate effort, and implement graphical elements. The team uses various programming languages and development tools to create high-quality software that is secure and performs optimally. They are also responsible for maintaining and updating the software to meet evolving user needs. The programming department plays a crucial role in delivering stable, user-friendly software that meets the objectives of the company and clients.",
+      "items": [
+        {
+          "title": "User manual",
+          "icon": "ic:baseline-menu-book",
+          "href": "tmp"
+        },
+        {
+          "title": "Source code",
+          "icon": "ic:baseline-code",
+          "href": "tmp"
+        }
+      ]
+    }
+  ]
+}

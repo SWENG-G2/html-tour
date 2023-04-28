@@ -2,6 +2,7 @@
 import Card from "../components/Card.astro";
 import LinkCard from "../components/LinkCard.astro";
 import Layout from "../layouts/Layout.astro";
+import { departments } from "../data/departments.json";
 ---
 
 <Layout
@@ -14,50 +15,23 @@ import Layout from "../layouts/Layout.astro";
       title="Departments within penelope ltd"
       content="At Penelope LTD, different departments collaborate closely to deliver successful software development projects. These departments work together to identify client requirements, design mock-ups and interfaces, create high-quality software, eliminate defects, manage finances, and promote software projects to clients and end-users. Clear communication channels, regular team meetings, and cross-functional collaboration ensure that all departments are aware of each other's progress and requirements, allowing them to work together seamlessly. The company is divided into different departments to ensure efficient functioning and to enable team members to focus on their respective areas of expertise. By working together, the different departments at Penelope LTD can deliver high-quality software projects that meet or exceed client expectations."
     />
-    <div class="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-4 gap-10 mx-auto w-3/4 mb-10">
-      <LinkCard
-        title="Project managment"
-        imageUrl="/links/project.png"
-        imageAspectRatio="aspect-video"
-        href={`${import.meta.env.BASE_URL}departments/pm`}
-      />
-      <LinkCard
-        title="Documentation"
-        imageUrl="/links/docs.png"
-        imageAspectRatio="aspect-video"
-        href={`${import.meta.env.BASE_URL}departments/docs`}
-      />
-      <LinkCard
-        title="Design & Media"
-        imageUrl="/links/design.png"
-        imageAspectRatio="aspect-video"
-        href={`${import.meta.env.BASE_URL}departments/designMedia`}
-      />
-      <LinkCard
-        title="Marketing"
-        imageUrl="/links/marketing.png"
-        imageAspectRatio="aspect-video"
-        href={`${import.meta.env.BASE_URL}departments/marketing`}
-      />
-      <LinkCard
-        title="Finance"
-        imageUrl="/links/finance.png"
-        imageAspectRatio="aspect-video"
-        href={`${import.meta.env.BASE_URL}departments/finance`}
-      />
-      <LinkCard
-        title="Quality assurance"
-        imageUrl="/links/qa.png"
-        imageAspectRatio="aspect-video"
-        href={`${import.meta.env.BASE_URL}departments/qa`}
-      />
-      <LinkCard
-        extraContainerClasses="col-span-2"
-        title="Programming"
-        imageUrl="/links/programming.png"
-        imageAspectRatio="aspect-video"
-        href={`${import.meta.env.BASE_URL}departments/programming`}
-      />
+    <div
+      class="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-4 gap-10 mx-auto w-3/4 mb-10"
+    >
+      {
+        departments.map((department, idx) => (
+          <div class={`w-full ${idx === departments.length - 1 ? "col-span-full" : ""}`}>
+            <LinkCard
+              title={department.name}
+              imageUrl={`${import.meta.env.BASE_URL}${department.imageUrl}`}
+              imageAspectRatio="aspect-video"
+              href={`${import.meta.env.BASE_URL}departments/${department.name
+                .replace(" ", "-")
+                .toLowerCase()}`}
+            />
+          </div>
+        ))
+      }
     </div>
   </main>
 </Layout>

@@ -1,7 +1,7 @@
 ---
 import Card from "../../components/Card.astro";
 import Layout from "../../layouts/Layout.astro";
-import { people } from "../people.json";
+import { people } from "../../data/people.json";
 export async function getStaticPaths() {
   return people.map((person) => {
     return {
