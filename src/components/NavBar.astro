@@ -1,4 +1,6 @@
 ---
+import Icon from "astro-icon";
+
 interface Props {
   active: string;
   backTo?: string;
@@ -13,8 +15,12 @@ const tabs = ["home", "the team", "departments", "fauna finder"];
 <nav
   class="sticky top-0 left-0 w-full py-6 flex flex-row justify-between bg-palette-600 text-white uppercase"
 >
-  <a class="ml-4 my-auto" href={backToLink ? backToLink : import.meta.env.BASE_URL}>{backTo ? `< Back to ${backTo}` : "Penelope LTD."}</a>
-  <ul class="list-none my-auto">
+  <a
+    class="hidden md:inline-block order-1 ml-4 my-auto"
+    href={backToLink ? backToLink : import.meta.env.BASE_URL}
+    >{backTo ? `< Back to ${backTo}` : "Penelope LTD."}</a
+  >
+  <ul class="list-none my-auto hidden md:inline-block order-2">
     {
       tabs.map((tab) => (
         <li
@@ -22,11 +28,65 @@ const tabs = ["home", "the team", "departments", "fauna finder"];
             tab === active && "border-b-2"
           }`}
         >
-          <a href={`${import.meta.env.BASE_URL}${tab !== "home" ? tab.replace(" ", "-") : ""}`}>
+          <a
+            href={`${import.meta.env.BASE_URL}${
+              tab !== "home" ? tab.replace(" ", "-") : ""
+            }`}
+          >
             {tab}
           </a>
         </li>
       ))
     }
   </ul>
+
+
+  <a
+    class="order-2 my-auto"
+    href={backToLink ? backToLink : import.meta.env.BASE_URL}
+    >{backTo ? `Back to ${backTo}` : "Penelope LTD."}</a
+  >
+  <button class="w-10 h-10 inline-block md:hidden ml-4 my-auto menuBtn">
+    <Icon name="ic:baseline-menu" class="text-white w-full h-full" />
+  </button>
+  <div class="w-10 h-10 order-3 md:hidden"></div>
 </nav>
+<div
+  class="w-full fixed z-50 flex flex-col py-6 top-0 left-0 bottom-0 right-0 bg-palette-600 -translate-x-full transition-transform ease-in-out duration-200"
+  id="mobileNav"
+>
+  <button class="w-10 h-10 inline-block ml-4 menuBtn">
+    <Icon name="ic:baseline-close" class="text-white w-full h-full" />
+  </button>
+  <ul class="list-none my-10 inline-block w-full text-white text-2xl uppercase">
+    {
+      tabs.map((tab) => (
+        <li
+          class={`mx-4 my-4 block text-center border-b-2 ${
+            tab === active ? "border-b-white" : "border-b-palette-500"
+          }`}
+        >
+          <a
+            href={`${import.meta.env.BASE_URL}${
+              tab !== "home" ? tab.replace(" ", "-") : ""
+            }`}
+          >
+            {tab}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+<script>
+  const menuBtnList = document.querySelectorAll(
+    ".menuBtn"
+  ) as NodeListOf<HTMLButtonElement>;
+  const mobileNav = document.getElementById("mobileNav") as HTMLDivElement;
+
+  menuBtnList.forEach((menuBtn) => {
+    menuBtn.addEventListener("click", () => {
+      mobileNav.classList.toggle("-translate-x-full");
+    });
+  });
+</script>
