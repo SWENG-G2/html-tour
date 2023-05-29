@@ -1,0 +1,25 @@
+---
+const links = ["home", "the team", "departments", "faunafinder"];
+---
+
+<footer class="flex flex-row bg-palette-700 py-4">
+  <div class="my-auto mx-auto flex flex-col">
+    <img class="object-cover" src="/penelope.png" />
+    <p class="mx-auto text-palette-100">
+      © 2022 Penelope LTD, All rights reserved
+    </p>
+  </div>
+  <div
+    class="my-auto mx-auto flex flex-col border-l-4 border-l-palette-100 uppercase text-palette-100 font-roboto"
+  >
+    <ul class="ml-4">
+      {
+        links.map((link) => (
+          <li>
+            <a href={`/${link.replaceAll(" ", "-")}`}>{link}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</footer>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  active: "home" | "the team" | "departments" | "faunafinder";
+}
+
+const links = ["home", "the team", "departments", "faunafinder"];
+
+const { active } = Astro.props;
+---
+
+<nav
+  class="flex flex-row bg-transparent fixed top-0 left-0 w-full justify-between text-white font-roboto"
+>
+  <div class="inline-block">
+    <img class="object-cover max-h-11" src="/penelope.png" />
+  </div>
+  <div class="inline-block">
+    <ul class="flex flex-row justify-between">
+      {
+        links.map((link) => (
+          <li class={`uppercase ${link === active ? "underline" : ""}`}>
+            {link}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
