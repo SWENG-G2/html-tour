@@ -2,6 +2,7 @@
 import PageLayout from "../layouts/PageLayout.astro";
 import { departments } from "../data/departments.json";
 import DepartmentCard from "../components/DepartmentCard.astro";
+import Card from "../components/Card.astro";
 ---
 
 <PageLayout
@@ -9,8 +10,10 @@ import DepartmentCard from "../components/DepartmentCard.astro";
   subtitle="Find out about the teams responsible for our product..."
   active="departments"
 >
-  <div class="py-4 md:py-8 px-2 md:px-8 lg:px-16 flex flex-col bg-palette-100 w-full">
-    <div class="flex flex-col w-full md:w-1/2 mx-auto">
+  <div
+    class="py-4 md:py-8 px-2 md:px-4 lg:px-8 xl:px-16 2xl:px-32 flex flex-col bg-palette-100 w-full"
+  >
+    <div class="flex flex-col w-full lg:w-3/5 xl:w-1/2 mx-auto">
       <h3
         class="font-bold font-montserrat text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
       >
@@ -32,7 +35,9 @@ import DepartmentCard from "../components/DepartmentCard.astro";
         software projects that meet or exceed client expectations.
       </p>
     </div>
-    <div class="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-1">
+    <div
+      class="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-1 mt-10 sm:w-1/2 sm:mx-auto md:mx-0 md:w-full"
+    >
       {
         departments
           .slice(0, 4)
@@ -44,5 +49,53 @@ import DepartmentCard from "../components/DepartmentCard.astro";
           ))
       }
     </div>
+    <div
+      class="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 md:mx-[12.5%] sm:w-1/2 sm:mx-auto md:w-auto"
+    >
+      {
+        departments
+          .slice(4, 8)
+          .map((department) => (
+            <DepartmentCard
+              name={department.name}
+              image={department.imageUrl}
+            />
+          ))
+      }
+    </div>
   </div>
+  <Card
+    title="Organisation and collaboration"
+    content="Our organisation employs a team structure that promotes collaboration and cross-functional expertise. We have functional teams dedicated to specific areas such as development, design, quality assurance, finance, communication, and marketing. Each team is led by a team leader responsible for overseeing activities and ensuring project goals are met. click down below to read more about our organisational structure and about our effective collaboration as a team..."
+    buttonLink="/organisation"
+    buttonText="Learn More"
+    textBg="bg-palette-500"
+    titleColor="text-palette-100"
+    contentColor="text-palette-100"
+    invertButton={true}
+    customImage={true}
+    tw="mt-32"
+  >
+    <div class="relative w-full h-full bg-palette-100 md:aspect-square">
+      <img
+        class="relative aspect-square object-cover w-1/4 rounded-lg left-[70%] top-4 md:top-0 md:-translate-y-1/2 z-[1]"
+        src="/org/1.jpg"
+      />
+      <img
+        class="relative aspect-square object-cover w-1/2 rounded-lg right-1/4 left-1/4 md:bottom-20 lg:bottom-32 2xl:bottom-44"
+        src="/org/2.jpg"
+      />
+      <img
+        class="relative aspect-portrait object-cover w-1/4 rounded-lg left-10 bottom-4 md:bottom-32 lg:bottom-44 2xl:bottom-64"
+        src="/org/3.jpg"
+      />
+    </div>
+  </Card>
+  <Card
+    title="Project workflow"
+    content="To simplify the product development process, Penelope splits the project lifecycle into 5 distinct phases that provide the project with more predictability. Click down below to find out more about this..."
+    buttonLink="/workflow"
+    buttonText="Learn More"
+    imageUrl="/workflow/1.jpg"
+  />
 </PageLayout>
