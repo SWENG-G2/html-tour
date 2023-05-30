@@ -9,20 +9,61 @@ const { active } = Astro.props;
 ---
 
 <nav
-  class="flex flex-row bg-transparent fixed top-0 left-0 w-full justify-between text-white font-roboto"
+  class="flex flex-row bg-transparent fixed top-0 left-0 w-full justify-between text-white font-roboto font-black px-8 z-10"
 >
   <div class="inline-block">
     <img class="object-cover max-h-11" src="/penelope.png" />
   </div>
-  <div class="inline-block">
+  <div class="inline-block my-auto">
     <ul class="flex flex-row justify-between">
       {
         links.map((link) => (
-          <li class={`uppercase ${link === active ? "underline" : ""}`}>
-            {link}
+          <li
+            class={`uppercase ml-8 border-b-2 ${
+              link === active ? "border-b-palette-100" : "border-b-transparent"
+            }`}
+          >
+            <a href={`/${link === "home" ? "" : link.replaceAll(" ", "-")}`}>
+              {link}
+            </a>
           </li>
         ))
       }
     </ul>
   </div>
+  <div
+    id="nav-bg"
+    class="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-100 ease-in bg-palette-600 -z-10"
+  >
+  </div>
 </nav>
+
+<script>
+  const content = document.getElementById("content");
+  const nav = document.querySelector("nav");
+  const navBg = document.getElementById("nav-bg");
+
+  const navHeight = nav ? nav.offsetHeight : 0;
+  const intersectionMargin = `-${window.innerHeight - navHeight}px`;
+
+  const options: IntersectionObserverInit = {
+    rootMargin: `0px 0px ${intersectionMargin} 0px`,
+  };
+
+  const detectIntersection: IntersectionObserverCallback = (entries, _) => {
+    entries.forEach((entry) => {
+      if (navBg) {
+        if (entry.isIntersecting) {
+          navBg.classList.remove("opacity-0");
+          navBg.classList.add("opacity-100");
+        } else {
+          navBg.classList.remove("opacity-100");
+          navBg.classList.add("opacity-0");
+        }
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(detectIntersection, options);
+  if (content) observer.observe(content);
+</script>

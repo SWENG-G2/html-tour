@@ -21,72 +21,76 @@ import Navbar from "../components/Navbar.astro";
   </head>
   <body class="bg-palette-100">
     <Navbar active="home" />
-    {/* Hero section */}
-    <div
-      class="h-[100dvh] h-screen text-white flex flex-col bg-[url('/hero.webp')] bg-cover"
-    >
-      <div class="flex flex-col my-auto mx-auto">
-        <h1
-          class="text-4xl md:text-6xl lg:text-8xl mx-auto font-franklin font-bold"
-        >
-          FaunaFinder
-        </h1>
-        <h2 class="mx-auto font-ibm text-lg md:text-xl lg:text-2xl">
-          Your window to nature&rsquo;s beauty
-        </h2>
-        <LinkButton text="Download" link="/" tw="mt-5" />
-      </div>
-    </div>
-    {/* Cards */}
-    <div class="flex flex-col w-full mt-28">
-      <Card
-        title="Who are we"
-        content="Penelope was founded in the UK at the University of York in 2022. The organisation was built from the ground up by students, focused on developing high-quality android applications. here at Penelope, we utilise effective project management strategies that facilitate innovation and communication in the work environment. Striving to provide  customers with a high-quality product that our employees are proud of..."
-        buttonLink="/the-team"
-        buttonText="Meet the team"
-        customImage={true}
-        padBoth={true}
-        tw="mb-28"
+    <main>
+      {/* Hero section */}
+      <div
+        class="h-[100dvh] h-screen text-white flex flex-col bg-[url('/hero.webp')] bg-cover"
       >
-        <div class="w-full grid grid-cols-2">
-          <img
-            class="rounded-3xl aspect-portrait object-cover max-w-[75%] mx-auto my-auto"
-            src="/1.jpg"
-          />
-          <div class="flex flex-col gap-4">
-            <img
-              class="rounded-3xl aspect-video object-cover max-w-[75%] max-h-[33%] mx-auto"
-              src="/2.png"
-            />
-            <img
-              class="rounded-3xl aspect-portrait object-cover max-w-[75%] mx-auto"
-              src="/3.jpg"
-            />
-          </div>
+        <div class="flex flex-col my-auto mx-auto">
+          <h1
+            class="text-4xl md:text-6xl lg:text-8xl mx-auto font-franklin font-bold"
+          >
+            FaunaFinder
+          </h1>
+          <h2 class="mx-auto font-ibm text-lg md:text-xl lg:text-2xl">
+            Your window to nature&rsquo;s beauty
+          </h2>
+          <LinkButton text="Download" link="/" tw="mt-5" />
         </div>
-      </Card>
-      <Card
-        textFirst={false}
-        title="Our work and departments"
-        content="Our aim is to develop and sell an educational Android application to provide students of campus-based universities, and local members of the public, a means of identifying and learning about the local wildlife. By providing potential future students with information on the wildlife that exists on campus, we are giving them the opportunity to fall in love with the university even prior to beginning their studies..."
-        imageUrl="/4.jpg"
-        buttonLink="/departments"
-        buttonText="Learn more"
-      />
-      <Card
-        textFirst={false}
-        title="Our product"
-        content="FaunaFinder is a mobile application designed to help users identify and learn about the wildlife in their local environment (their university). The app provides information about birds in the university’s vicinity and it aims to provide more information about other animals and creatures. This app could be useful for nature enthusiasts, researchers, and anyone interested in learning more about the natural world around them, as it includes a database of different species, including pictures, descriptions, and behavioural information. It also provides an amazing opportunity to promote eco-tourism and bring awareness to wildlife conservation..."
-        imageUrl="/5.png"
-        imageBg="bg-palette-100"
-        textBg="bg-palette-500"
-        titleColor="text-palette-100"
-        contentColor="text-palette-100"
-        buttonLink="/faunafinder"
-        buttonText="Learn more"
-        invertButton={true}
-      />
-    </div>
+      </div>
+      <div id="content">
+        {/* Cards */}
+        <div class="flex flex-col w-full pt-28">
+          <Card
+            title="Who are we"
+            content="Penelope was founded in the UK at the University of York in 2022. The organisation was built from the ground up by students, focused on developing high-quality android applications. here at Penelope, we utilise effective project management strategies that facilitate innovation and communication in the work environment. Striving to provide  customers with a high-quality product that our employees are proud of..."
+            buttonLink="/the-team"
+            buttonText="Meet the team"
+            customImage={true}
+            padBoth={true}
+            tw="mb-28"
+          >
+            <div class="w-full grid grid-cols-2">
+              <img
+                class="rounded-3xl aspect-portrait object-cover max-w-[75%] mx-auto my-auto"
+                src="/1.jpg"
+              />
+              <div class="flex flex-col gap-4">
+                <img
+                  class="rounded-3xl aspect-video object-cover max-w-[75%] max-h-[33%] mx-auto"
+                  src="/2.png"
+                />
+                <img
+                  class="rounded-3xl aspect-portrait object-cover max-w-[75%] mx-auto"
+                  src="/3.jpg"
+                />
+              </div>
+            </div>
+          </Card>
+          <Card
+            textFirst={false}
+            title="Our work and departments"
+            content="Our aim is to develop and sell an educational Android application to provide students of campus-based universities, and local members of the public, a means of identifying and learning about the local wildlife. By providing potential future students with information on the wildlife that exists on campus, we are giving them the opportunity to fall in love with the university even prior to beginning their studies..."
+            imageUrl="/4.jpg"
+            buttonLink="/departments"
+            buttonText="Learn more"
+          />
+          <Card
+            textFirst={false}
+            title="Our product"
+            content="FaunaFinder is a mobile application designed to help users identify and learn about the wildlife in their local environment (their university). The app provides information about birds in the university’s vicinity and it aims to provide more information about other animals and creatures. This app could be useful for nature enthusiasts, researchers, and anyone interested in learning more about the natural world around them, as it includes a database of different species, including pictures, descriptions, and behavioural information. It also provides an amazing opportunity to promote eco-tourism and bring awareness to wildlife conservation..."
+            imageUrl="/5.png"
+            imageBg="bg-palette-100"
+            textBg="bg-palette-500"
+            titleColor="text-palette-100"
+            contentColor="text-palette-100"
+            buttonLink="/faunafinder"
+            buttonText="Learn more"
+            invertButton={true}
+          />
+        </div>
+      </div>
+    </main>
     <Footer />
   </body>
 </html>

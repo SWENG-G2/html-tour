@@ -1,0 +1,23 @@
+---
+interface Props {
+  name: string;
+  image: string;
+}
+const { name, image } = Astro.props;
+---
+
+<a
+  class="flex flex-col rounded-lg p-1 border-palette-500 shadow-md bg-palette-600 mx-4 relative aspect-square lg:aspect-auto"
+  href={`/${name.toLowerCase().replaceAll(" ", "-").replaceAll("&", "")}`}
+>
+  <div
+    class="w-full relative after:content-[''] after:top-full after:-translate-y-full after:absolute after:w-full md:after:h-20 after:h-10 after:bg-gradient-to-b after:from-transparent after:to-palette-100"
+  >
+    <img src={image} class="rounded-t-lg object-scale-down" />
+  </div>
+  <h4
+    class="rounded-b-lg font-black text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl py-2 md:py-4 text-center bg-palette-100"
+  >
+    {name}
+  </h4>
+</a>

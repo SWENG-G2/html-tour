@@ -16,7 +16,9 @@ const links = ["home", "the team", "departments", "faunafinder"];
       {
         links.map((link) => (
           <li>
-            <a href={`/${link.replaceAll(" ", "-")}`}>{link}</a>
+            <a href={`/${link === "home" ? "" : link.replaceAll(" ", "-")}`}>
+              {link}
+            </a>
           </li>
         ))
       }

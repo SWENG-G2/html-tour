@@ -5,9 +5,11 @@ import Navbar from "../components/Navbar.astro";
 interface Props {
   title: string;
   subtitle: string;
+  active: "home" | "the team" | "departments" | "faunafinder";
+  image?: string;
 }
 
-const { title, subtitle } = Astro.props;
+const { title, subtitle, active, image } = Astro.props;
 ---
 
 <html lang="en">
@@ -25,18 +27,35 @@ const { title, subtitle } = Astro.props;
     />
   </head>
   <body class="bg-palette-100">
-    <Navbar active="home" />
-    <div class="mt-16 bg-palette-500 flex flex-col">
-      <h1
-        class="text-4xl md:text-6xl lg:text-8xl mx-auto font-franklin font-bold"
+    <Navbar active={active} />
+    <main id="content">
+      <div
+        class="relative py-16 md:py-32 bg-palette-600 text-palette-100 uppercase flex flex-col font-roboto"
       >
-        {title}
-      </h1>
-      <h2 class="mx-auto font-ibm text-lg md:text-xl lg:text-2xl">
-        {subtitle}
-      </h2>
-    </div>
-    <slot />
+        <div class="flex flex-col w-full md:w-1/2 lg:w-3/4">
+          <h1
+            class="text-4xl md:text-6xl lg:text-8xl mx-auto md:mr-0 md:ml-8 font-bold"
+          >
+            {title}
+          </h1>
+          <h2
+            class="mx-auto text-center md:text-left md:mr-0 md:ml-8 text-lg md:text-xl lg:text-2xl"
+          >
+            {subtitle}
+          </h2>
+        </div>
+        {
+          image && (
+            <img
+              src={image}
+              class="my-4 mx-auto md:m-0 md:absolute md:top-2/3 xl:-translate-y-1/4 md:right-16 border-8 lg:border-[16px] xl:border-[22px] border-palette-100 w-48 lg:w-52 xl:w-96 aspect-square object-cover"
+            />
+          )
+        }
+      </div>
+      <div class="w-full h-11 bg-palette-150"></div>
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
