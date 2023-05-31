@@ -8,7 +8,8 @@
         {
           "title": "Gantt chart",
           "icon": "gantt",
-          "href": "tmp"
+          "href": "tmp",
+          "versions": [1.0, 1.01, 1.5, 2]
         },
         {
           "title": "Roadmap",

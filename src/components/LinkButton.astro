@@ -4,12 +4,14 @@ interface Props {
   link: string;
   inverted?: boolean;
   tw?: string;
+  id?: string;
 }
 
-const { text, link, tw, inverted = false } = Astro.props;
+const { text, link, tw, inverted = false, id } = Astro.props;
 ---
 
 <a
+  id={id}
   href={link}
   class={`rounded-3xl ${
     inverted

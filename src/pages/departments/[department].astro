@@ -1,7 +1,9 @@
 ---
 import File from "../../components/File.astro";
+import LinkButton from "../../components/LinkButton.astro";
 import { departments } from "../../data/departments.json";
 import PageLayout from "../../layouts/PageLayout.astro";
+import type { itemT } from "../../types/item";
 export async function getStaticPaths() {
   return departments.map((department) => {
     return {
@@ -25,12 +27,7 @@ interface Props {
   name: string;
   imageUrl: string;
   content: string;
-  items: {
-    title: string;
-    icon: string;
-    pdf: string;
-    pdfFull: boolean;
-  }[];
+  items: itemT[];
 }
 
 const { name, imageUrl, content, items } = Astro.props;
@@ -49,10 +46,30 @@ const { name, imageUrl, content, items } = Astro.props;
       <p class="text-justify hyphens-auto w-full">{content}</p>
     </div>
   </div>
-  <div
-    class={`bg-palette-300 flex flex-col md:flex-row md:gap-16 lg:gap-32 xl:gap-44 2xl:gap-64 py-4 md:py-8 px-2 md:px-8 lg:px-16 overflow-x-scroll`}
-  >
-    {
+  <div class="bg-palette-300 flex flex-col py-4 md:py-8 px-2 md:px-8 lg:px-16">
+    <label for="documentSelect" class="mx-auto font-righteous text-xl"
+      >Please select a document from the dropdown below</label
+    >
+    <select
+      name="documentSelect"
+      id="documentSelect"
+      class="w-full md:w-1/2 mx-auto"
+    >
+      <option value="">Select document</option>
+      {items.map((item) => <option value={item.title}>{item.title}</option>)}
+    </select>
+    <label for="versionSelect" class="mx-auto font-righteous text-xl mt-10"
+      >Please select the document version from the dropdown below</label
+    >
+    <select
+      name="versionSelect"
+      id="versionSelect"
+      class="w-full md:w-1/2 mx-auto"
+    >
+      <option value="">Please select document first</option>
+    </select>
+    <LinkButton link="" text="View document" tw="hidden" id="viewBtn" />
+    <!-- {
       items.map((item) => (
         <File
           title={item.title}
@@ -61,6 +78,75 @@ const { name, imageUrl, content, items } = Astro.props;
           pdfFull={item.pdfFull}
         />
       ))
-    }
+    } -->
   </div>
+  <document-controller data-items={JSON.stringify(items)}></document-controller>
 </PageLayout>
+<script>
+  import type { itemT } from "../../types/item";
+  class DocumentController extends HTMLElement {
+    constructor() {
+      super();
+
+      window.addEventListener("load", () => {
+        const items = this.dataset.items
+          ? (JSON.parse(this.dataset.items) as itemT[])
+          : undefined;
+
+        if (items === undefined)
+          alert("Something went wrong when setting up the documents list");
+        else {
+          // Document select
+          const documentSelect = document.getElementById(
+            "documentSelect"
+          ) as HTMLSelectElement | null;
+
+          // Version select
+          const versionSelect = document.getElementById(
+            "versionSelect"
+          ) as HTMLSelectElement | null;
+
+          if (documentSelect && versionSelect) {
+            // Adds versions to version select
+            documentSelect.addEventListener("change", () => {
+              versionSelect.length = 1;
+
+              // Find matching document
+              const item = items.find(
+                (item) => item.title === documentSelect.value
+              );
+
+              // Add versions
+              if (item) {
+                item.versions.forEach((version) => {
+                  versionSelect.options[versionSelect.options.length] =
+                    new Option(version.toString(), version.toString());
+                });
+              }
+            });
+
+            versionSelect.addEventListener("change", () => {
+              // Get view button
+              const viewBtn = document.getElementById(
+                "viewBtn"
+              ) as HTMLAnchorElement | null;
+
+              if (viewBtn) {
+                if (versionSelect.value !== "") {
+                  viewBtn.classList.remove("hidden");
+                  viewBtn.href = `/pdfs/${decodeURIComponent(
+                    documentSelect.value
+                  )}/${decodeURIComponent(versionSelect.value)}.pdf`;
+                } else if (!viewBtn.classList.contains("hidden")) {
+                  viewBtn.classList.add("hidden");
+                }
+              }
+            });
+          }
+        }
+      });
+    }
+  }
+
+  customElements.define("document-controller", DocumentController);
+</script>
