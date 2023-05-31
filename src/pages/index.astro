@@ -1,7 +1,9 @@
 ---
+import Icon from "astro-icon";
 import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
 import LinkButton from "../components/LinkButton.astro";
+import LinkCard from "../components/LinkCard.astro";
 import Navbar from "../components/Navbar.astro";
 ---
 
@@ -15,82 +17,188 @@ import Navbar from "../components/Navbar.astro";
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Libre+Franklin&family=Montserrat&family=Roboto+Condensed&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-palette-100">
+  <body>
     <Navbar active="home" />
     <main>
       {/* Hero section */}
       <div
-        class="h-[100dvh] h-screen text-white flex flex-col bg-[url('/hero.webp')] bg-cover"
+        class="h-[100dvh] h-screen text-white flex flex-col bg-[url('/hero.webp')] bg-cover relative"
       >
-        <div class="flex flex-col my-auto mx-auto">
+        <div class="flex flex-col my-auto mx-auto relative">
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 blur-3xl bg-lime-200 opacity-50"
+          >
+          </div>
           <h1
-            class="text-4xl md:text-6xl lg:text-8xl mx-auto font-franklin font-bold"
+            class="text-4xl md:text-6xl lg:text-8xl mx-auto font-lobster font-bold textShadow relative"
           >
             FaunaFinder
           </h1>
-          <h2 class="mx-auto font-ibm text-lg md:text-xl lg:text-2xl">
+          <h2
+            class="mx-auto font-righteous text-lg md:text-xl lg:text-2xl textShadow relative"
+          >
             Your window to nature&rsquo;s beauty
           </h2>
-          <LinkButton text="Download" link="/" tw="mt-5" />
+          <LinkButton text="Download" link="/" tw="mt-5 relative" />
         </div>
-      </div>
-      <div id="content">
-        {/* Cards */}
-        <div class="flex flex-col w-full pt-28">
-          <Card
-            title="Who are we"
-            content="Penelope was founded in the UK at the University of York in 2022. The organisation was built from the ground up by students, focused on developing high-quality android applications. here at Penelope, we utilise effective project management strategies that facilitate innovation and communication in the work environment. Striving to provide  customers with a high-quality product that our employees are proud of..."
-            buttonLink="/the-team"
-            buttonText="Meet the team"
-            customImage={true}
-            padBoth={true}
-            tw="mb-28"
+        <button
+          class="absolute bottom-0 left-1/2 -translate-x-1/2"
+          id="scrollBtn"
+        >
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 blur-3xl bg-lime-200 opacity-50"
           >
-            <div class="w-full grid grid-cols-2">
-              <img
-                class="rounded-3xl aspect-portrait object-cover max-w-[75%] mx-auto my-auto"
-                src="/1.jpg"
+          </div>
+          <Icon name="mdi:chevron-double-down" class="w-20 md:w-44 relative" />
+        </button>
+      </div>
+      <div id="content" class="font-righteous">
+        <div class="w-full bg-palette-200 flex flex-col px-2 md:px-0 py-10">
+          <h1
+            class="text-center w-full md:w-1/2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl self-center"
+          >
+            Learn about your campus&rsquo; wildlife from those who know it best <span
+              class="inline-block"
+              ><img
+                src="/home/check.svg"
+                class="aspect-square w-5 md:w-10"
+              /></span
+            >
+          </h1>
+          <p
+            class="w-full md:w-3/4 self-center text-center mt-4 text-lg md:text-2xl lg:text-3xl"
+          >
+            We work closely with your university&lsquo;s staff to ensure
+            information is always correct and up-to-date. Fully immerse in your
+            campus&lsquo; wildlife with <span
+              class="text-transparent bg-clip-text bg-gradient-to-br from-palette-500 to-palette-600"
+              >FaunaFinder.</span
+            >
+          </p>
+        </div>
+        <div
+          class="w-full bg-palette-100 flex flex-col md:flex-row px-2 md:px-0 py-8"
+        >
+          <img
+            src="/home/campus.png"
+            alt="A picture of FaunaFinder in the Campus selection screen"
+            class="w-full md:w-1/5 object-scale-down md:object-cover max-h-96 md:max-h-max md:ml-[10%]"
+          />
+          <div class="w-full flex flex-col md:mx-[10%] mx-auto">
+            <h3
+              class="text-palette-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
+            >
+              We've got you covered
+            </h3>
+            <p class="mt-8 text-lg w-full hyphens-auto">
+              Whether you&apos;re a student or a tourist, FaunaFinder stores an
+              extensive database of wildlife in various UK universities campuses
+              for you to explore.
+              <br />
+              <br />
+              We&apos;re are constantly working on reaching new agreements with as
+              many universities as we can. If your nearest campus is not supported
+              yet, keep checking!
+              <br />
+              <br />
+              Here&apos;s a (non-extensive) list of our roadmap:
+            </p>
+            <ul class="list-disc ml-10 md:ml-8">
+              <li>University of Durham</li>
+              <li>Loughborough University</li>
+              <li>University of Bath</li>
+              <li>University of Warwick</li>
+              <li>University of Southampton</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="w-full bg-palette-200 flex flex-col md:flex-row px-2 md:px-0 py-8"
+        >
+          <div class="w-full flex flex-col md:mx-[10%] mx-auto">
+            <h3
+              class="text-palette-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
+            >
+              A tour guide in your pocket
+            </h3>
+            <p class="mt-8 text-xl w-full hyphens-auto">
+              Sure, you could email your University&apos;s grounds team and ask
+              for a tour. But why bother when FaunaFinder runs in your pocket?
+              <br />
+              <br />
+              All the information you will find within FaunaFinder has been vetted
+              and approved by some very knowledgeable folks who take care of the
+              very same animals you&apos;re curious about!
+              <br />
+              <br />
+              What are you waiting for?
+            </p>
+            <LinkButton
+              link="/faunafinder"
+              text="Download now"
+              tw="md:mx-0 my-4"
+            />
+          </div>
+          <img
+            src="/home/detail.png"
+            alt="A picture of FaunaFinder in the Campus selection screen"
+            class="w-full md:w-1/5 object-scale-down md:object-cover max-h-96 md:max-h-max md:mr-[10%]"
+          />
+        </div>
+        <div class="w-full bg-palette-100 flex flex-col px-2 md:px-0 py-8">
+          <h3
+            class="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl self-center"
+          >
+            Explore our journey
+          </h3>
+          <div class="w-full flex flex-col md:flex-row mt-10 mb-8">
+            <div class="w-full sm:w-1/2 md:w-1/4 mx-auto">
+              <LinkCard
+                title="Our work and departments"
+                href="/departments"
+                imageUrl="/home/departments.jpg"
               />
-              <div class="flex flex-col gap-4">
-                <img
-                  class="rounded-3xl aspect-video object-cover max-w-[75%] max-h-[33%] mx-auto"
-                  src="/2.png"
-                />
-                <img
-                  class="rounded-3xl aspect-portrait object-cover max-w-[75%] mx-auto"
-                  src="/3.jpg"
-                />
-              </div>
             </div>
-          </Card>
-          <Card
-            textFirst={false}
-            title="Our work and departments"
-            content="Our aim is to develop and sell an educational Android application to provide students of campus-based universities, and local members of the public, a means of identifying and learning about the local wildlife. By providing potential future students with information on the wildlife that exists on campus, we are giving them the opportunity to fall in love with the university even prior to beginning their studies..."
-            imageUrl="/4.jpg"
-            buttonLink="/departments"
-            buttonText="Learn more"
-          />
-          <Card
-            textFirst={false}
-            title="Our product"
-            content="FaunaFinder is a mobile application designed to help users identify and learn about the wildlife in their local environment (their university). The app provides information about birds in the university’s vicinity and it aims to provide more information about other animals and creatures. This app could be useful for nature enthusiasts, researchers, and anyone interested in learning more about the natural world around them, as it includes a database of different species, including pictures, descriptions, and behavioural information. It also provides an amazing opportunity to promote eco-tourism and bring awareness to wildlife conservation..."
-            imageUrl="/5.png"
-            imageBg="bg-palette-100"
-            textBg="bg-palette-500"
-            titleColor="text-palette-100"
-            contentColor="text-palette-100"
-            buttonLink="/faunafinder"
-            buttonText="Learn more"
-            invertButton={true}
-          />
+            <div class="w-full sm:w-1/2 md:w-1/4 mx-auto mt-10 md:mt-0">
+              <LinkCard
+                title="Our product"
+                href="/faunafinder"
+                imageUrl="/home/icon.jpg"
+              />
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 mx-auto mt-10 md:mt-0">
+              <LinkCard
+                title="The team"
+                href="/the-team"
+                imageUrl="/home/team.jpg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <Footer />
   </body>
 </html>
+<style>
+  .textShadow {
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+</style>
+<script>
+  const scrollBtn = document.getElementById(
+    "scrollBtn"
+  ) as HTMLButtonElement | null;
+
+  if (scrollBtn) {
+    scrollBtn.addEventListener("click", () => {
+      const content = document.getElementById("content");
+
+      if (content) content.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+</script>

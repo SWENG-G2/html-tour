@@ -5,16 +5,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ibm: ['"IBM Plex Mono"', "monospace"],
-        franklin: ['"Libre Franklin"', "sans-serif"],
-        montserrat: ['"Montserrat"', "sans-serif"],
-        roboto: ["'Roboto Condensed'", "sans-serif"],
+        lobster: ['"Lobster"', "sans-serif"],
+        righteous: ['"Righteous"', "segoe-ui"],
       },
       colors: {
         palette: {
           100: "#FFF",
           150: "#F5F5F5",
-          200: "#E3E3E3",
+          200: "#F0F0F0",
           300: "#D9D9D9",
           400: "#C5C5C5",
           500: "#934948",
