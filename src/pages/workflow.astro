@@ -1,0 +1,107 @@
+---
+import Card from "../components/Card.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout
+  title="Project workflow"
+  subtitle="Find out about the workflow processes behind our project..."
+  active="departments"
+>
+  <Card
+    title="Project workflow"
+    content="To simplify the product development process, Penelope splits the project lifecycle into 5 distinct phases that provide the project with more predictability. The first phase consists of the Initiation Phase where the project is defined and a product vision is created. The second phase (Planning Phase) is the phase where all the goals and details are defined in order to complete what has been set on the first phase. The Execution Phase is characterised by the execution of the product, when all that has been defined comes to life. During the Control & Monitoring Phase, which happens alongside the previous phase, the Project manager is responsible for monitoring progress and making adjustments if necessary, ensuring that the product is aligned with what was defined in the project plan. At last, the Closure Phase dictates the end of the project and during this phase Penelope ensures that the product meets all the requirements defined in the first phase."
+    imageUrl="/workflow/1.jpg"
+  />
+  <div
+    class="w-full mx-auto flex flex-col mt-4 md:mt-8 lg:mt-16 bg-palette-100"
+  >
+    <h4
+      class="w-full mx-auto font-roboto text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-palette-500 font-bold text-center"
+    >
+      The workflow structure
+    </h4>
+    <img
+      src="/workflow/structure.png"
+      class="w-full md:w-1/2 mx-auto object-cover mt-4 px-2 md:mt-8"
+    />
+  </div>
+  <div
+    class="w-full mx-auto flex flex-col mt-4 md:mt-8 lg:mt-16 bg-palette-100"
+  >
+    <h4
+      class="w-full mx-auto font-roboto text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-palette-500 font-bold text-center"
+    >
+      The phases
+    </h4>
+    <div class="w-full flex flex-col mt-4 md:mt-8 md:px-10 lg:px-20 xl:px-40 2xl:px-64 pb-16">
+      <div class="self-start w-full md:w-3/4 p-8 shadow-md">
+        <h5 class="font-bold font-lg">Initiation Phase:</h5>
+        <ul class="list-disc ml-8 hyphens-auto">
+          <li>Define the project and create a product vision.</li>
+          <li>Capture customer requirements and ensure understanding.</li>
+          <li>Review and confirm client orders and requirements.</li>
+          <li>Establish effective customer communication channels.</li>
+        </ul>
+      </div>
+      <div class="self-end w-full md:w-3/4 bg-palette-500 text-palette-100 p-8 shadow-md">
+        <h5 class="font-bold font-lg">Planning Phase:</h5>
+        <ul class="list-disc ml-4 md:ml-8 hyphens-auto">
+          <li>Define project goals, roles, and responsibilities.</li>
+          <li>
+            Create a project plan and establish logistics and communication
+            channels.
+          </li>
+          <li>Identify project risks and develop contingency plans.</li>
+          <li>Create a workflow/roadmap for the project.</li>
+        </ul>
+      </div>
+      <div
+        class="self-start w-full md:w-3/4 p-8 shadow-md"
+      >
+        <h5 class="font-bold font-lg">Execution Phase:</h5>
+        <ul class="list-disc ml-8 hyphens-auto">
+          <li>Utilise version control to manage development branches.</li>
+          <li>
+            Follow test-driven development to ensure quality and security.
+          </li>
+          <li>
+            Conduct unit testing, instrumentation testing, and user interface
+            testing.
+          </li>
+          <li>Utilise an automated test framework for user interface tests.</li>
+        </ul>
+      </div>
+      <div
+        class="self-end w-full md:w-3/4 bg-palette-500 text-palette-100 p-8 shadow-md"
+      >
+        <h5 class="font-bold font-lg">Control & Monitoring Phase:</h5>
+        <ul class="list-disc ml-4 md:ml-8 hyphens-auto">
+          <li>Monitor project progress and address roadblocks.</li>
+          <li>Conduct status meetings and produce reports.</li>
+          <li>Manage project resources and allocate tasks.</li>
+          <li>Implement corrective and preventive actions.</li>
+        </ul>
+      </div>
+      <div
+        class="self-start w-full md:w-3/4 p-8 shadow-md"
+      >
+        <h5 class="font-bold font-lg">Closing Phase:</h5>
+        <ul class="list-disc ml-8 hyphens-auto">
+          <li>
+            Complete all required tests and ensure the product meets
+            requirements.
+          </li>
+          <li>
+            Release the product to the customer or hand it over to another team.
+          </li>
+          <li>Conduct a product review and obtain customer feedback.</li>
+          <li>
+            Perform a project post-mortem to review project performance and
+            identify improvements.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</PageLayout>

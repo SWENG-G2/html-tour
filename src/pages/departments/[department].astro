@@ -1,0 +1,66 @@
+---
+import File from "../../components/File.astro";
+import { departments } from "../../data/departments.json";
+import PageLayout from "../../layouts/PageLayout.astro";
+export async function getStaticPaths() {
+  return departments.map((department) => {
+    return {
+      params: {
+        department: department.name
+          .replaceAll(" ", "-")
+          .replaceAll("&", "")
+          .toLowerCase(),
+      },
+      props: {
+        name: department.name,
+        imageUrl: department.imageUrl,
+        content: department.content,
+        items: department.items,
+      },
+    };
+  });
+}
+
+interface Props {
+  name: string;
+  imageUrl: string;
+  content: string;
+  items: {
+    title: string;
+    icon: string;
+    pdf: string;
+    pdfFull: boolean;
+  }[];
+}
+
+const { name, imageUrl, content, items } = Astro.props;
+---
+
+<PageLayout title={`${name}`} subtitle="" active="departments" image={imageUrl}>
+  <div class="bg-palette-150 flex flex-col px-2 md:px-8 lg:px-16 py-4 md:py-32">
+    <div
+      class="mx:auto my-auto md:mx-0 flex flex-col text-justify bg-palette-100 w-full md:max-w-[60%] p-4 rounded-lg shadow-md"
+    >
+      <h3
+        class="font-bold font-montserrat text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+      >
+        {name}
+      </h3>
+      <p class="text-justify hyphens-auto w-full">{content}</p>
+    </div>
+  </div>
+  <div
+    class={`bg-palette-300 flex flex-col md:flex-row md:gap-16 lg:gap-32 xl:gap-44 2xl:gap-64 py-4 md:py-8 px-2 md:px-8 lg:px-16 overflow-x-scroll`}
+  >
+    {
+      items.map((item) => (
+        <File
+          title={item.title}
+          icon={item.icon}
+          pdf={item.pdf}
+          pdfFull={item.pdfFull}
+        />
+      ))
+    }
+  </div>
+</PageLayout>

@@ -1,0 +1,85 @@
+---
+import { Icon } from "astro-icon";
+
+interface Props {
+  title: string;
+  icon: string;
+  pdf: string;
+  pdfFull: boolean;
+}
+
+const { title, icon, pdf, pdfFull } = Astro.props;
+---
+
+<!-- <button
+  class="mx-auto my-auto relative flex flex-col w-full sm:w-1/2 md:w-full aspect-square"
+  data-pdf={pdf}
+>
+  <Icon
+    name={icon}
+    class="absolute top-0 left-0 text-white blur-[3px] w-full -translate-x-4 translate-y-4"
+  />
+  <Icon name={icon} class="relative text-black w-full" />
+  <h5
+    class="mx-auto text-center font-montserrat font-semibold text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl mt-4"
+  >
+    {title}
+  </h5>
+</button> -->
+<button
+  class="w-full sm:w-1/2 md:w-1/4 h-full mx-auto my-auto relative flex flex-col scale-100 hover:scale-110 transition-transform duration-150 ease-in-out"
+  data-pdf={pdf}
+>
+  <img class="w-2/3 h-max mx-auto top-0 z-10" src={`/icons/${icon}.png`} />
+  <div
+    class="w-full my-auto relative flex flex-col rounded-lg bg-palette-600 border-4 border-palette-500 shadow-md shadow-palette-500"
+  >
+    <div
+      class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 w-3/4 h-16 md:h-12 lg:h-14 xl:h-16 2xl:h-20 bg-palette-600 rounded-full border-t-4 border-x-4 border-palette-500"
+    >
+    </div>
+    <div class="z-10 w-full h-full bg-palette-600 rounded-lg">
+      <h5
+        class="mx-auto my-auto text-center font-montserrat font-semibold test-sm md:text-base xl:text-lg 2xl:text-xl p-4 uppercase text-palette-100"
+      >
+        {title}
+      </h5>
+    </div>
+  </div>
+</button>
+<dialog class="w-full h-full rounded-lg" id={`dialog-${pdf}`}>
+  <div class="w-full h-full flex flex-col">
+    <form method="dialog" class="self-end">
+      <button>
+        <Icon name="ic:baseline-close" class="text-palette-600 w-10 h-10" />
+      </button>
+    </form>
+    <embed
+      src="/pdfs/roadmap.pdf"
+      type="application/pdf"
+      class={`w-full
+      ${pdfFull ? "md:w-1/2" : ""}
+      h-full
+      mx-auto`}
+    />
+  </div>
+</dialog>
+<script>
+  const buttons = document.querySelectorAll("button");
+
+  buttons.forEach((button) => {
+    const pdf = button.dataset.pdf;
+
+    if (pdf) {
+      const dialog = document.getElementById(
+        `dialog-${pdf}`
+      ) as HTMLDialogElement | null;
+
+      if (dialog) {
+        button.addEventListener("click", () => {
+          dialog.showModal();
+        });
+      }
+    }
+  });
+</script>

@@ -1,0 +1,39 @@
+---
+import Card from "../components/Card.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout
+  title="Organisation & collaboration"
+  subtitle="See the faces behind the production of fauna finder..."
+  active="departments"
+>
+  <Card
+    title="Organisational Structure"
+    content="Our organisation employs a team structure that promotes collaboration and cross-functional expertise. We have functional teams dedicated to specific areas such as development, design, quality assurance, finance, communication, and marketing. Each team is led by a team leader responsible for overseeing activities and ensuring project goals are met. Team leaders report to the project manager who oversees multiple teams, ensuring coordination and adherence to project timelines. Team members communicate primarily with their team leaders, who serve as the main point of contact for day-to-day activities. Our team structure encourages cross-functional collaboration, fostering creativity, innovation, and a deep understanding of projects. We embrace an agile methodology, enabling us to adapt quickly and deliver value in shorter iterations. Through effective communication and collaboration, our team structure allows us to deliver high-quality results, meeting the needs of our clients and stakeholders."
+    textBg="bg-palette-500"
+    imageBg="bg-palette-100"
+    titleColor="text-palette-100"
+    contentColor="text-palette-100"
+    imageUrl="/org/structure.jpg"
+  />
+  <Card
+    textFirst={false}
+    title="Team Collaboration"
+    content="Our team fosters effective collaboration and communication through a combination of project management software, version control systems, and messaging platforms. For project management, we utilise Monday.com, a robust project management software that helps us streamline our workflows, track tasks, and manage project timelines. This platform allows us to organise and allocate resources, assign tasks, and monitor progress, ensuring efficient project execution and effective team collaboration. To ensure version control and manage our codebase effectively, we utilise Git, a widely adopted version control system. Git enables our team to track changes, merge code, and collaborate seamlessly on software development projects. It helps us maintain a centralised repository, manage different versions of our code, and facilitate collaborative coding efforts."
+    textBg="bg-palette-500"
+    imageBg="bg-palette-100"
+    titleColor="text-palette-100"
+    contentColor="text-palette-100"
+    imageUrl="/org/collaboration.jpg"
+  />
+  <Card
+    title="Communication"
+    content="In terms of communication, we leverage multiple messaging platforms to facilitate quick and efficient interactions within our team. These provide instant communication channels for team members to discuss project-related matters, share updates, seek clarifications, and coordinate tasks. These platforms enable real-time communication, fostering effective collaboration and ensuring that team members stay connected and aligned. By combining Monday.com for project management, Git for version control, and using diverse messaging platforms, our team creates a collaborative work environment that promotes transparency, seamless coordination, and efficient communication. This allows us to stay organised, address challenges promptly, and deliver high-quality results within project timelines."
+    textBg="bg-palette-500"
+    imageBg="bg-palette-100"
+    titleColor="text-palette-100"
+    contentColor="text-palette-100"
+    imageUrl="/org/communication.jpg"
+  />
+</PageLayout>

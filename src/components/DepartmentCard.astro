@@ -8,7 +8,7 @@ const { name, image } = Astro.props;
 
 <a
   class="flex flex-col rounded-lg p-1 shadow-md bg-palette-600 mx-4 relative lg:aspect-auto scale-100 hover:scale-110 transition-transform ease-in-out duration-150 mt-4"
-  href={`/${name.toLowerCase().replaceAll(" ", "-").replaceAll("&", "")}`}
+  href={`/departments/${name.toLowerCase().replaceAll(" ", "-").replaceAll("&", "")}`}
 >
   <div
     class="w-full relative after:content-[''] after:h-1/2 after:-bottom-1 after:absolute after:w-full after:bg-gradient-to-b after:from-transparent after:to-palette-100"

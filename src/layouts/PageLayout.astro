@@ -47,7 +47,7 @@ const { title, subtitle, active, image } = Astro.props;
         {
           image && (
             <img
-              src={image}
+              src={`/${image}`}
               class="my-4 mx-auto md:m-0 md:absolute md:top-2/3 xl:-translate-y-1/4 md:right-16 border-8 lg:border-[16px] xl:border-[22px] border-palette-100 w-48 lg:w-52 xl:w-96 aspect-square object-cover"
             />
           )

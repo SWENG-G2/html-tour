@@ -7,22 +7,23 @@
       "items": [
         {
           "title": "Gantt chart",
-          "icon": "ic:baseline-insert-chart-outlined",
+          "icon": "gantt",
           "href": "tmp"
         },
         {
           "title": "Roadmap",
-          "icon": "ic:baseline-map",
-          "href": "tmp"
+          "icon": "roadmap",
+          "pdf": "roadmap",
+          "pdf-full": true
         },
         {
           "title": "Work breakdown structure",
-          "icon": "ic:baseline-work-outline",
+          "icon": "wbs",
           "href": "tmp"
         },
         {
           "title": "Sprint breakdown",
-          "icon": "ic:baseline-directions-run",
+          "icon": "sprint",
           "href": "tmp"
         }
       ]
@@ -34,22 +35,22 @@
       "items": [
         {
           "title": "Meeting minutes",
-          "icon": "ic:baseline-edit-note",
+          "icon": "minutes",
           "href": "tmp"
         },
         {
           "title": "Timesheet",
-          "icon": "ic:baseline-access-time",
+          "icon": "timesheets",
           "href": "tmp"
         },
         {
           "title": "Functional spec",
-          "icon": "ic:baseline-text-snippet",
+          "icon": "spec",
           "href": "tmp"
         },
         {
           "title": "Contracts",
-          "icon": "ic:baseline-currency-pound",
+          "icon": "contracts",
           "href": "tmp"
         }
       ]
@@ -61,17 +62,17 @@
       "items": [
         {
           "title": "App screen mockups",
-          "icon": "ic:baseline-smartphone",
+          "icon": "mock",
           "href": "tmp"
         },
         {
           "title": "App designs",
-          "icon": "ic:baseline-draw",
+          "icon": "designs",
           "href": "tmp"
         },
         {
           "title": "App design research",
-          "icon": "ic:baseline-find-in-page",
+          "icon": "design-research",
           "href": "tmp"
         }
       ]
@@ -83,12 +84,12 @@
       "items": [
         {
           "title": "Marketing research",
-          "icon": "ic:baseline-shopping-cart",
+          "icon": "marketing-research",
           "href": "tmp"
         },
         {
           "title": "Marketing plan",
-          "icon": "ic:baseline-document-scanner",
+          "icon": "marketing-plan",
           "href": "tmp"
         }
       ]
@@ -99,13 +100,33 @@
       "content": "The finance department at Penelope LTD is responsible for managing the financial aspects of the software development projects. their main goal is to ensure that projects are completed within budget and that all financial transactions are accurately recorded and reported. They work closely with the project management team to create and manage project budgets, track expenses, and forecast financial performance. The team also works with the other departments to ensure that all costs related to the project are accounted for. The finance team plays a critical role in ensuring the financial success of software development projects by providing accurate and timely financial reporting, managing cash flow, and ensuring that projects are financially sustainable.",
       "items": [
         {
-          "title": "Financial report",
-          "icon": "ic:baseline-account-balance-wallet",
+          "title": "Financial business plan",
+          "icon": "financial-plan",
+          "pdf": "tmp"
+        },
+        {
+          "title": "Financial report 1",
+          "icon": "financial-report",
           "href": "tmp"
         },
         {
-          "title": "Cashflow forecast",
-          "icon": "ic:baseline-ssid-chart",
+          "title": "Financial report 2",
+          "icon": "financial-report",
+          "href": "tmp"
+        },
+        {
+          "title": "Financial report 3",
+          "icon": "financial-report",
+          "href": "tmp"
+        },
+        {
+          "title": "Financial summary",
+          "icon": "financial-report",
+          "href": "tmp"
+        },
+        {
+          "title": "Financial spreadsheets",
+          "icon": "spreadsheets",
           "href": "tmp"
         }
       ]
@@ -117,12 +138,12 @@
       "items": [
         {
           "title": "QA Manual",
-          "icon": "ic:baseline-menu-book",
+          "icon": "manual",
           "href": "tmp"
         },
         {
           "title": "Testing & Integration",
-          "icon": "ic:baseline-phonelink-setup",
+          "icon": "integration",
           "href": "tmp"
         }
       ]
@@ -133,13 +154,23 @@
       "content": "The programming department at Penelope LTD creates and maintains software that meets client needs, is reliable, and scalable. They work closely with project management and design teams to understand requirements, estimate effort, and implement graphical elements. The team uses various programming languages and development tools to create high-quality software that is secure and performs optimally. They are also responsible for maintaining and updating the software to meet evolving user needs. The programming department plays a crucial role in delivering stable, user-friendly software that meets the objectives of the company and clients.",
       "items": [
         {
-          "title": "User manual",
-          "icon": "ic:baseline-menu-book",
+          "title": "Faunafinder user manual",
+          "icon": "manual",
+          "href": "tmp"
+        },
+        {
+          "title": "Icarius sysadmin user manual",
+          "icon": "manual",
+          "href": "tmp"
+        },
+        {
+          "title": "Faunafinder admin user manual",
+          "icon": "manual",
           "href": "tmp"
         },
         {
           "title": "Source code",
-          "icon": "ic:baseline-code",
+          "icon": "code",
           "href": "tmp"
         }
       ]
