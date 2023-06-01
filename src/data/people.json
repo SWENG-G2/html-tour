@@ -2,7 +2,7 @@
   "people": [
     {
       "name": "Connall Shurey",
-      "image": "https://placehold.co/400?text=Connall+Shurey",
+      "image": "team/connal.webp",
       "role": "Project Manager",
       "age": 21,
       "course": "EE",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Giuseppe Barillari",
-      "image": "https://placehold.co/400?text=Giuseppe+Barillari",
+      "image": "team/giuseppe.webp",
       "role": "Lead Developer",
       "age": 21,
       "course": "EE",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Harry Harrison",
-      "image": "https://placehold.co/400?text=Harry+Harrison",
+      "image": "team/harry.webp",
       "role": "Developer",
       "age": 21,
       "course": "EE",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Dawid Zaborowski",
-      "image": "https://placehold.co/400?text=Dawid+Zaborowski",
+      "image": "team/dawid.webp",
       "role": "Design & Media",
       "age": 21,
       "course": "EE",
@@ -34,7 +34,7 @@
     },
     {
       "name": "Ana Monteiro",
-      "image": "https://placehold.co/400?text=Ana+Monteiro",
+      "image": "team/ana.webp",
       "role": "Documentation",
       "age": 21,
       "course": "EE",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Ophelia Korontini",
-      "image": "https://placehold.co/400?text=Ophelia+Korontini",
+      "image": "team/ophelia.webp",
       "role": "Documentation",
       "age": 21,
       "course": "EE",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Oscar Goefron",
-      "image": "https://placehold.co/400?text=Oscar+Goefron",
+      "image": "team/oscar.webp",
       "role": "Marketing",
       "age": 21,
       "course": "EE",
@@ -58,7 +58,7 @@
     },
     {
       "name": "Thomas Richardson",
-      "image": "https://placehold.co/400?text=Thomas+Richardson",
+      "image": "team/tom.webp",
       "role": "Finance",
       "age": 21,
       "course": "EE",
@@ -66,7 +66,7 @@
     },
     {
       "name": "Roman Kulev",
-      "image": "https://placehold.co/400?text=Roman+Kulev",
+      "image": "team/roman.webp",
       "role": "QA Manager",
       "age": 21,
       "course": "EE",
@@ -74,7 +74,7 @@
     },
     {
       "name": "Ethan Cude",
-      "image": "https://placehold.co/400?text=Ethan+Cude",
+      "image": "team/ethan.webp",
       "role": "QA",
       "age": 21,
       "course": "EE",
@@ -82,7 +82,7 @@
     },
     {
       "name": "Alan Brookes",
-      "image": "https://placehold.co/400?text=Alan+Brookes",
+      "image": "team/alan.webp",
       "role": "Developer",
       "age": 21,
       "course": "EE",
