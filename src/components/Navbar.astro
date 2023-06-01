@@ -14,7 +14,7 @@ const { active } = Astro.props;
   class="bg-transparent fixed top-0 left-0 w-full text-white font-roboto font-black px-2 md:px-8 z-10"
 >
   <div class="hidden md:flex w-full flex-row justify-between">
-    <a class="inline-block" href="/">
+    <a class="inline-block hover:invert" href="/">
       <img class="object-cover max-h-11" src="/penelope.png" />
     </a>
     <div class="inline-block my-auto">
@@ -22,7 +22,7 @@ const { active } = Astro.props;
         {
           links.map((link) => (
             <li
-              class={`uppercase ml-8 border-b-2 ${
+              class={`uppercase ml-8 hover:text-black border-b-2 ${
                 link === active
                   ? "border-b-palette-100"
                   : "border-b-transparent"
@@ -84,12 +84,8 @@ const { active } = Astro.props;
   const nav = document.querySelector("nav");
   const navBg = document.getElementById("nav-bg");
 
-  const navHeight = nav ? nav.offsetHeight : 0;
-  const intersectionMargin = `-${window.innerHeight - navHeight}px`;
-
-  const options: IntersectionObserverInit = {
-    rootMargin: `0px 0px ${intersectionMargin} 0px`,
-  };
+  let navHeight = nav ? nav.offsetHeight : 0;
+  let intersectionMargin = `-${window.innerHeight - navHeight}px`;
 
   const detectIntersection: IntersectionObserverCallback = (entries, _) => {
     entries.forEach((entry) => {
@@ -107,8 +103,27 @@ const { active } = Astro.props;
     });
   };
 
-  const observer = new IntersectionObserver(detectIntersection, options);
+  let options: IntersectionObserverInit = {
+    rootMargin: `0px 0px ${intersectionMargin} 0px`,
+  };
+  let observer = new IntersectionObserver(detectIntersection, options);
   if (content) observer.observe(content);
+
+  window.addEventListener("resize", () => {
+    // Adjust trigger point when window size changes
+    navHeight = nav ? nav.offsetHeight : 0;
+    intersectionMargin = `-${window.innerHeight - navHeight}px`;
+
+    options = {
+      rootMargin: `0px 0px ${intersectionMargin} 0px`,
+    };
+
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver(detectIntersection, options);
+
+    if (content) observer.observe(content);
+  });
   // Nav colour change end
 
   // Mobile nav start

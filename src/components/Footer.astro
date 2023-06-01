@@ -3,19 +3,19 @@ const links = ["home", "the team", "departments", "faunafinder"];
 ---
 
 <footer class="flex flex-row bg-palette-700 py-4">
-  <div class="my-auto mx-auto flex flex-col">
-    <img class="object-cover" src="/penelope.png" />
-    <p class="mx-auto text-palette-100">
+  <div class="my-auto mx-auto w-1/2 flex flex-col ml-4 md:ml-0">
+    <img class="object-cover mx-auto" src="/penelope.png" />
+    <p class="mx-auto text-palette-100 text-xs md:text-base">
       © 2022 Penelope LTD, All rights reserved
     </p>
   </div>
   <div
-    class="my-auto mx-auto flex flex-col border-l-4 border-l-palette-100 uppercase text-palette-100 font-roboto"
+    class="my-auto w-1/2 mx-auto flex flex-col uppercase text-palette-100 font-roboto text-xs md:text-base"
   >
-    <ul class="ml-4">
+    <ul class="self-end mr-4 md:mr-10 border-l-4 border-l-palette-100">
       {
         links.map((link) => (
-          <li>
+          <li class="ml-2 my-2 hover:text-palette-600">
             <a href={`/${link === "home" ? "" : link.replaceAll(" ", "-")}`}>
               {link}
             </a>
