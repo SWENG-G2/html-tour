@@ -15,17 +15,20 @@
           "title": "Roadmap",
           "icon": "roadmap",
           "pdf": "roadmap",
-          "pdf-full": true
+          "pdf-full": true,
+          "versions": [1.0, 1.2]
         },
         {
           "title": "Work breakdown structure",
           "icon": "wbs",
-          "href": "tmp"
+          "href": "tmp",
+          "versions": [1.0, 2]
         },
         {
           "title": "Sprint breakdown",
           "icon": "sprint",
-          "href": "tmp"
+          "href": "tmp",
+          "versions": [1.0, 1.1, 1.2, 1.3]
         }
       ]
     },

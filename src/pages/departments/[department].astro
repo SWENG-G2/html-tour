@@ -43,42 +43,44 @@ const { name, imageUrl, content, items } = Astro.props;
       >
         {name}
       </h3>
-      <p class="text-justify hyphens-auto w-full">{content}</p>
+      <p class="text-justify hyphens-auto w-full font-roboto">{content}</p>
     </div>
   </div>
   <div class="bg-palette-300 flex flex-col py-4 md:py-8 px-2 md:px-8 lg:px-16">
-    <label for="documentSelect" class="mx-auto font-righteous text-xl"
+    <label
+      for="documentSelect"
+      class="mx-auto font-righteous text-xl text-center md:text-3xl"
       >Please select a document from the dropdown below</label
     >
-    <select
-      name="documentSelect"
-      id="documentSelect"
-      class="w-full md:w-1/2 mx-auto"
+    <div
+      class="bg-palette-100 p-2 rounded-lg border-4 border-palette-600 font-roboto mx-auto w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 my-4"
     >
-      <option value="">Select document</option>
-      {items.map((item) => <option value={item.title}>{item.title}</option>)}
-    </select>
-    <label for="versionSelect" class="mx-auto font-righteous text-xl mt-10"
+      <select
+        name="documentSelect"
+        id="documentSelect"
+        class="bg-transparent w-full outline-transparent cursor-pointer text-lg"
+      >
+        <option value="">Select document</option>
+        {items.map((item) => <option value={item.title}>{item.title}</option>)}
+      </select>
+    </div>
+    <label
+      for="versionSelect"
+      class="mx-auto font-righteous text-xl text-center md:text-3xl"
       >Please select the document version from the dropdown below</label
     >
-    <select
-      name="versionSelect"
-      id="versionSelect"
-      class="w-full md:w-1/2 mx-auto"
+    <div
+      class="bg-palette-100 p-2 rounded-lg border-4 border-palette-600 font-roboto mx-auto w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 my-4"
     >
-      <option value="">Please select document first</option>
-    </select>
-    <LinkButton link="" text="View document" tw="hidden" id="viewBtn" />
-    <!-- {
-      items.map((item) => (
-        <File
-          title={item.title}
-          icon={item.icon}
-          pdf={item.pdf}
-          pdfFull={item.pdfFull}
-        />
-      ))
-    } -->
+      <select
+        name="versionSelect"
+        id="versionSelect"
+        class="bg-transparent w-full outline-transparent cursor-pointer text-lg"
+      >
+        <option value="">Please select document first</option>
+      </select>
+    </div>
+    <LinkButton link="" text="View document" tw="hidden my-8" id="viewBtn" />
   </div>
   <document-controller data-items={JSON.stringify(items)}></document-controller>
 </PageLayout>
@@ -88,63 +90,76 @@ const { name, imageUrl, content, items } = Astro.props;
     constructor() {
       super();
 
-      window.addEventListener("load", () => {
-        const items = this.dataset.items
-          ? (JSON.parse(this.dataset.items) as itemT[])
-          : undefined;
+      const items = this.dataset.items
+        ? (JSON.parse(this.dataset.items) as itemT[])
+        : undefined;
 
-        if (items === undefined)
-          alert("Something went wrong when setting up the documents list");
-        else {
-          // Document select
-          const documentSelect = document.getElementById(
-            "documentSelect"
-          ) as HTMLSelectElement | null;
+      if (items === undefined)
+        alert("Something went wrong when setting up the documents list");
+      else {
+        // Document select
+        const documentSelect = document.getElementById(
+          "documentSelect"
+        ) as HTMLSelectElement | null;
 
-          // Version select
-          const versionSelect = document.getElementById(
-            "versionSelect"
-          ) as HTMLSelectElement | null;
+        // Version select
+        const versionSelect = document.getElementById(
+          "versionSelect"
+        ) as HTMLSelectElement | null;
 
-          if (documentSelect && versionSelect) {
-            // Adds versions to version select
-            documentSelect.addEventListener("change", () => {
-              versionSelect.length = 1;
+        if (documentSelect && versionSelect) {
+          // Adds versions to version select
+          documentSelect.addEventListener("change", () => {
+            // This clears previous options and keeps default one
+            versionSelect.length = 0;
 
-              // Find matching document
-              const item = items.find(
-                (item) => item.title === documentSelect.value
+            // Find matching document
+            const item = items.find(
+              (item) => item.title === documentSelect.value
+            );
+
+            // Add versions
+            if (item && item.versions) {
+              item.versions.forEach((version) => {
+                versionSelect.options[versionSelect.options.length] =
+                  new Option(version.toString(), version.toString());
+              });
+            } else
+              versionSelect.options[0] = new Option(
+                "Please select document first",
+                ""
               );
 
-              // Add versions
-              if (item) {
-                item.versions.forEach((version) => {
-                  versionSelect.options[versionSelect.options.length] =
-                    new Option(version.toString(), version.toString());
-                });
-              }
-            });
+            this.parseInput(documentSelect, versionSelect);
+          });
 
-            versionSelect.addEventListener("change", () => {
-              // Get view button
-              const viewBtn = document.getElementById(
-                "viewBtn"
-              ) as HTMLAnchorElement | null;
-
-              if (viewBtn) {
-                if (versionSelect.value !== "") {
-                  viewBtn.classList.remove("hidden");
-                  viewBtn.href = `/pdfs/${decodeURIComponent(
-                    documentSelect.value
-                  )}/${decodeURIComponent(versionSelect.value)}.pdf`;
-                } else if (!viewBtn.classList.contains("hidden")) {
-                  viewBtn.classList.add("hidden");
-                }
-              }
-            });
-          }
+          versionSelect.addEventListener("change", () => {
+            this.parseInput(documentSelect, versionSelect);
+          });
         }
-      });
+      }
+    }
+
+    parseInput(
+      documentSelect: HTMLSelectElement,
+      versionSelect: HTMLSelectElement
+    ) {
+      // Get view button link
+      const viewBtn = document.getElementById(
+        "viewBtn"
+      ) as HTMLAnchorElement | null;
+      if (viewBtn) {
+        if (documentSelect.value !== "" && versionSelect.value !== "") {
+          // Show view button
+          viewBtn.classList.remove("hidden");
+          viewBtn.href = `/pdfs/${decodeURIComponent(
+            documentSelect.value
+          )}/${decodeURIComponent(versionSelect.value)}.pdf`;
+        } else if (!viewBtn.classList.contains("hidden")) {
+          // Hide view button
+          viewBtn.classList.add("hidden");
+        }
+      }
     }
   }
 

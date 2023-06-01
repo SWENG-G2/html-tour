@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         lobster: ['"Lobster"', "sans-serif"],
         righteous: ['"Righteous"', "segoe-ui"],
+        roboto: ['"Roboto"', "sans-serif"],
       },
       colors: {
         palette: {
