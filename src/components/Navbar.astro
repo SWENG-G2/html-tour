@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon";
+
 interface Props {
   active: "home" | "the team" | "departments" | "faunafinder";
 }
@@ -9,27 +11,40 @@ const { active } = Astro.props;
 ---
 
 <nav
-  class="flex flex-row bg-transparent fixed top-0 left-0 w-full justify-between text-white font-roboto font-black px-8 z-10"
+  class="bg-transparent fixed top-0 left-0 w-full text-white font-roboto font-black px-2 md:px-8 z-10"
 >
-  <div class="inline-block">
-    <img class="object-cover max-h-11" src="/penelope.png" />
+  <div class="hidden md:flex w-full flex-row justify-between">
+    <a class="inline-block" href="/">
+      <img class="object-cover max-h-11" src="/penelope.png" />
+    </a>
+    <div class="inline-block my-auto">
+      <ul class="flex flex-row justify-between">
+        {
+          links.map((link) => (
+            <li
+              class={`uppercase ml-8 border-b-2 ${
+                link === active
+                  ? "border-b-palette-100"
+                  : "border-b-transparent"
+              }`}
+            >
+              <a href={`/${link === "home" ? "" : link.replaceAll(" ", "-")}`}>
+                {link}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
-  <div class="inline-block my-auto">
-    <ul class="flex flex-row justify-between">
-      {
-        links.map((link) => (
-          <li
-            class={`uppercase ml-8 border-b-2 ${
-              link === active ? "border-b-palette-100" : "border-b-transparent"
-            }`}
-          >
-            <a href={`/${link === "home" ? "" : link.replaceAll(" ", "-")}`}>
-              {link}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+  <div class="flex flex-row md:hidden justify-between">
+    <button id="navTgl">
+      <Icon name="mdi:menu" class="w-11 aspect-square" />
+    </button>
+    <a class="inline-block" href="/">
+      <img class="object-cover max-h-11" src="/penelope.png" />
+    </a>
+    <div class="w-11"></div>
   </div>
   <div
     id="nav-bg"
@@ -37,8 +52,34 @@ const { active } = Astro.props;
   >
   </div>
 </nav>
+<div
+  class="absolute flex flex-col top-0 w-full z-50 h-screen h-[100dvh] bg-palette-600 -translate-x-full text-palette-100 transition-transform duration-150 ease-in px-2"
+  id="mobileLinks"
+>
+  <button id="closeTgl" class="self-start">
+    <Icon name="mdi:close" class="w-11 aspect-square" />
+  </button>
+  <ul
+    class="flex flex-col justify-between w-full text-center my-auto gap-4 text-xl"
+  >
+    {
+      links.map((link) => (
+        <li
+          class={`uppercase border-b-2 mx-4 ${
+            link === active ? "border-b-palette-100" : "border-b-transparent"
+          }`}
+        >
+          <a href={`/${link === "home" ? "" : link.replaceAll(" ", "-")}`}>
+            {link}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
 
 <script>
+  // Nav colour change start
   const content = document.getElementById("content");
   const nav = document.querySelector("nav");
   const navBg = document.getElementById("nav-bg");
@@ -52,12 +93,14 @@ const { active } = Astro.props;
 
   const detectIntersection: IntersectionObserverCallback = (entries, _) => {
     entries.forEach((entry) => {
-      if (navBg) {
+      if (navBg && nav) {
         if (entry.isIntersecting) {
           navBg.classList.remove("opacity-0");
           navBg.classList.add("opacity-100");
+          nav.classList.add("shadow-md");
         } else {
           navBg.classList.remove("opacity-100");
+          nav.classList.remove("shadow-md");
           navBg.classList.add("opacity-0");
         }
       }
@@ -66,4 +109,21 @@ const { active } = Astro.props;
 
   const observer = new IntersectionObserver(detectIntersection, options);
   if (content) observer.observe(content);
+  // Nav colour change end
+
+  // Mobile nav start
+  const navTgl = document.getElementById("navTgl");
+  const closeTgl = document.getElementById("closeTgl");
+  const mobileLinks = document.getElementById("mobileLinks");
+
+  if (navTgl && closeTgl && mobileLinks) {
+    navTgl.addEventListener("click", () => {
+      mobileLinks.classList.remove("-translate-x-full");
+    });
+
+    closeTgl.addEventListener("click", () => {
+      mobileLinks.classList.add("-translate-x-full");
+    });
+  }
+  // Mobile nav end
 </script>
