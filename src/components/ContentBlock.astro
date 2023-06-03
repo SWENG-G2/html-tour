@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+  image: string;
+  dark?: boolean;
+  textFirst?: boolean;
+}
+
+const { title, image, dark = false, textFirst = true } = Astro.props;
+---
+
+<div
+  class={`w-full ${
+    dark ? "bg-palette-200" : "bg-palette-100"
+  } flex flex-col md:flex-row px-2 md:px-0 py-8`}
+>
+  <img
+    src={image}
+    alt="A picture of FaunaFinder in the Campus selection screen"
+    class={`w-full md:w-1/5 object-scale-down md:object-cover max-h-96 md:max-h-max ${
+      textFirst ? "md:mr-[10%]" : "md:ml-[10%]"
+    } ${textFirst ? "order-2" : "order-1"}`}
+  />
+  <div
+    class={`w-full flex flex-col md:mx-[10%] mx-auto ${
+      textFirst ? "order-1" : "order-2"
+    }`}
+  >
+    <h3
+      class="text-palette-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
+    >
+      {title}
+    </h3>
+    <p class="mt-8 text-lg w-full hyphens-auto">
+      <slot />
+    </p>
+    <slot name="button-slot" />
+  </div>
+</div>

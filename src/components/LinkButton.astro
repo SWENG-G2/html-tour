@@ -15,9 +15,9 @@ const { text, link, tw, inverted = false, id } = Astro.props;
   href={link}
   class={`rounded-3xl ${
     inverted
-      ? "bg-palette-100 text-palette-500"
-      : "bg-palette-500 text-palette-100"
-  } py-4 px-10 shadow-sm hover:shadow-lg shadow-palette-700 hover:shadow-palette-700 transition-shadow hover:duration-150 font-righteous w-max mx-auto ${
+      ? "bg-palette-100 border-palette-100 text-palette-500 hover:text-palette-100 hover:bg-palette-500"
+      : "bg-palette-500 border-palette-500 text-palette-100 hover:bg-palette-100 hover:text-palette-500"
+  } transition-[color,background-color,transform] scale-100 hover:scale-110 duration-150 py-4 border-2 px-10 font-righteous w-max mx-auto ${
     tw ? tw : ""
   }`}
 >

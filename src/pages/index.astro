@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import LinkButton from "../components/LinkButton.astro";
 import LinkCard from "../components/LinkCard.astro";
 import Navbar from "../components/Navbar.astro";
+import ContentBlock from "../components/ContentBlock.astro";
 ---
 
 <html lang="en">
@@ -57,7 +58,7 @@ import Navbar from "../components/Navbar.astro";
         </button>
       </div>
       <div id="content" class="font-righteous">
-        <div class="w-full bg-palette-200 flex flex-col px-2 md:px-0 py-10">
+        <div class="w-full bg-palette-100 flex flex-col px-2 md:px-0 py-10">
           <h1
             class="text-center w-full md:w-1/2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl self-center"
           >
@@ -75,80 +76,57 @@ import Navbar from "../components/Navbar.astro";
             We work closely with your university&lsquo;s staff to ensure
             information is always correct and up-to-date. Fully immerse in your
             campus&lsquo; wildlife with <span
-              class="text-transparent bg-clip-text bg-gradient-to-br from-palette-500 to-palette-600"
+              class="text-transparent bg-clip-text bg-gradient-to-r from-palette-500 to-palette-600"
               >FaunaFinder.</span
             >
           </p>
         </div>
-        <div
-          class="w-full bg-palette-100 flex flex-col md:flex-row px-2 md:px-0 py-8"
+        <ContentBlock
+          title="We've got you covered"
+          textFirst={false}
+          image="/home/campus.png"
         >
-          <img
-            src="/home/campus.png"
-            alt="A picture of FaunaFinder in the Campus selection screen"
-            class="w-full md:w-1/5 object-scale-down md:object-cover max-h-96 md:max-h-max md:ml-[10%]"
-          />
-          <div class="w-full flex flex-col md:mx-[10%] mx-auto">
-            <h3
-              class="text-palette-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
-            >
-              We've got you covered
-            </h3>
-            <p class="mt-8 text-lg w-full hyphens-auto">
-              Whether you&apos;re a student or a tourist, FaunaFinder stores an
-              extensive database of wildlife in various UK universities campuses
-              for you to explore.
-              <br />
-              <br />
-              We&apos;re are constantly working on reaching new agreements with as
-              many universities as we can. If your nearest campus is not supported
-              yet, keep checking!
-              <br />
-              <br />
-              Here&apos;s a (non-extensive) list of our roadmap:
-            </p>
-            <ul class="list-disc ml-10 md:ml-8">
-              <li>University of Durham</li>
-              <li>Loughborough University</li>
-              <li>University of Bath</li>
-              <li>University of Warwick</li>
-              <li>University of Southampton</li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="w-full bg-palette-200 flex flex-col md:flex-row px-2 md:px-0 py-8"
+          Whether you&apos;re a student or a tourist, FaunaFinder stores an
+          extensive database of wildlife in various UK universities campuses for
+          you to explore.
+          <br />
+          <br />
+          We&apos;re are constantly working on reaching new agreements with as many
+          universities as we can. If your nearest campus is not supported yet, keep
+          checking!
+          <br />
+          <br />
+          Here&apos;s a (non-extensive) list of our roadmap:
+          <ul class="list-disc ml-10 md:ml-8">
+            <li>University of Durham</li>
+            <li>Loughborough University</li>
+            <li>University of Bath</li>
+            <li>University of Warwick</li>
+            <li>University of Southampton</li>
+          </ul>
+        </ContentBlock>
+        <ContentBlock
+          title="A tour guide in your pocket"
+          image="/home/detail.png"
+          dark={true}
         >
-          <div class="w-full flex flex-col md:mx-[10%] mx-auto">
-            <h3
-              class="text-palette-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
-            >
-              A tour guide in your pocket
-            </h3>
-            <p class="mt-8 text-xl w-full hyphens-auto">
-              Sure, you could email your University&apos;s grounds team and ask
-              for a tour. But why bother when FaunaFinder runs in your pocket?
-              <br />
-              <br />
-              All the information you will find within FaunaFinder has been vetted
-              and approved by some very knowledgeable folks who take care of the
-              very same animals you&apos;re curious about!
-              <br />
-              <br />
-              What are you waiting for?
-            </p>
-            <LinkButton
-              link="/faunafinder"
-              text="Download now"
-              tw="md:mx-0 my-4"
-            />
-          </div>
-          <img
-            src="/home/detail.png"
-            alt="A picture of FaunaFinder in the Campus selection screen"
-            class="w-full md:w-1/5 object-scale-down md:object-cover max-h-96 md:max-h-max md:mr-[10%]"
+          Sure, you could email your University&apos;s grounds team and ask for
+          a tour. But why bother when FaunaFinder runs in your pocket?
+          <br />
+          <br />
+          All the information you will find within FaunaFinder has been vetted and
+          approved by some very knowledgeable folks who take care of the very same
+          animals you&apos;re curious about!
+          <br />
+          <br />
+          What are you waiting for?
+          <LinkButton
+            slot="button-slot"
+            link="/faunafinder"
+            text="Download now"
+            tw="md:mx-0 my-4"
           />
-        </div>
+        </ContentBlock>
         <div class="w-full bg-palette-100 flex flex-col px-2 md:px-0 py-8">
           <h3
             class="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl self-center"
@@ -183,22 +161,24 @@ import Navbar from "../components/Navbar.astro";
     </main>
     <Footer />
   </body>
+
+  <style>
+    .textShadow {
+      text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+  <script>
+    const scrollBtn = document.getElementById(
+      "scrollBtn"
+    ) as HTMLButtonElement | null;
+
+    if (scrollBtn) {
+      scrollBtn.addEventListener("click", () => {
+        const content = document.getElementById("content");
+
+        if (content) content.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  </script>
 </html>
-<style>
-  .textShadow {
-    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
-  }
-</style>
-<script>
-  const scrollBtn = document.getElementById(
-    "scrollBtn"
-  ) as HTMLButtonElement | null;
-
-  if (scrollBtn) {
-    scrollBtn.addEventListener("click", () => {
-      const content = document.getElementById("content");
-
-      if (content) content.scrollIntoView({ behavior: "smooth" });
-    });
-  }
-</script>
