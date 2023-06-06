@@ -4,9 +4,16 @@ interface Props {
   image: string;
   dark?: boolean;
   textFirst?: boolean;
+  squareImage?: boolean;
 }
 
-const { title, image, dark = false, textFirst = true } = Astro.props;
+const {
+  title,
+  image,
+  dark = false,
+  textFirst = true,
+  squareImage = false,
+} = Astro.props;
 ---
 
 <div
@@ -17,9 +24,11 @@ const { title, image, dark = false, textFirst = true } = Astro.props;
   <img
     src={image}
     alt="A picture of FaunaFinder in the Campus selection screen"
-    class={`w-full md:w-1/5 object-scale-down md:object-cover max-h-96 md:max-h-max ${
-      textFirst ? "md:mr-[10%]" : "md:ml-[10%]"
-    } ${textFirst ? "order-2" : "order-1"}`}
+    class={`w-full md:w-1/5 object-scale-down max-h-96 md:max-h-max ${
+      squareImage ? "aspect-square" : "md:object-cover"
+    } ${textFirst ? "md:mr-[10%]" : "md:ml-[10%]"} ${
+      textFirst ? "order-2" : "order-1"
+    }`}
   />
   <div
     class={`w-full flex flex-col md:mx-[10%] mx-auto ${
@@ -31,7 +40,7 @@ const { title, image, dark = false, textFirst = true } = Astro.props;
     >
       {title}
     </h3>
-    <p class="mt-8 text-lg w-full hyphens-auto">
+    <p class="mt-8 text-lg w-full hyphens-auto text-justify">
       <slot />
     </p>
     <slot name="button-slot" />

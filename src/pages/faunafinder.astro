@@ -1,4 +1,5 @@
 ---
+import ContentBlock from "../components/ContentBlock.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 ---
 
@@ -6,4 +7,30 @@ import PageLayout from "../layouts/PageLayout.astro";
   title="FaunaFinder"
   subtitle="Take a tour and learn more about our product..."
   active="faunafinder"
-/>
+>
+  <ContentBlock
+    title="What is fauna finder?"
+    image="/faunafinder/app.jpg"
+    squareImage={true}
+  >
+    Fauna Finder is a mobile app developed by Penelope LTD, a group based in the
+    University of York. The app is designed to help students and visitors
+    identify and learn about the wildlife on campus.
+    <br />
+    <br />
+    The app currently focuses on avian wildlife, with the intent to expand it to
+    include other wildlife and animals in the future. The app acts as an identification
+    tool to help students and visitors alike to find and learn more about the diverse
+    campus wildlife.
+    <br />
+    <br />
+    The app features a location screen that allows users to select from the available
+    university campuses. Once a campus is selected, the app updates the list of animals
+    accordingly. The app provides users with a long list of birds, their respective
+    names, and corresponding illustrations. Each bird species comes with detailed
+    information that includes its scientific name, physical description, interesting
+    facts, and natural habitat.
+    <br />
+    <br />
+  </ContentBlock>
+</PageLayout>

@@ -1,7 +1,7 @@
 {
   "departments": [
     {
-      "name": "Project managment",
+      "name": "Project management",
       "imageUrl": "links/project.png",
       "content": "The project management department at Penelope LTD oversees software development projects for clients. they work closely with the all the departments, plan and manage resources, and communicate progress and changes to all members of our team. their responsibilities include identifying project requirements, assessing risks, and creating a roadmap for development. they aim to deliver a product that meets client needs and expectations. Effective resource management ensures projects are completed on time and within budget. Communication with clients and team members helps to ensure everyone is informed and projects stay on track. The project management department plays a critical role in ensuring successful project completion.",
       "items": [
