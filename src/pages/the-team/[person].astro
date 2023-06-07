@@ -10,27 +10,26 @@ export async function getStaticPaths() {
         name: person.name,
         image: person.image,
         role: person.role,
-        age: person.age,
-        course: person.course,
-        time: person.time,
         description: person.description,
       },
     };
   });
 }
 
-const { name, image, role, age, course, time, description } = Astro.props;
+const { name, image, role, description } = Astro.props;
 ---
 
 <PageLayout title={name} subtitle={role} active="the team" image={image}>
   <div class="bg-palette-150 flex flex-col px-2 md:px-8 lg:px-16 py-4 md:py-32">
-    <div class="mx:auto my-auto md:mx-0 flex flex-col text-justify bg-palette-100 w-full md:max-w-[60%] p-4 rounded-lg shadow-md">
+    <div
+      class="mx:auto my-auto md:mx-0 flex flex-col text-justify bg-palette-100 w-full md:max-w-[60%] p-4 rounded-lg shadow-md"
+    >
       <h3
-        class="font-bold font-montserrat text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+        class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
       >
         My role at Penelope
       </h3>
-      <p class="text-justify hyphens-auto w-full">{description}</p>
+      <p class="text-justify hyphens-auto w-full mt-4 font-roboto" set:html={description} />
     </div>
   </div>
 </PageLayout>

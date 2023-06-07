@@ -84,7 +84,7 @@
         },
         {
           "title": "Marketing Plan",
-          "versions": ["1.0.pdf", "1.1.pdf"]
+          "versions": ["1.0.pdf", "1.1.pdf", "1.2.pdf"]
         },
         {
           "title": "Tender Presentation Notes",
@@ -131,6 +131,14 @@
         {
           "title": "Financial Summary",
           "versions": ["1.0.pdf", "1.1.pdf"]
+        },
+        {
+          "title": "Time Sheets",
+          "versions": ["Alan.pdf", "Ana.pdf", "Connall.pdf", "Dawid.pdf", "Ethan.pdf", "Giuseppe.pdf", "Harry.pdf", "Ophelia.pdf", "Oscar.pdf", "Roman.pdf", "Thomas.pdf", "Meetings.pdf", "Timesheet.xlsx"]
+        },
+        {
+          "title": "Time Sheet Summaries",
+          "versions": ["Financial Summary.pdf", "Hourly Summary.pdf"]
         }
       ]
     },
@@ -155,7 +163,15 @@
       "content": "The programming department at Penelope LTD creates and maintains software that meets client needs, is reliable, and scalable. They work closely with project management and design teams to understand requirements, estimate effort, and implement graphical elements.<br/><br/>The team uses various programming languages and development tools to create high-quality software that is secure and performs optimally. They are also responsible for maintaining and updating the software to meet evolving user needs. The programming department plays a crucial role in delivering stable, user-friendly software that meets the objectives of the company and clients.",
       "items": [
         {
+          "title": "Development Notes",
+          "versions": ["1.0.pdf"]
+        },
+        {
           "title": "Fauna Finder User Manual",
+          "versions": ["1.0.pdf"]
+        },
+        {
+          "title": "Icarius Admin User Manual",
           "versions": ["1.0.pdf"]
         },
         {
@@ -195,12 +211,12 @@
           "versions": ["1.0.txt"]
         },
         {
-          "title": "Fauna FInder Source Code",
-          "versions": ["FaunaFinder-main.zip"]
+          "title": "Fauna Finder Source Code",
+          "versions": ["android_clean-main.zip"]
         },
         {
           "title": "Penelope Source Code",
-          "versions": ["Penelope-main.zip"]
+          "versions": ["penelope_clean-main.zip"]
         },
         {
           "title": "Icarius Source Code",
