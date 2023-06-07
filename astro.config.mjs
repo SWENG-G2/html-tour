@@ -6,6 +6,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: 'https://:sweng-g2.github.io',
+  site: 'https://sweng-g2.github.io',
   base: '/html-tour'
 });
