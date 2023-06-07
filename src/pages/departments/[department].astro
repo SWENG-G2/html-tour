@@ -1,5 +1,6 @@
 ---
 import File from "../../components/File.astro";
+import FileSelector from "../../components/FileSelector";
 import LinkButton from "../../components/LinkButton.astro";
 import { departments } from "../../data/departments.json";
 import PageLayout from "../../layouts/PageLayout.astro";
@@ -47,121 +48,6 @@ const { name, imageUrl, content, items } = Astro.props;
     </div>
   </div>
   <div class="bg-palette-300 flex flex-col py-4 md:py-8 px-2 md:px-8 lg:px-16">
-    <label
-      for="documentSelect"
-      class="mx-auto font-righteous text-xl text-center md:text-3xl"
-      >Please select a document from the dropdown below</label
-    >
-    <div
-      class="bg-palette-100 p-2 rounded-lg border-4 border-palette-600 font-roboto mx-auto w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 my-4"
-    >
-      <select
-        name="documentSelect"
-        id="documentSelect"
-        class="bg-transparent w-full outline-transparent cursor-pointer text-lg"
-      >
-        <option value="">Select document</option>
-        {items.map((item) => <option value={item.title}>{item.title}</option>)}
-      </select>
-    </div>
-    <label
-      for="versionSelect"
-      class="mx-auto font-righteous text-xl text-center md:text-3xl"
-      >Please select the document version from the dropdown below</label
-    >
-    <div
-      class="bg-palette-100 p-2 rounded-lg border-4 border-palette-600 font-roboto mx-auto w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 my-4"
-    >
-      <select
-        name="versionSelect"
-        id="versionSelect"
-        class="bg-transparent w-full outline-transparent cursor-pointer text-lg"
-      >
-        <option value="">Please select document first</option>
-      </select>
-    </div>
-    <LinkButton link="" text="View document" tw="hidden my-8" id="viewBtn" />
+    <FileSelector items={items} department={name} client:only />
   </div>
-  <document-controller data-items={JSON.stringify(items)}></document-controller>
 </PageLayout>
-<script>
-  import type { itemT } from "../../types/item";
-  class DocumentController extends HTMLElement {
-    constructor() {
-      super();
-
-      const items = this.dataset.items
-        ? (JSON.parse(this.dataset.items) as itemT[])
-        : undefined;
-
-      if (items === undefined)
-        alert("Something went wrong when setting up the documents list");
-      else {
-        // Document select
-        const documentSelect = document.getElementById(
-          "documentSelect"
-        ) as HTMLSelectElement | null;
-
-        // Version select
-        const versionSelect = document.getElementById(
-          "versionSelect"
-        ) as HTMLSelectElement | null;
-
-        if (documentSelect && versionSelect) {
-          // Adds versions to version select
-          documentSelect.addEventListener("change", () => {
-            // This clears previous options and keeps default one
-            versionSelect.length = 0;
-
-            // Find matching document
-            const item = items.find(
-              (item) => item.title === documentSelect.value
-            );
-
-            // Add versions
-            if (item && item.versions) {
-              item.versions.forEach((version) => {
-                versionSelect.options[versionSelect.options.length] =
-                  new Option(version.toString(), version.toString());
-              });
-            } else
-              versionSelect.options[0] = new Option(
-                "Please select document first",
-                ""
-              );
-
-            this.parseInput(documentSelect, versionSelect);
-          });
-
-          versionSelect.addEventListener("change", () => {
-            this.parseInput(documentSelect, versionSelect);
-          });
-        }
-      }
-    }
-
-    parseInput(
-      documentSelect: HTMLSelectElement,
-      versionSelect: HTMLSelectElement
-    ) {
-      // Get view button link
-      const viewBtn = document.getElementById(
-        "viewBtn"
-      ) as HTMLAnchorElement | null;
-      if (viewBtn) {
-        if (documentSelect.value !== "" && versionSelect.value !== "") {
-          // Show view button
-          viewBtn.classList.remove("hidden");
-          viewBtn.href = `/pdfs/${decodeURIComponent(
-            documentSelect.value
-          )}/${decodeURIComponent(versionSelect.value)}.pdf`;
-        } else if (!viewBtn.classList.contains("hidden")) {
-          // Hide view button
-          viewBtn.classList.add("hidden");
-        }
-      }
-    }
-  }
-
-  customElements.define("document-controller", DocumentController);
-</script>

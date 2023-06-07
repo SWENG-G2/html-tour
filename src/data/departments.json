@@ -1,34 +1,17 @@
 {
   "departments": [
     {
-      "name": "Project management",
+      "name": "Project Management",
       "imageUrl": "links/project.png",
       "content": "The project management department at Penelope LTD oversees software development projects for clients. they work closely with the all the departments, plan and manage resources, and communicate progress and changes to all members of our team. their responsibilities include identifying project requirements, assessing risks, and creating a roadmap for development. they aim to deliver a product that meets client needs and expectations. Effective resource management ensures projects are completed on time and within budget. Communication with clients and team members helps to ensure everyone is informed and projects stay on track. The project management department plays a critical role in ensuring successful project completion.",
       "items": [
         {
-          "title": "Gantt chart",
-          "icon": "gantt",
-          "href": "tmp",
-          "versions": [1.0, 1.01, 1.5, 2]
-        },
-        {
           "title": "Roadmap",
-          "icon": "roadmap",
-          "pdf": "roadmap",
-          "pdf-full": true,
-          "versions": [1.0, 1.2]
+          "versions": ["1.0.pdf", "2.0.pdf", "3.0.pdf"]
         },
         {
-          "title": "Work breakdown structure",
-          "icon": "wbs",
-          "href": "tmp",
-          "versions": [1.0, 2]
-        },
-        {
-          "title": "Sprint breakdown",
-          "icon": "sprint",
-          "href": "tmp",
-          "versions": [1.0, 1.1, 1.2, 1.3]
+          "title": "Work Breakdown Structure",
+          "versions": ["1.0.1.pdf"]
         }
       ]
     },
@@ -38,46 +21,47 @@
       "content": "The documentation department at Penelope is responsible for creating and managing technical and non-technical documents related to software development projects. Their main goal is to ensure that all documents are accurate, up-to-date, and easily accessible to all members. They work closely with all departments to create technical documentation such as the functional specification and user manuals. they also create non-technical documentation such as project plans, meeting minutes, and other documents. The documentation department plays a critical role in ensuring that projects are well-documented and that members have access to the information they need to make informed decisions. Effective document management helps to improve collaboration, reduce errors, and increase efficiency.",
       "items": [
         {
-          "title": "Meeting minutes",
-          "icon": "minutes",
-          "href": "tmp"
+          "title": "Project Standards",
+          "versions": ["1.0.pdf", "1.1.pdf", "1.2.pdf"]
         },
         {
-          "title": "Timesheet",
-          "icon": "timesheets",
-          "href": "tmp"
+          "title": "Design Meeting Minutes",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "Functional spec",
-          "icon": "spec",
-          "href": "tmp"
+          "title": "Finance Meeting Minutes",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "Contracts",
-          "icon": "contracts",
-          "href": "tmp"
+          "title": "Marketing Meeting Minutes",
+          "versions": ["1.0.pdf"]
+        },
+        {
+          "title": "Software - Contracts Meeting Minutes",
+          "versions": ["1.0.pdf"]
+        },
+        {
+          "title": "Sprints Meeting Minutes",
+          "versions": ["1.0.pdf"]
         }
       ]
     },
     {
-      "name": "Design & media",
+      "name": "Design & Media",
       "imageUrl": "links/design.png",
       "content": "The design and media team at Penelope LTD is responsible for creating the visual elements of software development projects. Their main goal is to design and coordinate the graphical elements of the app, create mock-up app screens, and source original media for the app. they work closely with the programming team to ensure that the graphical design of the app is consistent with its intended functionality. They also collaborate with other departments such as the project management and documentation teams to ensure that all graphical elements are documented and communicated effectively. The design and media team plays a critical role in creating visually appealing and functional software that meets the needs and expectations of clients and end-users.",
       "items": [
         {
-          "title": "App screen mockups",
-          "icon": "mock",
-          "href": "tmp"
+          "title": "Design Update Log",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "App designs",
-          "icon": "designs",
-          "href": "tmp"
+          "title": "FaunaFinder Final Mock",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "App design research",
-          "icon": "design-research",
-          "href": "tmp"
+          "title": "Media And Content Creation Plan",
+          "versions": ["1.0.pdf"]
         }
       ]
     },
@@ -87,14 +71,28 @@
       "content": "The marketing team at Penelope is responsible for promoting the software development projects to potential clients and end-users. Their main goal is to create a marketing strategy that highlights the features and benefits of the software and communicates them effectively to the target audience. They work closely with the project manager and programming department to understand the unique value proposition of the software and collaborate with the design team to create marketing materials. The marketing team plays a critical role in ensuring the success of software development projects by creating and executing effective marketing strategies that drive adoption and usage.",
       "items": [
         {
-          "title": "Marketing research",
-          "icon": "marketing-research",
-          "href": "tmp"
+          "title": "App Name Research",
+          "versions": ["1.0.pdf", "1.1.pdf"]
         },
         {
-          "title": "Marketing plan",
-          "icon": "marketing-plan",
-          "href": "tmp"
+          "title": "Competitor Research",
+          "versions": ["1.0.xlsx"]
+        },
+        {
+          "title": "Final Sales and Demonstration Presentation PowerPoint",
+          "versions": ["1.0.pdf"]
+        },
+        {
+          "title": "Marketing Plan",
+          "versions": ["1.0.pdf", "1.1.pdf"]
+        },
+        {
+          "title": "Tender Presentation Notes",
+          "versions": ["1.0.pdf"]
+        },
+        {
+          "title": "Tender Presentation PowerPoint",
+          "versions": ["1.0.pdf"]
         }
       ]
     },
@@ -104,34 +102,35 @@
       "content": "The finance department at Penelope LTD is responsible for managing the financial aspects of the software development projects. their main goal is to ensure that projects are completed within budget and that all financial transactions are accurately recorded and reported. They work closely with the project management team to create and manage project budgets, track expenses, and forecast financial performance. The team also works with the other departments to ensure that all costs related to the project are accounted for. The finance team plays a critical role in ensuring the financial success of software development projects by providing accurate and timely financial reporting, managing cash flow, and ensuring that projects are financially sustainable.",
       "items": [
         {
-          "title": "Financial business plan",
-          "icon": "financial-plan",
-          "pdf": "tmp"
+          "title": "Financial Analysis",
+          "versions": [
+            "1.0.xlsx",
+            "1.1.xlsx",
+            "1.2.xlsx",
+            "1.3.xlsx",
+            "1.4.xlsx",
+            "1.5.xlsx"
+          ]
         },
         {
-          "title": "Financial report 1",
-          "icon": "financial-report",
-          "href": "tmp"
+          "title": "Financial Business Plan",
+          "versions": ["1.0.pdf", "1.1.pdf"]
         },
         {
-          "title": "Financial report 2",
-          "icon": "financial-report",
-          "href": "tmp"
+          "title": "Financial Report 1",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "Financial report 3",
-          "icon": "financial-report",
-          "href": "tmp"
+          "title": "Financial Report 2",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "Financial summary",
-          "icon": "financial-report",
-          "href": "tmp"
+          "title": "Financial Report 3",
+          "versions": ["1.0.pdf", "1.1.pdf"]
         },
         {
-          "title": "Financial spreadsheets",
-          "icon": "spreadsheets",
-          "href": "tmp"
+          "title": "Financial Summary",
+          "versions": ["1.0.pdf", "1.1.pdf"]
         }
       ]
     },
@@ -142,40 +141,38 @@
       "items": [
         {
           "title": "QA Manual",
-          "icon": "manual",
-          "href": "tmp"
+          "versions": ["0.1.pdf", "2.0.pdf", "2.6.pdf", "2.9.pdf"]
         },
         {
-          "title": "Testing & Integration",
-          "icon": "integration",
-          "href": "tmp"
+          "title": "Testing & Integration Plan",
+          "versions": ["1.0.pdf"]
         }
       ]
     },
     {
-      "name": "Programming",
+      "name": "Software",
       "imageUrl": "links/programming.png",
       "content": "The programming department at Penelope LTD creates and maintains software that meets client needs, is reliable, and scalable. They work closely with project management and design teams to understand requirements, estimate effort, and implement graphical elements. The team uses various programming languages and development tools to create high-quality software that is secure and performs optimally. They are also responsible for maintaining and updating the software to meet evolving user needs. The programming department plays a crucial role in delivering stable, user-friendly software that meets the objectives of the company and clients.",
       "items": [
         {
-          "title": "Faunafinder user manual",
-          "icon": "manual",
-          "href": "tmp"
+          "title": "Fauna Finder User Manual",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "Icarius sysadmin user manual",
-          "icon": "manual",
-          "href": "tmp"
+          "title": "Icarius User Manual",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "Faunafinder admin user manual",
-          "icon": "manual",
-          "href": "tmp"
+          "title": "Image Contract",
+          "versions": ["1.0.pdf"]
         },
         {
-          "title": "Source code",
-          "icon": "code",
-          "href": "tmp"
+          "title": "Text Contract",
+          "versions": ["1.0.pdf"]
+        },
+        {
+          "title": "Licenses",
+          "versions": ["1.0.pdf"]
         }
       ]
     }
