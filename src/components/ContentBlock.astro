@@ -22,7 +22,7 @@ const {
   } flex flex-col lg:flex-row px-2 lg:px-0 py-8`}
 >
   <img
-    src={image}
+    src={`${import.meta.env.BASE_URL}${image}`}
     alt="A picture of FaunaFinder in the Campus selection screen"
     class={`w-full mx-auto lg:w-1/5 object-scale-down max-h-96 lg:max-h-max ${
       squareImage ? "aspect-square" : "lg:object-scale-down 2xl:object-cover"

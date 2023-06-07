@@ -1,7 +1,5 @@
 ---
-import File from "../../components/File.astro";
 import FileSelector from "../../components/FileSelector";
-import LinkButton from "../../components/LinkButton.astro";
 import ProjectManagement from "../../components/ProjectManagement.astro";
 import Software from "../../components/Software.astro";
 import { departments } from "../../data/departments.json";
@@ -60,12 +58,6 @@ const { name, imageUrl, content, items } = Astro.props;
     </h3>
     <FileSelector items={items} department={name} client:only />
   </div>
-  {
-    name === "Project Management" &&
-    <ProjectManagement />
-  }
-  {
-    name === "Software" &&
-    <Software />
-  }
+  {name === "Project Management" && <ProjectManagement />}
+  {name === "Software" && <Software />}
 </PageLayout>

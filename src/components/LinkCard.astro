@@ -18,12 +18,12 @@ const {
 
 <a
   class="w-full h-full rounded-3xl border-4 border-palette-500 flex flex-col overflow-clip scale-100 hover:scale-110 transition-transform duration-150 bg-palette-500"
-  href={href}
+  href={`${import.meta.env.BASE_URL}${href}`}
 >
   <div
     class="w-full aspect-square rounded-t-lg relative after:content-[''] after:h-1/2 after:-bottom-1 after:absolute after:w-full after:bg-gradient-to-b after:from-transparent after:to-palette-100"
   >
-    <img src={imageUrl} class="object-cover w-full aspect-square" />
+    <img src={`${import.meta.env.BASE_URL}${imageUrl}`} class="object-cover w-full aspect-square" />
   </div>
   <h4
     class={`font-black h-full text-base lg:text-xl xl:text-2xl 2xl:text-4xl py-2 lg:py-4 text-center my-auto ${titleFont} ${titleColour} lg:px-4 bg-palette-100`}
