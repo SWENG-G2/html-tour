@@ -16,11 +16,11 @@ import { people } from "../data/people.json";
         people.slice(0, 4).map((person) => (
           <a
             class="relative flex flex-col mb-6 md:mb-0 cardShadow cardScale"
-            href={`/the-team/${person.name.toLowerCase().replaceAll(" ", "-")}`}
+            href={`${import.meta.env.BASE_URL}the-team/${person.name.toLowerCase().replaceAll(" ", "-")}`}
           >
             <img
               class="mx-auto aspect-square object-cover w-28 md:w-36 lg:w-44 xl:w-56 2xl:w-64 rounded-full shadow-2xl shadow-palette-700"
-              src={`/${person.image}`}
+              src={`${import.meta.env.BASE_URL}${person.image}`}
             />
             <h4 class="font-black text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl mt-2 md:mt-4 text-center">
               {person.name}
@@ -37,11 +37,11 @@ import { people } from "../data/people.json";
         people.slice(4, 8).map((person) => (
           <a
             class="relative flex flex-col mb-6 md:mb-0 cardShadow cardScale"
-            href={`/the-team/${person.name.toLowerCase().replaceAll(" ", "-")}`}
+            href={`${import.meta.env.BASE_URL}the-team/${person.name.toLowerCase().replaceAll(" ", "-")}`}
           >
             <img
               class="mx-auto aspect-square object-cover w-28 md:w-36 lg:w-44 xl:w-56 2xl:w-64 rounded-full shadow-2xl shadow-palette-700"
-              src={`/${person.image}`}
+              src={`${import.meta.env.BASE_URL}${person.image}`}
             />
             <h4 class="font-black text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl mt-2 md:mt-4 text-center">
               {person.name}
@@ -58,11 +58,11 @@ import { people } from "../data/people.json";
         people.slice(8, 11).map((person) => (
           <a
             class="relative flex flex-col mb-6 md:mb-0 cardShadow cardScale"
-            href={`/the-team/${person.name.toLowerCase().replaceAll(" ", "-")}`}
+            href={`${import.meta.env.BASE_URL}the-team/${person.name.toLowerCase().replaceAll(" ", "-")}`}
           >
             <img
               class="mx-auto aspect-square object-cover w-28 md:w-36 lg:w-44 xl:w-56 2xl:w-64 rounded-full shadow-2xl shadow-palette-700"
-              src={`/${person.image}`}
+              src={`${import.meta.env.BASE_URL}${person.image}`}
             />
             <h4 class="font-black text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl mt-2 md:mt-4 text-center">
               {person.name}

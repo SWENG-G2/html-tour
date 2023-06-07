@@ -5,11 +5,13 @@ import type { itemT } from "../types/item";
 interface Props {
   department: string;
   items: itemT[];
+  baseUrl: string;
 }
 
 const FileSelector: React.FunctionComponent<Props> = ({
   items,
   department,
+  baseUrl,
 }) => {
   const [currentFile, setCurrentFile] = useState<string>();
   const [currentVersions, setCurrentVersions] = useState<string[]>();
@@ -33,9 +35,11 @@ const FileSelector: React.FunctionComponent<Props> = ({
   useEffect(() => {
     if (selectedVersion !== undefined && currentFile !== undefined) {
       setCurrentLink(
-        `/documents/${encodeURIComponent(department)}/${encodeURIComponent(
-          currentFile
-        )}/${encodeURIComponent(selectedVersion)}`
+        `${baseUrl}documents/${encodeURIComponent(
+          department
+        )}/${encodeURIComponent(currentFile)}/${encodeURIComponent(
+          selectedVersion
+        )}`
       );
     } else setCurrentLink(undefined);
   }, [selectedVersion]);

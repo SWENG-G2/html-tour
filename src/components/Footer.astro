@@ -4,7 +4,10 @@ const links = ["home", "the team", "departments", "faunafinder"];
 
 <footer class="flex flex-row bg-palette-700 py-4">
   <div class="my-auto mx-auto w-1/2 flex flex-col ml-4 md:ml-0">
-    <img class="object-cover mx-auto" src="/penelope.png" />
+    <img
+      class="object-cover mx-auto"
+      src={`${import.meta.env.BASE_URL}penelope.png`}
+    />
     <p class="mx-auto text-palette-100 text-xs md:text-base">
       © 2022 Penelope LTD, All rights reserved
     </p>
@@ -16,7 +19,11 @@ const links = ["home", "the team", "departments", "faunafinder"];
       {
         links.map((link) => (
           <li class="ml-2 my-2 hover:text-palette-600">
-            <a href={`/${link === "home" ? "" : link.replaceAll(" ", "-")}`}>
+            <a
+              href={`${import.meta.env.BASE_URL}${
+                link === "home" ? "" : link.replaceAll(" ", "-")
+              }`}
+            >
               {link}
             </a>
           </li>

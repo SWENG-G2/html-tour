@@ -43,7 +43,7 @@ import ContentBlock from "../components/ContentBlock.astro";
           >
             Your window to nature&rsquo;s beauty
           </h2>
-          <LinkButton text="Download" link="/faunafinder" tw="mt-5 relative" />
+          <LinkButton text="Download" link="faunafinder" tw="mt-5 relative" />
         </div>
         <button
           class="absolute bottom-0 left-1/2 -translate-x-1/2 scale-100 hover:scale-110 transition-transform duration-150 ease-in"
@@ -64,7 +64,7 @@ import ContentBlock from "../components/ContentBlock.astro";
             Learn about your campus&rsquo; wildlife from those who know it best <span
               class="inline-block"
               ><img
-                src={`${import.meta.env.BASE_URL}/home/check.svg`}
+                src={`${import.meta.env.BASE_URL}home/check.svg`}
                 class="aspect-square w-5 md:w-10"
               /></span
             >
@@ -83,7 +83,7 @@ import ContentBlock from "../components/ContentBlock.astro";
         <ContentBlock
           title="We've got you covered"
           textFirst={false}
-          image="/home/campus.png"
+          image="home/campus.png"
         >
           Whether you&apos;re a student or a tourist, FaunaFinder stores an
           extensive database of wildlife in various UK universities campuses for
@@ -106,7 +106,7 @@ import ContentBlock from "../components/ContentBlock.astro";
         </ContentBlock>
         <ContentBlock
           title="A tour guide in your pocket"
-          image="/home/detail.png"
+          image="home/detail.png"
           dark={true}
         >
           Sure, you could email your University&apos;s grounds team and ask for
@@ -121,7 +121,7 @@ import ContentBlock from "../components/ContentBlock.astro";
           What are you waiting for?
           <LinkButton
             slot="button-slot"
-            link="/faunafinder"
+            link="faunafinder"
             text="Download now"
             tw="md:mx-0 my-4"
           />
@@ -136,22 +136,22 @@ import ContentBlock from "../components/ContentBlock.astro";
             <div class="w-full sm:w-1/2 md:w-1/4 mx-auto">
               <LinkCard
                 title="Our work and departments"
-                href="/departments"
-                imageUrl="/home/departments.jpg"
+                href="departments"
+                imageUrl="home/departments.jpg"
               />
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 mx-auto mt-10 md:mt-0">
               <LinkCard
                 title="Our product"
-                href="/faunafinder"
-                imageUrl="/home/icon.jpg"
+                href="faunafinder"
+                imageUrl="home/icon.jpg"
               />
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 mx-auto mt-10 md:mt-0">
               <LinkCard
                 title="The team"
-                href="/the-team"
-                imageUrl="/home/team.jpg"
+                href="the-team"
+                imageUrl="home/team.jpg"
               />
             </div>
           </div>

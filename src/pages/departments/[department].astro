@@ -56,7 +56,12 @@ const { name, imageUrl, content, items } = Astro.props;
     >
       Explore this department's work
     </h3>
-    <FileSelector items={items} department={name} client:only />
+    <FileSelector
+      items={items}
+      department={name}
+      baseUrl={import.meta.env.BASE_URL}
+      client:only
+    />
   </div>
   {name === "Project Management" && <ProjectManagement />}
   {name === "Software" && <Software />}
