@@ -2,6 +2,8 @@
 import File from "../../components/File.astro";
 import FileSelector from "../../components/FileSelector";
 import LinkButton from "../../components/LinkButton.astro";
+import ProjectManagement from "../../components/ProjectManagement.astro";
+import Software from "../../components/Software.astro";
 import { departments } from "../../data/departments.json";
 import PageLayout from "../../layouts/PageLayout.astro";
 import type { itemT } from "../../types/item";
@@ -40,14 +42,30 @@ const { name, imageUrl, content, items } = Astro.props;
       class="mx:auto my-auto md:mx-0 flex flex-col text-justify bg-palette-100 w-full md:max-w-[60%] p-4 rounded-lg shadow-md"
     >
       <h3
-        class="font-bold font-montserrat text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+        class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
       >
         {name}
       </h3>
-      <p class="text-justify hyphens-auto w-full font-roboto">{content}</p>
+      <p
+        class="text-justify hyphens-auto md:text-xl w-full font-roboto"
+        set:html={content}
+      />
     </div>
   </div>
   <div class="bg-palette-300 flex flex-col py-4 md:py-8 px-2 md:px-8 lg:px-16">
+    <h3
+      class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-500 mx-auto mb-4 md:mb-10 text-center"
+    >
+      Explore this department's work
+    </h3>
     <FileSelector items={items} department={name} client:only />
   </div>
+  {
+    name === "Project Management" &&
+    <ProjectManagement />
+  }
+  {
+    name === "Software" &&
+    <Software />
+  }
 </PageLayout>

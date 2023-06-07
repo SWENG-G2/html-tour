@@ -1,0 +1,443 @@
+commit 832c43afafa00c786763f5aabee2854b0747ac2f
+Merge: b558205 7ac54a2
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 20:43:50 2023 +0100
+
+    Merge pull request #1 from SWENG-G2/about-us
+    
+    About us
+
+commit 7ac54a2d1e14b459b214eb30b2f5303eb1c92460
+Author: dz940 <dz940@york.ac.uk>
+Date:   Mon May 22 12:02:15 2023 +0100
+
+    changed back arrows to white
+
+commit 97a81220a3e1c3bdf84033fe5f9a8bc16c2cf375
+Author: dz940 <dz940@york.ac.uk>
+Date:   Sun May 14 12:15:49 2023 +0100
+
+    extracted string resources
+
+commit 8772a019eca8bf72333376f269e83e499d53be38
+Author: dz940 <dz940@york.ac.uk>
+Date:   Thu May 11 14:08:20 2023 +0100
+
+    extracting string resources and orientation locking about us pages
+
+commit e788ad46b3643bb354f2cb9d29a3b951158ad43a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue May 9 17:02:09 2023 +0100
+
+    Restore unintentionally edited files
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit f9b96f63d7eb6c10ca89327aacada830b2d2cbb9
+Author: dz940 <dz940@york.ac.uk>
+Date:   Sat May 6 19:51:14 2023 +0100
+
+    fixed app icon, made improvements to layout of certain screens
+
+commit e0232dc6624b6500e49b78d5733c05c12e865a97
+Author: dz940 <dz940@york.ac.uk>
+Date:   Thu Apr 27 13:39:12 2023 +0100
+
+    added espresso tests for about us usage and creators screens
+
+commit 03a061810fb792d9211ece3cad69f41dcb090183
+Author: dz940 <dz940@york.ac.uk>
+Date:   Wed Apr 19 17:04:16 2023 +0100
+
+    Formatting 'creators' screen, adding logo, fixing constraints in 'app usage' screen
+
+commit ea52eba660f147ebc60a44ab8f5925a3146a7e45
+Author: dz940 <dz940@york.ac.uk>
+Date:   Thu Mar 16 14:40:17 2023 +0000
+
+    Update EspressoTest.java
+
+commit 374c0ac603ddb55fd611f3ceec493a9f71ff9547
+Author: dz940 <dz940@york.ac.uk>
+Date:   Thu Mar 16 14:28:56 2023 +0000
+
+    'about us' espresso test writing
+
+commit 1e3da83899a6ced3dfca13f134cde01a44641d4b
+Author: dz940 <dz940@york.ac.uk>
+Date:   Wed Mar 15 10:59:50 2023 +0000
+
+    further espresso testing
+
+commit eca4c6de35ae3ee1732cfcbf6c022e3a19a0c625
+Author: dz940 <dz940@york.ac.uk>
+Date:   Wed Mar 15 09:15:09 2023 +0000
+
+    Began creating espresso tests for about us page
+
+commit 5a69f7c1569020d967db6f45d98a07bd6588228c
+Author: dz940 <dz940@york.ac.uk>
+Date:   Tue Mar 14 17:12:32 2023 +0000
+
+    writing espresso tests for about us pages
+
+commit a75fd0ba6870ec3959685aec4ec69e782f1c31a2
+Author: gman98974 <goefronoscar@gmail.com>
+Date:   Sun Mar 12 17:18:16 2023 +0000
+
+    added text, string resource management, scroll functions and formatting
+
+commit 375d9a68ed0ec6224e3b4b0922c04226473e9de3
+Author: gman98974 <goefronoscar@gmail.com>
+Date:   Sat Mar 11 22:11:34 2023 +0000
+
+    lay structure for instructions on how to use the app
+
+commit a3f82bf7accfbe7c387ca19758162d5d157da188
+Merge: 13abc22 d5a98f1
+Author: gman98974 <goefronoscar@gmail.com>
+Date:   Thu Mar 9 14:52:51 2023 +0000
+
+    Merge remote-tracking branch 'origin/about-us' into about-us
+
+commit 13abc22add9ebe5db416fd52296514d24ebb7703
+Author: gman98974 <goefronoscar@gmail.com>
+Date:   Thu Mar 9 14:51:52 2023 +0000
+
+    added text to about us and string organization
+
+commit d5a98f137ecbb5d35e414e45e077b5e2e54249e1
+Author: dz940 <dz940@york.ac.uk>
+Date:   Thu Mar 9 13:57:10 2023 +0000
+
+    Update AboutUsActivity.java
+
+commit 5cb1c33b2e9332a9ecbb1d94e8762ec3e36bcffd
+Author: dz940 <dz940@york.ac.uk>
+Date:   Thu Mar 9 13:37:39 2023 +0000
+
+    Added about-us page
+
+commit b5582058bd8abcf9c077eb10d7c4596dd8729b57
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 4 16:16:19 2023 +0000
+
+    Include javadoc plugin
+
+commit b4b8756b95685710864a7945eeb592122463d22a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 4 15:30:57 2023 +0000
+
+    Second batch of comments
+
+commit e88594759dc248356636c41fc88c82b298ee2131
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Mar 3 18:46:45 2023 +0000
+
+    Initial batch of comments
+
+commit 9f3221c7df27446eb93a0f2a454e810673337830
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Feb 10 10:57:09 2023 +0000
+
+    Adjust TextElement behaviour and fix if typo
+
+commit 04c29116c2e61a42922b3438d84eefd6171b9216
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Feb 10 10:47:57 2023 +0000
+
+    Update TextElement to support width and height
+
+commit 1ed22386c6385a06d63591adb243071be9c3e769
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Feb 6 15:50:19 2023 +0000
+
+    Implement missing functionality in {Image, Text}Element 2/2
+
+commit 998aae428e459d524fb0103bf01f71673f638573
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Feb 6 08:18:28 2023 +0000
+
+    Implement missing functionality in {Image, Text}Element 1/2
+
+commit 948d966df16f2cfcd9e69ce99f3d14ee7aacd4e1
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 31 19:33:16 2023 +0000
+
+    Fix instance check for shape element
+
+commit 0f8ed98e1443fa1a1ee1678c0d00cbbfa1f657ff
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 31 16:41:14 2023 +0000
+
+    Remove isShape field
+
+commit 457860c35dc273ef828a6a018ba33743ed60e018
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 31 15:04:36 2023 +0000
+
+    Initial implementation of {Shape,View}Element
+
+commit 69cb9ea7ea1d6710e0e7e536a73559ad9bd7af7a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 27 20:40:10 2023 +0000
+
+    Actually import app icon
+
+commit 78ccf11e0d9baf97a3919627d31c2aaf07e5e142
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 20 12:11:09 2023 +0000
+
+    Import app icon
+
+commit ef4b165aea0cab371d1510c8245091f9f1b30341
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 20 12:00:36 2023 +0000
+
+    Load custom bird file from storage
+
+commit 7c21eeb3a9a2156c6aa6f65d17989eaaa650f153
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 17 21:58:39 2023 +0000
+
+    Display full list if search parameter length is 0
+
+commit de145ef10656f41dec8fba6b239ff8cf24f001e7
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 17 20:33:54 2023 +0000
+
+    Implement layouts re-usability
+        * They are RecyclerViews after all
+
+commit 1a8bf90e4a180f1a9c075f4e17007c13bdb49ecd
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 16 18:46:59 2023 +0000
+
+    Refactor and implement search functionality
+
+commit a36fb9796d0c10992374a04e27227c39bebba034
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 16 17:45:53 2023 +0000
+
+    Expand detail slides when title is clicked
+
+commit e358ef289c9f28c7641e648386fcb7efab3a2dab
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 16 17:35:05 2023 +0000
+
+    Fix CanvasView behaviour
+        * By adding CanvasView to the RelativeLayout AFTER the
+          layout has been laid out, we don't need to worry about
+          the canvas not being drawn due to bad parent's height/width.
+
+commit a6a48ec76305dd9d958b8cf0880c723940d12f4a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 16 16:48:45 2023 +0000
+
+    getAdapterPosition is deprecated
+
+commit f5b5e2541cc80868d4b56c1b729a5cceeac403ec
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 16 16:47:13 2023 +0000
+
+    Pause media players as they are detached and release them as container view is detached
+
+commit a8dffe93b3d0f2ba8f9f9cdaff1add6c8a0acda4
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 16 16:16:08 2023 +0000
+
+    Prepare media player for audio streaming in a separate thread
+
+commit d6669fff4601576d18f5582d253bf9b7e770059d
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jan 15 18:28:01 2023 +0000
+
+    Custom video player layout based on ExoPlayer
+
+commit 0eaceecde2f8a009539da7e0995ac6cabe9d53cb
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jan 15 15:47:51 2023 +0000
+
+    Justify textview (Android Q =<) and parse HTML encoded strings
+
+commit 72e66da8213f51b2d409ed754eca40902fe4f000
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jan 15 14:41:01 2023 +0000
+
+    Guard against NumberFormatException in UIUtils
+
+commit 739678a5386ff9fc215a2d8e1a6d40edc8479b5a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 13 17:34:06 2023 +0000
+
+    Cleanup and reformat
+
+commit ac49da2d7a7b8f5ad43a46720edd132732e27035
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 13 10:19:36 2023 +0000
+
+    Initial video element
+
+commit 21f7345e5d15cfe230a92dbcc8864bf1ab966236
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 13 09:56:50 2023 +0000
+
+    Switch to relative layout for slides
+
+commit d9de661d7f763c74b3aff9b84dca4689f502312d
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 13 08:46:10 2023 +0000
+
+    Adjust audio element button size
+        * Also allow position to parent end
+
+commit c0cd1261938418eaa4bd8e495f33799bffe3c5eb
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jan 13 08:11:13 2023 +0000
+
+    Use DP for y positioning
+        * More consistent content delivery across
+          different screen sizes.
+
+commit cbb089065b57b7367bf24f72747803fc1bca5d32
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu Jan 12 14:21:01 2023 +0000
+
+    Implement an accordion-like slide
+        * Content can be expanded, used in
+          bird page.
+
+commit 73635474e7cef060099fb573fb81329ec0957394
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Jan 11 18:17:42 2023 +0000
+
+    Fully functional audio implementation
+
+commit 56774763f9d82917d201bb86cf41345ba6b362b1
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Jan 11 16:50:56 2023 +0000
+
+    Let there be circles 😇
+
+commit ff09e334620cfa7fbfb9e47b8db7109006ccdb08
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Jan 11 13:20:32 2023 +0000
+
+    Import monospace font
+
+commit 1f54fa4875ddeb5e47d7193ba0a7a229c7c8eb3e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 10 20:15:11 2023 +0000
+
+    Generalise Slides
+        * Now slides all implement the same interface
+          and I plan to make them all extend AbstractSlide.
+        * This allows us to perform custom actions for each
+          type of different slide.
+        * I'm also setting the background for the birds list
+          with a drawable because drawing a big shape on the
+          whole canvas for each element on the list might not
+          be a good idea.
+
+commit 3957954b68a987f49386768321dbef215383fa54
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 10 17:09:53 2023 +0000
+
+    Initial bird activity
+        * Also improve parsing of data from xml
+          by introducing default values.
+
+commit 6673d7348adc542a814808fd8917f1352cb2a22b
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Dec 14 18:28:49 2022 +0000
+
+    Parse Images and Rectangles
+
+commit af49320aba2a7d8d7ece41923df6bfb710635e03
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Dec 14 14:14:56 2022 +0000
+
+    Store campus preference on campus list item click
+
+commit 84bbce8291cb76a005a46b729a14aad114074c44
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Dec 13 18:16:41 2022 +0000
+
+    Scale slides height with SP
+        - Consistent experience on different screen sizes and densities for slide size and text size.
+
+commit d0ed5e64d45af31fdb524e800ba7df7d8b89d446
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Dec 11 21:05:16 2022 +0000
+
+    Change drawing logic to use native elements (TextView)
+
+commit 05dc1a510fe61bdd2bbd71cbbc88572a2edeefcd
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Dec 10 20:11:08 2022 +0000
+
+    Parsers and Elements refactor
+
+commit 1e518484809442f263f99e6ead3c3e6b374efa3e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Dec 7 21:18:15 2022 +0000
+
+    Better mapping on slide and parse and draw lines
+
+commit a1114cbd4c2b1a42be0d6091d3a7d7e2d24218a5
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Dec 7 13:59:36 2022 +0000
+
+    Draw text on campuses list canvas
+
+commit 368a6ac16978a4761b7cfaf6fecbeaf1fccc9da8
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Dec 7 12:28:47 2022 +0000
+
+    Basic code to parse campuses list
+
+commit 802a4143dbfc371190596e523306f0a1d81eb6e2
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Dec 5 15:51:25 2022 +0000
+
+    Initial work to make requests to server
+
+commit d89b8b759c2b13946118d672dab1c17f06761848
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Dec 2 15:20:56 2022 +0000
+
+    Add campus selection activity
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 855426e22cb12a7efbb3cb8ea15b209165b71606
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Dec 2 14:47:15 2022 +0000
+
+    Update colours
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 7c6a2ba325f3a9c9c806d1bb793827e133bafd18
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Nov 9 20:29:28 2022 +0000
+
+    Theme home screen according to mock
+
+commit 5939dfd8aae2a3b7e545f4e07b36a0b3154bfc9e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu Nov 3 18:59:47 2022 +0000
+
+    Basic RecyclerView list to display ducks
+
+commit 25dc19da0ae5bcf3676bdf81db8c8537784baa24
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Nov 2 21:00:11 2022 +0000
+
+    Basic app bar layout for home screen
+
+commit 81729eddf4a6c3681996336d04271d826deaf958
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Nov 2 13:52:13 2022 +0000
+
+    Initial commit

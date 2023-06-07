@@ -1,0 +1,716 @@
+commit dd37e31b1944307899aa74092ebd3dfb1b8c1418
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jun 5 17:32:44 2023 +0100
+
+    Be able to opt out from using SSL
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit e973f4c3c47156bbac56e12eebe61684084e7562
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jun 5 16:41:19 2023 +0100
+
+    BirdController: Change list image url for patch method
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 07db678c58129abcbb5f79c00160eacc1a9bf7ac
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 13:39:53 2023 +0100
+
+    Fully remove old keys paths logic
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 52135431a6a8145439648621d1c35f0929c20a23
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 13:35:33 2023 +0100
+
+    Add persistant data volume and remove old keys path
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 3a90581158d21780300858af4b7a86e4ced36eb1
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 12:49:04 2023 +0100
+
+    Remove unreachable test
+    
+            There's no point in checking that an IOException is thrown there.
+            The file's name has been checked before the method is called.
+            IOException will be thrown by the library.
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit d8e58e9012e16bb22cb0f78a1101f52b2315f574
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 12:40:59 2023 +0100
+
+    Improve storeProcessedImage logic and fix related test
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit f5ac271947e784493adf5c0d003204f2e66fa9df
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 12:16:48 2023 +0100
+
+    Improve test coverage
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit f0aca0984dcad4e0d2dafbc344850f18e2106f4a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 09:19:47 2023 +0100
+
+    BirdXML: Increment number of slides upon slide addition
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 3e4e282e407f1e2510f7a8aeb5916fabe95891a1
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 09:16:56 2023 +0100
+
+    Fix caching by supplying appropriate key for bird and campus xmls
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 7ca4607045b8658723c49a1fe7a62ef69c8ba392
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Jun 3 21:39:13 2023 +0100
+
+    Return full url for list images
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 1fae634e3f952f631b468315a0a089b9e6ad975e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 21:38:53 2023 +0100
+
+    Provide full url to bird assets
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 5a5c0049f8ba3c36c2bc77e41df5ec4cad9a11f7
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 19:39:35 2023 +0100
+
+    Remove assets on bird edit actions, if new asset supplied
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 5c7ad3d9657a1bddd271407663eaf7862a6e601e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 18:45:32 2023 +0100
+
+    Improve bird update logic and update "unique" string to assets
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 8dab896b880321e356c53aa4be87ee37537e0815
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 15:27:42 2023 +0100
+
+    Evict correct bird caches
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 55b6cebcfafe730c086454ff8b7a865043e0be1c
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 14:59:50 2023 +0100
+
+    Evict cache on new campus and serve not found for missing xml
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 2d8a6c7362bb348d6af543da42a828c952433827
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 13:46:50 2023 +0100
+
+    Docker test
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 6093f4bc8b5086f1cb6fd1a6abdc4b4cbc5b0776
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 11:36:42 2023 +0100
+
+    Improve error message when constraint validation exception is thrown
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 7161f3ad9895c156c1fff3d0861717e96592d116
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 11:29:02 2023 +0100
+
+    Bump spring version and manually set up mock mvc for BirdControllerTest
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 9407da60799a1b487d54d44a036b0c97e6a77c64
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 11:27:36 2023 +0100
+
+    Revert "Remove unneeded ControllersExceptionHandler"
+    
+    This reverts commit 69879016d8e546fe673569d1283772bc3ae248c6.
+
+commit b7fce0738dc255d0db1732c77ba17265cc55f33b
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:55:47 2023 +0100
+
+    Import test SSL certificate and add missing fields in properties
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 69879016d8e546fe673569d1283772bc3ae248c6
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:55:20 2023 +0100
+
+    Remove unneeded ControllersExceptionHandler
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit c7cb6ebe9676c314fad34fefb82af167dc1ae8bb
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:54:03 2023 +0100
+
+    Add UsersListXML
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit ec2b058edf5c65c2ee6cedc40d04e17d1f9c4b88
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:53:48 2023 +0100
+
+    Add KeyPairController
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 8dbc22d3718ee609aab2678c9321b79b19fd6d47
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:53:16 2023 +0100
+
+    CampusController: Remove unneeded import
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit d5f2e85b84326f9b488e658ebefad8aeb128adcd
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:52:28 2023 +0100
+
+    CommonXML: Expose createDocument and document field
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 42b8492edea41eb6e4ef916c02be5aef9a2cbdad
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:51:58 2023 +0100
+
+    Add file download/upload controllers
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit e001b798371805b13bbcf3bd4196e5f6e5f32465
+Author: dz940 <dz940@york.ac.uk>
+Date:   Fri Jun 2 10:50:52 2023 +0100
+
+    Change the way data is displayed on frontend
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit c4e61f6efcf3182158f82e6c8b177dbfba9bc7e5
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:49:31 2023 +0100
+
+    Support retrieving users list and remove apiKey dependency from StorageService and its impl
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 3b4122f0a7f2de8f9c83e010dfa703c997867e02
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:46:47 2023 +0100
+
+    Javadocs [Bird, Campus]Repository
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit e8f0dd8c01fca92432a00a973f6f78c5cdc98a38
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:31:21 2023 +0100
+
+    Update ControllerUtils to remove apiKey dependency
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 0c152ebae4dbcd260cc2153a9cf7c8ccd263f5d5
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:29:57 2023 +0100
+
+    Update CampusController to remove apiKey dependency and add endpoint to edit campus
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 9327b542cdebee8a862d46ebedcf5f29ec566cfe
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:25:49 2023 +0100
+
+    Update BirdController to remove apiKey dependency
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit aeaa9db377c266898e581f534f937f61b4eda51a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:22:43 2023 +0100
+
+    Add pre-remove logic to campus and implement equals, hashCode
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 1728ac32530497ce899322d67956fa3264c484d6
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:21:18 2023 +0100
+
+    Update auth related controllers, entities, repositories
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 2201f2834ad14e5eada1ec0d0ce1b09adb944066
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:18:00 2023 +0100
+
+    Update auth stack to support username-password auth
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit c5421563a5dcc2a9c87af3516cc1bf5c012149d0
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:17:06 2023 +0100
+
+    Import SpringFox configuration for live API docs
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit a25afeb898948f74e677674247c0a56b214bbf55
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:16:34 2023 +0100
+
+    Set up application for username-password auth
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit fd2d3b8fed952e66610e4c9abaf6407bfa8f6bd9
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 10:15:48 2023 +0100
+
+    Tweak minor tests bugs
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 4f008b7542126e1ecf7805712e11715ca8f3413f
+Merge: 52ceaae aaaea8d
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 09:44:54 2023 +0100
+
+    Merge pull request #14 from SWENG-G2/newTests
+    
+    updated penelope tests
+
+commit aaaea8d606286088d35800d64db55a4e31e67cae
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 09:44:10 2023 +0100
+
+    Tests: Move test resource
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 843e13c06a734324e6742e132cd14f3cc6b13ed5
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri Jun 2 09:39:37 2023 +0100
+
+    Tests: use ssl, do not use Apache IOUtils, add test resources to classpath
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 8222def942e072b21cc25ea6a568cb7c7665584f
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Fri Jun 2 04:54:45 2023 +0100
+
+    Updated various tests
+
+commit 44504e3de98d371f27726659da692b55a859e361
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Mon May 29 08:11:38 2023 +0100
+
+    bird controller test
+
+commit bb140c00e4862de64848bbc3197303a5adc3280f
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Sun May 28 22:18:25 2023 +0100
+
+    data manager test
+
+commit 52ceaae4b913080256564b02e24419f7a84425e2
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 17:51:19 2023 +0000
+
+    Test FileSystemStorageService
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 4be94f755d92a3e582176e09b17926913f575728
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 13:03:26 2023 +0000
+
+    Validate BirdController
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit b9809fedda89b0bc88f2eb702553681d6ec15c84
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 12:56:33 2023 +0000
+
+    Handle invalid campus parameter
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit d36824601cb5e16212b56f4dbbac5410d0aed0ba
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 12:18:09 2023 +0000
+
+    Do not ignore test failures
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 0898796e6ebef2ed6962dca47d2ca16af4a2716a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 11:41:33 2023 +0000
+
+    Enable caching
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit a7829bec6d0f819a01995ca6810ca9c8ec5144ed
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 11:37:05 2023 +0000
+
+    Implement CampusController
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 3a76127eae3c4397d260e774f1012568ad9d00d8
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 11:34:04 2023 +0000
+
+    Implement BirdController
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 7e6798c1e49d407a229726331577cd5f46198f80
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 11:35:10 2023 +0000
+
+    Implement ControllerUtils
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 754f3c1494c15741421d5be791ee916f680ab064
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 11:33:16 2023 +0000
+
+    Implement CacheUtils
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 8697d6cafafaaa10e048bf6054d3168875512a6b
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Mar 13 11:32:30 2023 +0000
+
+    Initial Jacoco setup
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 9e25f46d79870032007945ee801f41defb29f2ec
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 12:31:20 2023 +0000
+
+    Implement ApiKeyController
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit b6cad8d9d9dc03eff9972ef4555ee3cfc2d6d9be
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 12:30:45 2023 +0000
+
+    Implement FileSystem Storage Service
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit b9a4ce2d7ad87e7fd5d48396c6a03de7202ed4e4
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 12:14:03 2023 +0000
+
+    Implement UnauthorisedException
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 3587f90147e8130aa6a6478b84a81c9374efcc21
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 12:12:11 2023 +0000
+
+    Add auth header properties
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 6aab0f7f2673a31c8bf30526ff4498e6331b9330
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 12:05:43 2023 +0000
+
+    Implement ApiKeyAuthenticationManager
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 9195e5ad34a4c8ad1da0cde309e75502fd1e5699
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 12:05:15 2023 +0000
+
+    Implement ApiKeyFilter
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit fdef2ff86db22addea3a233418550cb130f99789
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 12:03:19 2023 +0000
+
+    Implement SecurityConfig
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 707ef693b7a397964662a802c2b28f89d2ccb0e1
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:45:44 2023 +0000
+
+    Update methods visibility for testing
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit ad62235f95e7c703291070e38da64a47e881ef30
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:43:17 2023 +0000
+
+    Implement RSAUtils
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 0f6053a8e2e8b8e2abf34b9e748b185fe7d02d15
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:33:06 2023 +0000
+
+    Include Dom4J
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 21aa5f7479199e9715f3b60230bc29a305174875
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:29:27 2023 +0000
+
+    Implement CampusesListXML
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 8171a78854ce76588581493ac7d9250195228561
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:28:58 2023 +0000
+
+    Implement CampusXML
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit f4a3c438ec50b0fbbc426125db87b4f5683ebe14
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:28:31 2023 +0000
+
+    Implement BirdXML
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit d038f67d208ce62d1019d945a7b4819a39489fed
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:28:02 2023 +0000
+
+    Implement CommonXML
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 64a262a2f455e412a98b557edc32f7ed367a5dc6
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 11:26:54 2023 +0000
+
+    Implement XMLConfiguration
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 82cfae87b1c2c4dd26505b675b174334205c5044
+Merge: f57402c 2afcfc1
+Author: Roman <97888334+romank727@users.noreply.github.com>
+Date:   Fri Mar 3 18:35:53 2023 +0000
+
+    Merge pull request #8 from SWENG-G2/campus-controller-test_new
+    
+    Initial campus controller test
+
+commit f57402c84c2cd2d579e3107e7992871126df8a7f
+Merge: 03d7125 f96851a
+Author: Roman <97888334+romank727@users.noreply.github.com>
+Date:   Fri Mar 3 18:32:49 2023 +0000
+
+    Merge pull request #11 from SWENG-G2/bird-xml-test_new
+    
+    Initial bird xml test
+
+commit 2afcfc18406be76adf8f7311db487b0880374929
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Fri Mar 3 18:30:54 2023 +0000
+
+    Uncommented test as per request
+
+commit 03d7125ecf18db41f72937009d05b6e16766f3cf
+Merge: a70e4a4 25d203c
+Author: Roman <97888334+romank727@users.noreply.github.com>
+Date:   Fri Mar 3 18:08:32 2023 +0000
+
+    Merge pull request #9 from SWENG-G2/campus-xml-test_new
+    
+    Initial campus xml test
+
+commit a70e4a403e3c79970c13322e4ed6865a5b3bd6e7
+Merge: f854357 ed4a82e
+Author: Roman <97888334+romank727@users.noreply.github.com>
+Date:   Fri Mar 3 18:08:15 2023 +0000
+
+    Merge pull request #10 from SWENG-G2/campuses-list-xml-test_new
+    
+    Initial campuses list xml test
+
+commit f85435777fb821e989d40b87c4c6114438f8bfa3
+Merge: fa9008f 87de729
+Author: Roman <97888334+romank727@users.noreply.github.com>
+Date:   Fri Mar 3 18:07:39 2023 +0000
+
+    Merge pull request #12 from SWENG-G2/common-xml-test_new
+    
+    Initial common xml test
+
+commit 1e49355cad5ca0ecd85fc76e6efa80279952724b
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Fri Mar 3 18:06:46 2023 +0000
+
+    Re-assigned to campus variable
+
+commit f96851ade8b2ef69539534a7fe2811426ce5e552
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Fri Mar 3 18:04:15 2023 +0000
+
+    Rewrite with assertNotEquals syntax
+
+commit fa9008fd4a3660a2f9dec4f793b60ce3851ecf20
+Merge: c6a0550 e88a535
+Author: Roman <97888334+romank727@users.noreply.github.com>
+Date:   Fri Mar 3 17:55:54 2023 +0000
+
+    Merge pull request #7 from SWENG-G2/bird-controller-test_new
+    
+    Initial bird controller test
+
+commit ab3e89dccb004594d8874c8b2132e6d746b3ae51
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Tue Feb 21 07:56:26 2023 +0000
+
+    Initial bird xml test
+
+commit e88a535d11007f18e13e710c28498289d3195a11
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Tue Feb 21 07:46:10 2023 +0000
+
+    Initial bird controller test
+
+commit 87de729a85d3fd600aaff371648afd12e718f54f
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Tue Feb 21 08:00:24 2023 +0000
+
+    Initial common xml test
+
+commit ed4a82ebecbae964778b43cee59e8b791fd18ef2
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Tue Feb 21 08:03:29 2023 +0000
+
+    Initial campuses list xml test
+
+commit 25d203c995949f339f51a31065aa8e2f9662cc49
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Tue Feb 21 08:02:10 2023 +0000
+
+    Initial campus xml test
+
+commit a3574187badf17c3e5a3547101721930d19d9978
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Tue Feb 21 07:50:47 2023 +0000
+
+    Initial campus controller test
+
+commit c6a0550a8aca0a6e1571ee32a2fe5779871b6f54
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Feb 25 16:32:19 2023 +0000
+
+    Initial CI/CD pipeline
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 77db79fc03e6e8b2f1c77698125da17867d9caa7
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 24 21:12:46 2023 +0000
+
+    ApiKeys Endpoints Integration tests
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 84b55dab77085522477e61cea9d2ecf34f82cb53
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 24 06:57:10 2023 +0000
+
+    Create StorageService interface
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 53c2eeef5219b6cbfea84bbd72d01865f1232ac1
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 24 06:48:45 2023 +0000
+
+    Create initial repositories
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit e19bb117eb7c7d3e0736c092fe00a7567f917b9c
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jan 24 06:47:11 2023 +0000
+
+    Create initial entities
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit e38357cc5af55d8a18f01cbfab4cc196e6f207aa
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 23 14:48:32 2023 +0000
+
+    Initial application properties
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 27d4ffe939e69de64e35b4d3532f5fff209541f7
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon Jan 23 14:46:20 2023 +0000
+
+    Initial commit
+    
+            * Import from https://start.spring.io/#!type=gradle-project&language=java&platformVersion=2.7.5&packaging=jar&jvmVersion=19&groupId=sweng&artifactId=penelope&name=penelope&description=Demo%20project%20for%20Spring%20Boot&packageName=sweng.penelope&dependencies=web,data-jpa,postgresql
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>

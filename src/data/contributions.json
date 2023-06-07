@@ -1,0 +1,128 @@
+{
+  "contributions": {
+    "penelopeSpike": [
+      {
+        "name": "Giuseppe",
+        "commits": 85,
+        "addittions": 20056,
+        "deletions": 4601
+      },
+      {
+        "name": "Dawid",
+        "commits": 2,
+        "addittions": 12,
+        "deletions": 12
+      }
+    ],
+    "penelope": [
+      {
+        "name": "Giuseppe",
+        "commits": 71,
+        "addittions": 5889,
+        "deletions": 1702
+      },
+      {
+        "name": "Roman",
+        "commits": 12,
+        "addittions": 1765,
+        "deletions": 296
+      },
+      {
+        "name": "Dawid",
+        "commits": 1,
+        "addittions": 14,
+        "deletions": 15
+      }
+    ],
+    "androidSpike": [
+      {
+        "name": "Giuseppe",
+        "commits": 51,
+        "addittions": 5866,
+        "deletions": 1709
+      },
+      {
+        "name": "Dawid",
+        "commits": 13,
+        "addittions": 1209,
+        "deletions": 817
+      },
+      {
+        "name": "Oscar",
+        "commits": 3,
+        "addittions": 306,
+        "deletions": 50
+      }
+    ],
+    "android": [
+      {
+        "name": "Giuseppe",
+        "commits": 51,
+        "addittions": 6898,
+        "deletions": 704
+      },
+      {
+        "name": "Roman",
+        "commits": 9,
+        "addittions": 400,
+        "deletions": 22
+      },
+      {
+        "name": "Dawid",
+        "commits": 3,
+        "addittions": 603,
+        "deletions": 182
+      },
+      {
+        "name": "Oscar",
+        "commits": 2,
+        "addittions": 227,
+        "deletions": 11
+      },
+      {
+        "name": "Ana",
+        "commits": 1,
+        "addittions": 653,
+        "deletions": 0
+      }
+    ],
+    "icarius": [
+      {
+        "name": "Connall",
+        "commits": 59,
+        "addittions": 10282,
+        "deletions": 7648
+      },
+      {
+        "name": "Harry",
+        "commits": 21,
+        "addittions": 5789,
+        "deletions": 2819
+      },
+      {
+        "name": "Tom & Ophelia",
+        "commits": 20,
+        "addittions": 3042,
+        "deletions": 1167
+      },
+      {
+        "name": "Ethan",
+        "commits": 4,
+        "addittions": 9969,
+        "deletions": 36
+      },
+      {
+        "name": "Giuseppe",
+        "commits": 3,
+        "addittions": 219,
+        "deletions": 711
+      },
+      {
+        "name": "Oscar",
+        "commits": 1,
+        "addittions": 728,
+        "deletions": 9
+      }
+    ]
+  }
+}

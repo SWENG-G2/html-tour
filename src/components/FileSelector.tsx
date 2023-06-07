@@ -1,6 +1,5 @@
 import type React from "react";
-import { Component, useEffect, useState } from "react";
-import Select from "react-select";
+import { useEffect, useState } from "react";
 import type { itemT } from "../types/item";
 
 interface Props {

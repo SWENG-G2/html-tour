@@ -1,0 +1,87 @@
+<div class="bg-palette-100 flex flex-col px-2 md:px-8 lg:px-16 py-4 md:py-32">
+    <h3
+        class="font-bold font-righteous text-3xl md:text-5xl lg:text-6xl uppercase text-palette-600 mx-auto text-center"
+    >
+        Conftributions
+    </h3>
+    <div class="flex flex-col w-full my-20">
+        <h4
+            class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+        >
+            Penelope - Spike
+        </h4>
+        <div class="w-full flex flex-col lg:w-1/2 mx-auto">
+            <canvas id="penelopeSpike" class="self-center"></canvas>
+        </div>
+    </div>
+    <div class="flex flex-col w-full my-20">
+        <h4
+            class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+        >
+            Penelope
+        </h4>
+        <div class="w-full flex flex-col lg:w-1/2 mx-auto">
+            <canvas id="penelope" class="self-center"></canvas>
+        </div>
+    </div>
+    <div class="flex flex-col w-full my-20">
+        <h4
+            class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+        >
+            Android - Spike
+        </h4>
+        <div class="w-full flex flex-col lg:w-1/2 mx-auto">
+            <canvas id="androidSpike" class="self-center"></canvas>
+        </div>
+    </div>
+    <div class="flex flex-col w-full my-20">
+        <h4
+            class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+        >
+            Android
+        </h4>
+        <div class="w-full flex flex-col lg:w-1/2 mx-auto">
+            <canvas id="android" class="self-center"></canvas>
+        </div>
+    </div>
+    <div class="flex flex-col w-full my-20">
+        <h4
+            class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-600"
+        >
+            Icarius
+        </h4>
+        <div class="w-full flex flex-col lg:w-1/2 mx-auto">
+            <canvas id="icarius" class="self-center"></canvas>
+        </div>
+    </div>
+</div>
+
+<script>
+    import { contributions } from "../data/contributions.json";
+    import { createChart } from "./charts";
+
+    const penelopeSpike = document.getElementById(
+        "penelopeSpike"
+    ) as HTMLCanvasElement | null;
+    createChart(penelopeSpike, contributions.penelopeSpike);
+
+    const penelope = document.getElementById(
+        "penelope"
+    ) as HTMLCanvasElement | null;
+    createChart(penelope, contributions.penelope);
+
+    const androidSpike = document.getElementById(
+        "androidSpike"
+    ) as HTMLCanvasElement | null;
+    createChart(androidSpike, contributions.androidSpike);
+
+    const android = document.getElementById(
+        "android"
+    ) as HTMLCanvasElement | null;
+    createChart(android, contributions.android);
+
+    const icarius = document.getElementById(
+        "icarius"
+    ) as HTMLCanvasElement | null;
+    createChart(icarius, contributions.icarius);
+</script>

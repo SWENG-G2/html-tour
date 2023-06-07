@@ -1,0 +1,978 @@
+commit 54420d5cadc9e7064f6b7f414dbbb44ac9493313
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jun 6 23:50:49 2023 +0100
+
+    Remove incorrect javadoc
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 1a474b023124de34f20144196c52bc16b3702e48
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Tue Jun 6 21:57:20 2023 +0100
+
+    Note for development method
+
+commit 641aeaa77606135da4536ef653f30ff61f0b8215
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Tue Jun 6 21:56:31 2023 +0100
+
+    gui javadoc comments (Done by Harry)
+
+commit 017a59243d2f0b4d7fe8592756dbaa400a0b530f
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Tue Jun 6 00:34:11 2023 +0100
+
+    Entity package comments, removal of obsolete code and completion of last TODO tasks
+
+commit fa1c51d3c24456a72b8f15cfabcdd565df43e31e
+Merge: 1019837 77e1ee3
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jun 5 23:16:50 2023 +0100
+
+    Merge pull request #26 from SWENG-G2/bugfixing-gui
+    
+    Bugfixing gui
+
+commit 77e1ee39d33cc5f5221900ad0b52ad1775cbd410
+Merge: 6b8d7ad 1019837
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jun 5 23:16:29 2023 +0100
+
+    Merge branch 'main' into bugfixing-gui
+
+commit 10198374f7a3f417c8c05ccc4e45b20afbbd25e7
+Merge: 5be3b57 9a776e7
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jun 5 23:14:47 2023 +0100
+
+    Merge pull request #25 from SWENG-G2/entity-test-2
+    
+    Entity test 2
+
+commit 5be3b57039f9a5b6fc582c9fcd7f67ec4b877827
+Merge: e1c4c2c ad0fb55
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jun 5 23:14:02 2023 +0100
+
+    Merge pull request #24 from SWENG-G2/http-test-and-comments
+    
+    Http package javadoc comments
+
+commit ad0fb55ec3851893e5ec3bf6644f6f7d4e80673a
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Mon Jun 5 23:13:37 2023 +0100
+
+    Http package javadoc comments
+
+commit 6b8d7ad27e496d305a784d07f8efd3dd4c131e59
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Mon Jun 5 03:36:06 2023 +0100
+
+    UI Improvements
+    
+    Improved layout of buttons
+
+commit 3ec13d4b715b39cf294923de2e08f9926c69a203
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Sun Jun 4 20:17:49 2023 +0100
+
+    Image upload fix
+
+commit 1a6f87b2ca62f6be6477965b5b6fe3a2421a1bba
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Sun Jun 4 14:53:32 2023 +0100
+
+    Image Loading BugFixing
+
+commit 84e667bd6f2014373e09ae883ade2ded16a71e21
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Sun Jun 4 05:48:02 2023 +0100
+
+    Final touches
+    
+    Loading Image, Displaying image, Playing sound, Reading ListImageUrl, Creating bird with all fields
+
+commit 2704b23117f2c024f412bc2af2e72a5fcbea152e
+Author: Ethan Cude <ejc628@york.ac.uk>
+Date:   Sat Jun 3 21:12:41 2023 +0100
+
+    Added ability to view video thumbnail. Added audio player (wav only currently)
+
+commit 9a776e7316ac3127cab244daedd8272ef348b625
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Fri Jun 2 22:03:14 2023 +0100
+
+    Removed the birds reading from the server when the campus is read, and tests done.
+
+commit acd220eee0381f32fbf4b7cfc891b5732381def0
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Fri Jun 2 20:47:59 2023 +0100
+
+    Forgot to save before last push
+
+commit bfe5e1df5b01ecb67c51af9246e126afe2c35052
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Fri Jun 2 20:41:57 2023 +0100
+
+    Updated create bird form to require alll fields be filled and to make it resemble the new edit bird form. Also quick bugfix on text areas that was preventing them from working with the rest of the program.
+
+commit c947663178c6ca64098e8af4292137ab9219f937
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Fri Jun 2 17:39:51 2023 +0100
+
+    Tom & Ophelia: comments done for entities
+
+commit be03677aa6c11c09d0a863240249249abca5036f
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Fri Jun 2 13:09:32 2023 +0100
+
+    Some testing comments
+
+commit a91bca0a8e69798dcea05e197bc0b8e4317aacc4
+Author: Ethan Cude <ejc628@york.ac.uk>
+Date:   Fri Jun 2 13:06:03 2023 +0100
+
+    Added multiline text areas and image viewing functionality
+
+commit 4014cd2a716bd43bf270695819ec78363d70d73e
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri Jun 2 04:03:37 2023 +0100
+
+    Number of bugfixes
+
+commit c51cc2acedd29c81905510a432c5913ecc84f3e8
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Jun 1 18:50:26 2023 +0100
+
+    Tom & Ophelia (with help from Connall): did most of campus test still need to test read function
+
+commit e1c4c2cda1acd7b511516ab4c9914f36fb938734
+Merge: 0f29b02 05438e2
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Thu Jun 1 18:25:04 2023 +0100
+
+    Merge pull request #22 from SWENG-G2/Auth-test-refactor
+    
+    Comments for all methods and tests
+
+commit 05438e2ea81c93ec26c35477907b66ec1e354868
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu Jun 1 18:24:11 2023 +0100
+
+    Comments for all methods and tests
+
+commit ea1978b3a41fbd9762e0819d012c1f2ee219d8e5
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Jun 1 16:58:31 2023 +0100
+
+    Tom & Ophelia (with major help from Connall and Giuseppe): bird tests done still need to comment
+
+commit 7def658287f976389514e22dc8b570eb35fbe88e
+Author: Ethan Cude <ejc628@york.ac.uk>
+Date:   Thu Jun 1 14:08:05 2023 +0100
+
+    Added multiline text fields and started work on viewing uploaded image
+
+commit 6bbf8d33cf64500e05436c60c6c1fbb4f2d8fa72
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu Jun 1 04:55:37 2023 +0100
+
+    BUGFIX: Database tree updates no longer close expanded campuses
+
+commit 0f29b0295944e82424b042351683b51fb8e4fef9
+Merge: 4150594 77b0817
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed May 31 21:43:54 2023 +0100
+
+    Merge pull request #21 from SWENG-G2/entity-tests
+    
+    Entity tests
+
+commit 2b3253300ee297c67067ad280d7f42ed1abf937a
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Wed May 31 18:10:41 2023 +0100
+
+    Users pannel completed
+
+commit 4240e0d1d58fb418c1fcbc1c96383e61884d3dc4
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Tue May 30 22:16:40 2023 +0100
+
+    Edit bird redone, create user updated. Reuploaded to remove obsolete class.
+
+commit 25f4c445c9e8b503dd780b35596609801c724a73
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Tue May 30 22:11:37 2023 +0100
+
+    Edit bird redone and create uer tab updated
+
+commit 77b0817e64474c3b2133c8be96d4afbaa2dc43ff
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Tue May 30 15:31:37 2023 +0100
+
+    bird delete test started
+
+commit df4be2254327f6fd42f702f3bacd4ce0287e215f
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Tue May 30 15:19:58 2023 +0100
+
+    tried to do update bird test
+
+commit ad691178da042a79193e3c96ed655d864833d557
+Author: Ethan <ejc628@york.ac.uk>
+Date:   Tue May 30 14:13:45 2023 +0100
+
+    BUGFIX: null user permissions check on user validate
+
+commit 0d39b57722267cb6c14c7a94d7cb6afad1213185
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Tue May 30 11:30:13 2023 +0100
+
+    saving bird now returns form to bird details page
+
+commit 415059484fb4a290ed04d45f03bee661e6be9269
+Merge: 9550d80 d6d917f
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon May 29 01:54:32 2023 +0100
+
+    Merge pull request #20 from SWENG-G2/entity-tests
+    
+    Entity tests
+
+commit 9550d805f7158e50acf8e023da10898bf9e3be63
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Mon May 29 01:53:30 2023 +0100
+
+    Icarius users tab functionally complete
+
+commit e5e7df1c2917129682a5b9fb7ead5ba600f06061
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri May 26 04:08:20 2023 +0100
+
+    Finished User List
+
+commit deb9d5491c805756c41954ceace4b1d3f15bff53
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri May 26 02:24:26 2023 +0100
+
+    Create User page completed
+
+commit 8974723658d48a314f565eabb7816a3357c59e25
+Merge: e0f4bed 2d09849
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Thu May 25 02:33:46 2023 +0100
+
+    Merge pull request #19 from SWENG-G2/auth-tests
+    
+    Auth tests
+
+commit 2d098495af3bb61172f02e22fe43a575b5e7f570
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu May 25 02:33:25 2023 +0100
+
+    All Auth & Http Tests
+
+commit 4b21124170fe6542d0534b8f5b4b5176fc1c228e
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Wed May 24 23:15:29 2023 +0100
+
+    AuthenticationServiceTest
+
+commit e0f4bed0838f94f3b1764ed7ee91567c4bdad0fa
+Merge: 0174001 e952584
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Sun May 21 20:39:35 2023 +0100
+
+    Merge pull request #18 from SWENG-G2/gui-dev
+    
+    Edit Form image upload code formatting
+
+commit e952584129866202ec1f5b6ad4984f197c43d273
+Merge: b71cb6f 0174001
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Sun May 21 20:39:27 2023 +0100
+
+    Merge branch 'main' into gui-dev
+
+commit 01740016b34c1ac052dee7b9432fa26a88e35fd6
+Merge: d52a237 bf170ef
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Sun May 21 20:38:02 2023 +0100
+
+    Merge pull request #17 from SWENG-G2/http-tests
+    
+    Http tests
+
+commit bf170ef554e0fcf5fbfcc534ae802ad80b30b5fb
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri May 12 02:09:49 2023 +0100
+
+    Improvements on error handling
+
+commit d6d917fa59f79caa94ec0841ad522b5b6f297f22
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu May 11 17:58:13 2023 +0100
+
+    Tom & Ophelia - finished canReadBird.
+
+commit 179ddc638532e39e5a0667804297e8d17091c171
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu May 11 15:43:33 2023 +0100
+
+    Removed interceptor, improved error management
+
+commit 03ff076ed77fdf61f42f70ce5be76fda5e24a518
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu May 11 15:38:09 2023 +0100
+
+    Tom & Ophelia - fixed all of canBirdRead test.
+
+commit b71cb6f900d121bc0f65c2d7a03d4ab4e5255b22
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Wed May 10 03:00:07 2023 +0100
+
+    Edit Form image upload code formatting
+
+commit d52a2371c82c6d1b713186f032d5f906da4fed3b
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Wed May 10 02:48:04 2023 +0100
+
+    Improvements to server response handling
+    
+    - Http requests now take user, not client
+    - Added edit bird/campus gui notifications
+    - Edited GUI code to use new entity CRUD responses effectively
+    - BUGFIX: Not uploading a new file to edit bird form no longer removes existing image from bird
+
+commit 37859f6016a3afde4642ca240badb25ff8a016b4
+Merge: 0515112 6faab57
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed May 10 01:09:07 2023 +0100
+
+    Merge pull request #16 from SWENG-G2/gui-dev
+    
+    Gui dev
+
+commit 6faab57ece3cc4ff59755434060d08a7c9f9b362
+Merge: d4994cb 0515112
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed May 10 01:08:58 2023 +0100
+
+    Merge branch 'main' into gui-dev
+
+commit 051511224f4f64d84d32ab9a23d7740e82b2f6d2
+Merge: aed340a 6419a1e
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed May 10 01:06:50 2023 +0100
+
+    Merge pull request #15 from SWENG-G2/entity-dev
+    
+    Entity dev
+
+commit 6419a1e4c4e38e567e8658d66f3a2ff5fea4babd
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Wed May 10 01:06:02 2023 +0100
+
+    Updated Entity CRUD methods to return true on CRUD success, else false
+
+commit d4994cbd1a5de49c6a1dd0da9e8992b4d72df7f7
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri May 5 02:29:54 2023 +0100
+
+    GUI refactor, Server Connection Failure Logic
+    
+    Finished refactoring regular user area:
+    - add campus/bird
+    - actions
+    Created Server Connection fail Logic:
+    - catches failure using interceptor
+    - creates 404 response
+    - applies associates notification to gui
+    - no longer crashes on connection failure
+
+commit 66dc918ac78951ca93ced953c147fab3334d9a22
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu May 4 15:21:08 2023 +0100
+
+    removed admin tab, created users and create user tab
+
+commit c16f45f24035600533156800009b89e5f69670dc
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu May 4 15:12:32 2023 +0100
+
+    Turns out we havent almost finished, we have to redo most of it. Connall has given us a plan in canReadBird
+
+commit f59129971d70dce8d28234315bebe26f7d77db9a
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu May 4 14:13:51 2023 +0100
+
+    Mostly finished BirdTest, still some TODOs to do.
+
+commit c466ef26b25667732a85e55867b485e041c246c5
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu May 4 14:00:56 2023 +0100
+
+    Added Auth test package
+
+commit dd136f99d8b1dcb7845fc19e7876e601adad5687
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu May 4 13:46:54 2023 +0100
+
+    small bug changes
+
+commit 70db92ff777b85e0d10f62a5675206a20e51342b
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu May 4 02:30:12 2023 +0100
+
+    Refactoring of gui
+    
+    Refactored:
+    -login screen, login validation
+    -mainframe tabs
+    -database tree
+    -entity details page
+    -begun refactoring entity edit page
+
+commit a062531658ae6fb5d8b1cea15c0ceadfe8d39bef
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Thu Apr 27 16:09:55 2023 +0100
+
+    Ready for Connall to refactor
+
+commit fbed94a77b8b532d781132df711122a2025f86e2
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Apr 27 16:07:47 2023 +0100
+
+    canCreateBird mostly completed
+
+commit aed340a47b5dc8329e9bf8e2bc9246310a57e5c4
+Merge: 23a4837 9bcdf61
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Thu Apr 27 12:39:43 2023 +0100
+
+    Merge pull request #14 from SWENG-G2/gui-server-connection
+    
+    Gui server connection
+
+commit 9bcdf6145531fac4863849d80cf530eb903e0efd
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu Apr 27 03:15:31 2023 +0100
+
+    server-gui interactions
+    
+    - Edit Campus
+    - Delete bird
+    - edit bird
+    - Login validation and admin check
+    - Created ServerResponse Class
+
+commit b4185f53886ea41ffdb5840d2f63f983470aa992
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Tue Apr 25 20:43:22 2023 +0100
+
+    Added delete bird feature (doesn't work with server but works in gui), moved remove campus into edit screen, upload buttons now return a file path, removed some bugs
+
+commit 52732009168337e3990b61621a0c41a4bd87c4a7
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Sun Apr 23 22:45:49 2023 +0100
+
+    Edit bird works with server
+
+commit a77cd506644ce389eac0ba27394efbb4b311978c
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Sun Apr 23 17:19:57 2023 +0100
+
+    Can now create bird with about,location and diet in server, though this isn't yet displayed in GUI
+
+commit 23a483734e598d5760915ad5bce00fe38a38597e
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri Apr 21 13:56:56 2023 +0100
+
+    Deleted CampusTab - Obsolete
+
+commit feef1079c9b8461e1e7663edae4d788b09a42930
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Fri Apr 21 13:44:46 2023 +0100
+
+    creating TODO list
+
+commit 02e3d2680643626193dab7ad9a38a79cd3633a41
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Sun Apr 16 02:56:03 2023 +0100
+
+    Added GUI-server interactions
+    
+    - Add/Remove Campus interactions
+    - Add/Edit Bird interactions
+    - Login interactions (still need to validate credentials)
+
+commit 41c54c8075f4b5d78009a4b58e6c040e04fe0379
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri Apr 14 00:50:05 2023 +0100
+
+    Implemented changes for all interactions except login
+
+commit 389e65a359d4b9cd09974fa27d05775ddbf7be5d
+Merge: 3de141f 1d4629e
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Thu Apr 13 23:13:28 2023 +0100
+
+    Merge pull request #13 from SWENG-G2/request-test-example
+    
+    Mild clean up and sample request tests
+
+commit 1d4629e6319c9311d1a4f4c18855abb32587fd07
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu Apr 13 14:38:11 2023 +0100
+
+    Mild clean up and sample request tests
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 3de141f7fb498bb3a4df2b471a963209f436e89d
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Thu Mar 16 15:00:11 2023 +0000
+
+    Entities refactor
+
+commit d121bbf755d87877d8ce18304158a62274d13eaa
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Wed Mar 15 16:15:41 2023 +0000
+
+    Begun testing http
+
+commit f89ef95e917b71a8b02d2dba08d8772b085e4d86
+Merge: 891b5e4 e9ea653
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed Mar 15 15:42:43 2023 +0000
+
+    Merge pull request #12 from SWENG-G2/dev-gui
+    
+    Dev gui
+
+commit 891b5e48477650c600081ad8d317bf4ded5e5abd
+Merge: 197f6a9 b1505c0
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed Mar 15 15:42:05 2023 +0000
+
+    Merge pull request #11 from SWENG-G2/dev-entities
+    
+    Dev entities
+
+commit b1505c0ae96b4781aeae3c1a492e05f1e4ffa07a
+Merge: dc07efc 197f6a9
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed Mar 15 15:41:52 2023 +0000
+
+    Merge branch 'main' into dev-entities
+
+commit dc07efc72efb7e5f578c17fd0a43e0f08e72de5b
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Tue Mar 14 10:28:58 2023 +0000
+
+    Tom & Ophelia created the method that gets the Campus List
+
+commit 197f6a95f8501977ace5639d02b316e4b5921347
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Mon Mar 13 18:23:40 2023 +0000
+
+    Updated http to allow request mocking
+
+commit 517c09b7b367062724bcb33dde6283dacfc588a1
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Mar 9 19:28:01 2023 +0000
+
+    Added name to campus read method, removed campus feild from bird class and added campus list feild to main.
+
+commit a14a5119779af3d1c999c11165ba791ed89b2afc
+Merge: dbafbc4 e8e5631
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Mar 9 17:53:57 2023 +0000
+
+    Tried to revert and it messed it up so I've fixed up to this.
+
+commit e9ea6539d7b8a1cd5178c6a979603db7cfe4f9e9
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Mon Mar 6 16:19:17 2023 +0000
+
+    Added TODOs, also fixed a small mistak in the main tab
+
+commit 4940ce1bdc0c51d5bc7238e4a0dcc82735fba2e1
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Thu Mar 2 15:01:11 2023 +0000
+
+    Removed need for JTrees in campus object
+
+commit bf07f80d11b4fd704b544c0d27c92fb643f51d43
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Mar 2 14:58:27 2023 +0000
+
+    Tom & Ophelia, last push didnt work/happen, created a method to get all the birds from a campus
+
+commit 7aed53a34ef4d5f089cae72dc5c288fd43e9e290
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Thu Mar 2 13:23:11 2023 +0000
+
+    attempt at force push
+
+commit a16d2150a0787b8687a43e47b1d0fe099f5f876b
+Merge: dfaba5c e8e5631
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Mon Feb 27 19:06:34 2023 +0000
+
+    Merge branch 'dev-gui' of https://github.com/SWENG-G2/Icarius into dev-gui
+
+commit e8e56316f8dc69d6ff22f0edd59dd8df242e9bf2
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Mon Feb 27 19:00:04 2023 +0000
+
+    Removed unnecessary keys folder
+
+commit f1c55f187e30b5b8851e88ee3d7c75d731b1d9f6
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Mon Feb 27 18:56:52 2023 +0000
+
+    Resolved merge conflicts
+
+commit dfaba5c47ca8c11b8b0c434e9118417a97070e78
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Mon Feb 27 18:08:35 2023 +0000
+
+    merged campus and bird tab into a single 'main' tab, as well as refining how the user adds and removes campuses on the visual end
+
+commit 73234ac4a6b5247522a2c90fd150117fa66d4836
+Merge: d763673 46c0e8a
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Feb 27 17:28:39 2023 +0000
+
+    Merge pull request #10 from SWENG-G2/dev-entities
+    
+    Dev entities
+
+commit 46c0e8a708e5348be851cbf9b9c14659a9fa8709
+Merge: 9fd7c70 d763673
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Feb 27 17:28:27 2023 +0000
+
+    Merge branch 'main' into dev-entities
+
+commit d7636734469d568fbc16ff20a585a9b71a198b9a
+Merge: d5369f5 ed0d961
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Feb 27 17:23:32 2023 +0000
+
+    Merge branch 'dev-gui' into main
+
+commit d5369f521465da894613243e52aff2243da8ce48
+Merge: 131d816 624a663
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Feb 27 17:11:25 2023 +0000
+
+    Merge pull request #8 from SWENG-G2/dev-auth
+    
+    Authorisation update
+
+commit 624a663cb26751c9e17a16371d53af069ce9e946
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Mon Feb 27 17:08:40 2023 +0000
+
+    Completed Auth Update, Resolved response cut off Bug (Maybe)
+
+commit b8df181c41cbc605096fbb324ef99bfce4df2102
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Sun Feb 26 18:30:10 2023 +0000
+
+    refactored current authentication into auth package
+
+commit ed0d9617641207379bb39ee7d87f6b0826ac6b3d
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Fri Feb 24 18:37:03 2023 +0000
+
+    Add bird node added to campus trees, removing the need for the user to choose what campus a bird is added to
+
+commit dbafbc4b2ec2b735ed41abc6269bef88fae3b375
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Feb 23 16:07:50 2023 +0000
+
+    Tom and Ophelia, did the read() method in the campus class, added a field that stores all the birds in that campus, also added a getter
+
+commit 9d1bcf7ef000f43d33c45d90347de1401bc7f036
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Wed Feb 22 21:57:17 2023 +0000
+
+    Added the remaining fields for the bird tab. They don't do anything yet.
+
+commit a9d565b7f1903ea2e0a2f6d5b3aa02593bec590d
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Tue Feb 21 23:00:14 2023 +0000
+
+    Updated bird tab, includes basic pop up menu
+
+commit af5fc98f4d15c624fb596d768571cc260b2acf03
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Sun Feb 19 17:25:52 2023 +0000
+
+    Tree displaying birds and campuses added. Uses temporary bird and campus classes which will be changed when the actual ones are ready.
+
+commit 9fd7c701f76cad84f20b410bc3f8c66a21480e6e
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Thu Feb 16 15:26:11 2023 +0000
+
+    Tom & Ophelia, changed the read method to store in fields during XML iteration.
+
+commit 2b6ee303c61d0481aafb79a2f962c143c5585ccf
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Tue Feb 14 22:01:24 2023 +0000
+
+    Forgot to save before I pushed the last version
+
+commit 078e7ee8daf79554291800c4d9f238a4af369b0c
+Author: Harry Harrison <hh1439@york.ac.uk>
+Date:   Tue Feb 14 21:58:22 2023 +0000
+
+    Changed how the code is arranged to make it look neater and to fix problems i was having with jTrees
+
+commit 004c58b96720609499b6956a86fe92a8a1c304bf
+Author: ThmsRchrdsn <115042486+ThmsRchrdsn@users.nereply.github.com>
+Date:   Tue Feb 14 17:05:28 2023 +0000
+
+    Tom & Ophelia, changed the read method in Bird class. Now iterates through XML and assigns the vales to the relevant fields.
+
+commit 734e0f4b38f62dcf4465ec5ee9e95a85456c4c9d
+Author: H-Harrison2112 <98042710+H-Harrison2112@users.noreply.github.com>
+Date:   Thu Feb 9 14:26:37 2023 +0000
+
+    GUI package initial commit
+
+commit 131d816a0fe9a80181d32d3befa9e50e67022f27
+Merge: 38a1a76 485b1c3
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Thu Feb 9 14:04:40 2023 +0000
+
+    Merge pull request #7 from SWENG-G2/gitignore
+    
+    Introduce .gitignore
+
+commit 485b1c3539a2c73b51a9d6d05537c263d2a27876
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu Feb 9 14:03:45 2023 +0000
+
+    Introduce .gitignore
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 38a1a760e3c712752dae4dae3e9960c77b7a1320
+Merge: 290cf86 f76904d
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Thu Feb 9 10:58:25 2023 +0000
+
+    Merge pull request #6 from SWENG-G2/Dev-Oscar
+    
+    Entities: Bird and Campus, added get entity List functions
+
+commit f76904dcda8a0ab809ddde533e28ea8c8bd3d189
+Author: gman98974 <goefronoscar@gmail.com>
+Date:   Wed Feb 8 09:58:40 2023 +0000
+
+    Entities: Bird and Campus
+
+commit 290cf86c92644d78600c46e03610643f484a4fd4
+Merge: 3512758 2d78c1e
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Sun Feb 5 13:20:41 2023 +0000
+
+    Merge pull request #5 from SWENG-G2/WIP-Keys
+    
+    Merge pull request #4 from SWENG-G2/main
+
+commit 2d78c1ea5d69b22f18dc86e3ed58fc0c97e37868
+Merge: d65e8a3 3512758
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Sun Feb 5 13:19:41 2023 +0000
+
+    Merge pull request #4 from SWENG-G2/main
+    
+    Merging completed branch
+
+commit 35127582e19664908cb3f1ec0fdfe4b392363f3a
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Wed Feb 1 17:58:00 2023 +0000
+
+    Introduction of ServerEntity abstract class
+    
+    ServerEntity abstract class implements CRUD operations
+    - entities bird and campus extend abstract class
+
+commit 1b422c954173138d392f6813208543f3e778e0a0
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jan 30 17:31:19 2023 +0000
+
+    Moved static controller methods into Campus object
+
+commit d7620b9fc558d13262145ee621191c581d38aa9d
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jan 30 17:30:59 2023 +0000
+
+    Moved static controller methods into bird object
+
+commit 0179e99779cebaa6ff0fb619062123600c705ef4
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri Jan 27 01:55:35 2023 +0000
+
+    Created user class
+    
+    User class contains current user identity and the campus that is being displayed
+
+commit f9a77bd6847c9b1a3e19f9d850eea08fa9c0abde
+Merge: 874250d 6bd78d3
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Fri Jan 27 01:04:12 2023 +0000
+
+    Merge pull request #3 from SWENG-G2/WIP-Connall
+    
+    Merged new birdController functions from WIP-Tom
+
+commit 6bd78d33ededc9e222a9a291d50fd0534805b7d4
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri Jan 27 01:03:24 2023 +0000
+
+    Merged new birdController functions from WIP-Tom
+    
+    updated birdController functions to work with new request classes and incorporated into main
+
+commit 874250df250c2c21d0b2f039035901186f0d247c
+Author: shurcaz <connall_shurey@hotmail.com>
+Date:   Fri Jan 27 00:48:52 2023 +0000
+
+    OOP http package restructure
+    
+    - removed httpService
+    - made ServerRequest abstract class
+    - extended ServerRequest to POST, GET, PATCH and DELETE request classes
+
+commit d65e8a356e4792903eb2f07516e0a4707876d2f2
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jan 23 03:15:42 2023 +0000
+
+    Restructured network stack
+    
+    Restructed stack to be more object orientated:
+    - introduced http package
+    - introduced configurable serverRequest object
+    - updated controllers to work with new structure
+
+commit cc00481038aa35a2d836b6d4702c4a5cdfb8ba81
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jan 23 02:46:57 2023 +0000
+
+    Superseded by http package
+
+commit c893af7ac104c29dde26c7e4b6e9083d93ab0e98
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jan 23 02:46:47 2023 +0000
+
+    Superseded by http package
+
+commit e4bf93c9047b5756398c7da40c1d845896cafa70
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Mon Jan 23 02:46:40 2023 +0000
+
+    Superseded by http package
+
+commit 4c1cbbf4ea66092e98dfed12e1ea44b0aad69344
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Jan 17 22:25:09 2023 +0000
+
+    Delete a
+    
+    Removing invalid key
+
+commit 062c12910854900bbc389009b64e9dd2d542975b
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Jan 17 22:24:41 2023 +0000
+
+    Add files via upload
+
+commit 1949e830b89ef94e8af0bd749da117dbdd521478
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Jan 17 22:21:57 2023 +0000
+
+    Add files via upload
+
+commit 04656144f987d5846793e6824fc176805f51a5c8
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Jan 17 22:20:24 2023 +0000
+
+    Fixing file upload mess
+
+commit 01991422dbef23b58aec26dae093247f83704a2a
+Merge: 7205189 c9bfbfb
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Jan 17 22:17:35 2023 +0000
+
+    Merge pull request #1 from SWENG-G2/CRUD-wip
+
+commit c9bfbfbc52053010924913709963cef5f4387782
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Jan 17 22:16:31 2023 +0000
+
+    Implemented authentication
+    
+    Additions:
+    - Authentication headers in http requests and related encryption service
+    - Local key storage service
+    - Key controller for key generation/deletion from server and local memory
+
+commit 7205189769d222726e0150e80e4666cb5112b07b
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Fri Dec 16 22:53:31 2022 +0000
+
+    Update HttpService.java
+    
+    Rearranged methods to group by:
+    - post
+    - get
+    - private methods
+
+commit ba78a65aff34b564124888cfdf6033a4d7fa7d4f
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Fri Dec 16 22:52:45 2022 +0000
+
+    Update HttpService.java
+    
+    Completed and cleaned service.
+    Can:
+    - post to url with parameters
+    - post file to url with parameters
+    - get from url
+    - get from url with parameters
+
+commit df3e7ed699ecdd391df908602197354944d211c2
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Thu Dec 15 03:27:59 2022 +0000
+
+    Add files via upload
+    
+    Created HttpService in services package
+
+commit c03a603ddbd4ce45b0972b6021be059e0abe50e3
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Dec 13 14:48:00 2022 +0000
+
+    Add files via upload
+    
+    Project Creation
+    
+    uses OkHttp to send a url and captures a string response
+
+commit 65ddbbc2bcffb3f1f096e3e2e09b9e0c5a02d7fd
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Dec 13 14:43:27 2022 +0000
+
+    Delete .gitignore
+
+commit 8c2ceb92f2740aa4c62e0c2717369315f6b138f1
+Author: shurcaz <46389115+shurcaz@users.noreply.github.com>
+Date:   Tue Dec 13 14:42:59 2022 +0000
+
+    Initial commit

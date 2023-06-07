@@ -19,19 +19,19 @@ const {
 <div
   class={`w-full ${
     dark ? "bg-palette-200" : "bg-palette-100"
-  } flex flex-col md:flex-row px-2 md:px-0 py-8`}
+  } flex flex-col lg:flex-row px-2 lg:px-0 py-8`}
 >
   <img
     src={image}
     alt="A picture of FaunaFinder in the Campus selection screen"
-    class={`w-full md:w-1/5 object-scale-down max-h-96 md:max-h-max ${
-      squareImage ? "aspect-square" : "md:object-cover"
-    } ${textFirst ? "md:mr-[10%]" : "md:ml-[10%]"} ${
+    class={`w-full mx-auto lg:w-1/5 object-scale-down max-h-96 lg:max-h-max ${
+      squareImage ? "aspect-square" : "lg:object-scale-down 2xl:object-cover"
+    } ${textFirst ? "lg:mr-[10%] lg:ml-0" : "lg:ml-[10%] lg:mr-0"} ${
       textFirst ? "order-2" : "order-1"
     }`}
   />
   <div
-    class={`w-full flex flex-col md:mx-[10%] mx-auto ${
+    class={`w-full flex flex-col lg:mx-[10%] ${
       textFirst ? "order-1" : "order-2"
     }`}
   >
@@ -40,7 +40,7 @@ const {
     >
       {title}
     </h3>
-    <p class="mt-8 text-lg w-full hyphens-auto text-justify">
+    <p class="mt-8 text-lg w-full break-words hyphens-auto text-justify">
       <slot />
     </p>
     <slot name="button-slot" />
