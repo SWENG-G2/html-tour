@@ -1,0 +1,526 @@
+commit 4734a9e9e65bdba3eddc3b8cd249b90cbc42d903
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jun 6 21:27:01 2023 +0100
+
+    Implement shadows in [Circle, Rectangle]Element
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit ae852c5c44543dca6810df789dff7c65e077101a
+Merge: 0652302 d3d27c2
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jun 6 20:19:12 2023 +0100
+
+    Merge pull request #13 from SWENG-G2/ana_clean_2
+    
+    Parsers, Adapter and ViewHolder tests
+
+commit d3d27c24ba8f1c894c5b2ca76c56333b27288f55
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jun 6 20:16:58 2023 +0100
+
+    Allow http traffic for local development and tests
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 24094f53d2046df9e6f59be9809c7eb0ebaf318b
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jun 6 19:39:06 2023 +0100
+
+    Fix parsers tests and add missing attributes to elements
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit c6d756aad04784e55d2b35fb634f673163cd8ae3
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jun 6 18:18:45 2023 +0100
+
+    PresentationParser Test
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 4adef70ec62862d2feb6b12c28b4a8e809fa5621
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Tue Jun 6 15:27:53 2023 +0100
+
+    SlideViewHolder and SlidesRecyclerViewAdapter tests
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit e780ed64850c1e29c38989892502871b8b8138db
+Author: am3271 <am3271@york.ac.uk>
+Date:   Thu Mar 16 14:24:04 2023 +0000
+
+    Initial parsers tests
+
+commit 0652302201d1de5c2de751306439f8419203baea
+Author: dz940 <dz940@york.ac.uk>
+Date:   Sun Jun 4 21:45:07 2023 +0100
+
+    Final app icon and fix app name
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 42fc6af2bb6a906f6eb84c4c2ba33c67011b541a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 21:37:39 2023 +0100
+
+    Clean up HowTo logic
+
+commit 362afc3d0130107aebdf3881d2a45107a3a4aaea
+Merge: 4b740d0 1412acd
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 21:16:50 2023 +0100
+
+    Merge pull request #12 from SWENG-G2/intro_screen
+    
+    Intro screen
+
+commit 1412acdf0335816b903131a879e36005c96635f9
+Merge: 43e4097 4b740d0
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 21:16:02 2023 +0100
+
+    Merge branch 'main' into intro_screen
+
+commit 4b740d0bd6918e73c03ff759be80b6da28649a8a
+Author: dz940 <dz940@york.ac.uk>
+Date:   Sun Jun 4 21:05:00 2023 +0100
+
+    Implement AboutUs page
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit d5430ace766bbab903c51c4a029f69f3fd829976
+Author: dz940 <dz940@york.ac.uk>
+Date:   Sun Jun 4 20:48:53 2023 +0100
+
+    AboutUs page tests
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 43e4097185d0045c24af5b1bf5bd302b49da869f
+Author: gman98974 <goefronoscar@gmail.com>
+Date:   Sun Jun 4 16:58:31 2023 +0100
+
+    image borders and slide transition
+
+commit bc513f901bf4ff4773c6e807c9803f06da1b9df6
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun Jun 4 13:04:16 2023 +0100
+
+    Fix parseDelay logic
+
+commit 168487f15882857d1be3fa07f57fea46fdbdcbc0
+Merge: 3dcc241 63f22cc
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Jun 3 21:26:53 2023 +0100
+
+    Merge pull request #11 from SWENG-G2/tmpSwipeToRefresh
+    
+    Swipe to refresh and SSL address
+
+commit 63f22cc2d729b54cf323448458597e7a42564efa
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Jun 3 21:25:09 2023 +0100
+
+    Fix minor test bugs
+
+commit 85ea986de211c1fd1ff28472896eb388d7abc3fd
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Jun 3 14:05:22 2023 +0100
+
+    Implement swipe to refresh
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 63fed5c94029ebaf560eef54935b7dc9d7865d2a
+Author: gman98974 <goefronoscar@gmail.com>
+Date:   Thu Jun 1 02:05:20 2023 +0100
+
+    intro screen basics done
+
+commit 3dcc241e7666912f3da79e5dfd1923776449304e
+Merge: a4eba7f 426fb9e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun May 28 15:44:00 2023 +0100
+
+    Merge pull request #10 from SWENG-G2/slide-padding-support
+    
+    Support slide padding in SlideViewHolder
+
+commit 426fb9ea09efe1fa76c9f5e74910ef86812140c1
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sun May 28 13:57:50 2023 +0100
+
+    Support slide padding in SlideViewHolder
+
+commit a4eba7fad90c74aeb7aeb10ea7fc79f7899f6ce4
+Merge: adfb38c d72cfcb
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon May 22 12:22:32 2023 +0100
+
+    Merge pull request #1 from SWENG-G2/audio-element-test
+    
+    Initial audio element test
+
+commit d72cfcb8a923b4312dc4fa90b3427dbdb30607a3
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Mon May 22 12:20:13 2023 +0100
+
+    Change variable names
+
+commit adfb38c9e86be0e45dee1db994004fe9294293c6
+Merge: 07fa68f 47702de
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon May 22 12:14:02 2023 +0100
+
+    Merge pull request #9 from SWENG-G2/implementations
+    
+    Implementations
+
+commit 07fa68fb29cc645d88dae1b7ba6d143b69be584e
+Merge: 4c16342 bac0675
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Mon May 22 12:13:49 2023 +0100
+
+    Merge pull request #8 from SWENG-G2/giuseppe
+    
+    Various tests
+
+commit f9ac444bc8f40a84cd1d9e4fbee5803ea730f020
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Mon May 22 06:03:24 2023 +0100
+
+    Change variable name
+
+commit 47702de8f193dd013f9f9d6637b4ce88879ee430
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 20:43:13 2023 +0100
+
+    Implement duration/timeOnScreen for Shapes
+
+commit 8ab80e6154281963870117c2936ddf127db2bf00
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 19:30:09 2023 +0100
+
+    Address test bugs and quirks
+
+commit c1542939fd9480ad0fb7def1c8ad8403bb47c6c6
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 19:11:46 2023 +0100
+
+    Implement CampusSelectionActivity
+
+commit 786f833c5dc18af57b2b097950d1328e483e330f
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 19:10:32 2023 +0100
+
+    Implement BirdActivity
+
+commit 30010fa226e6693d210f1b84f462aa6ea6aabb3c
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 19:09:10 2023 +0100
+
+    Implement MainActivity and MainActivityLifecycleObserver
+
+commit 665af0d0db8e433a43303b90e75cba421abfa1bd
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 19:08:46 2023 +0100
+
+    Implement UIUtils
+
+commit 11f33bd6e39d5b3689865b01360555f2cdd14e12
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 19:04:54 2023 +0100
+
+    Implement PresentationParser
+
+commit 5bf65ed296c4afe74ea769c5575f358b4af76a40
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 19:02:51 2023 +0100
+
+    Import fonts
+
+commit 72b0e2ecab31915742a585d7ed1df039a38bfe27
+Author: fltodd <96445128+fltodd@users.noreply.github.com>
+Date:   Thu May 18 19:02:40 2023 +0100
+
+    Bring in contracts
+
+commit 610f62240f96c10bfe67f5201d413127d41dab47
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:57:02 2023 +0100
+
+    Implement VideoParser
+
+commit 5c84faebfaf2486c8ea377a07eb670b3b5bc5fbd
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:56:54 2023 +0100
+
+    Implement TextParser
+
+commit 6c93b52d6eb9e0880ce0836f5fcf89142fb92c6b
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:56:41 2023 +0100
+
+    Implement RectangleParser
+
+commit 5a9b212d8c4e8c20b168f8d31aac5a8b3bb1645d
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:55:47 2023 +0100
+
+    Implement LineParser
+
+commit 922d9d0417437825a3702275a190c0656241a483
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:55:23 2023 +0100
+
+    Implement ImageParser
+
+commit 040191a8384476d67ce6565d09c8adac6b214e5a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:53:18 2023 +0100
+
+    Implement CircleParser
+
+commit 89e116e8ceddb9e32d2cb6b4ae500fde2545f3f9
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:52:51 2023 +0100
+
+    Implement AudioParser
+
+commit a873a3fbbe9ab9f27520279799f4c12b653dbd34
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:52:08 2023 +0100
+
+    Implement ElementParser
+
+commit 7b648b1db6a95c38881a69c0ded9c8e26d0d84af
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:49:44 2023 +0100
+
+    Implement SlidesRecyclerViewAdapter
+
+commit 7ef0bf5c59e8b043ee8b2252bdac1bbb2d83eaa5
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:48:11 2023 +0100
+
+    Implement SlideViewHolder
+
+commit ea0ce8574493309979228186969f700f3c80aab9
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:44:35 2023 +0100
+
+    Implement CanvasView
+
+commit 38cf2234902b02bd779108bfb62a7ac948bdefc0
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:42:25 2023 +0100
+
+    Implement VideoElement
+
+commit 1b0b7d0743e7ad9ca2f0a4d64a0cbfd9957c6fc5
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:41:26 2023 +0100
+
+    Implement RectangleElement
+
+commit fb7aa6975a542b4ddd6bbec1eaf3dc6e93da87a8
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:40:04 2023 +0100
+
+    Implement LineElement
+
+commit 0dd8fd95f0d1e39c12565ccf8ea14e19c6b26ef4
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:39:23 2023 +0100
+
+    Implement CircleElement
+
+commit ce482a0bfe29fe4dde10de5b355f0ea8827d7351
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:38:39 2023 +0100
+
+    Implement AudioElement
+
+commit d93307c654f3e97af4ee6e0b0fd1a1d28d7258f4
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:38:21 2023 +0100
+
+    Implement PresentationElement
+
+commit 91e053c290f73f69fdc623fd9bdebddccdff40f9
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:34:03 2023 +0100
+
+    Implement Slides and required resources
+
+commit 215df9f3747e7ad9719a041a8b67866a2d735f89
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:27:41 2023 +0100
+
+    Implement RequestMaker
+
+commit 0dd6d55929b275eceaa626a7424bbfe52f1f6215
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 18 18:24:33 2023 +0100
+
+    Build file structure for implementation
+
+commit bac0675f3014dea8dafd29b26d1677d8c597a09d
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri May 12 14:30:54 2023 +0100
+
+    TestUtils: Join file content without delimiter
+
+commit 3c9ba45202f26282d8a361d68e1864464d17baed
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri May 12 14:17:53 2023 +0100
+
+    MainActivityLifeCycleObserver espresso test
+
+commit 5838664d1087e2480c41e8977bb940fef8d1d421
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri May 12 13:03:07 2023 +0100
+
+    BirdActivity espresso test
+
+commit d16415fd2fc9883bd3071845c46a954198e8c17a
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri May 12 11:41:15 2023 +0100
+
+    CampusSelectionActivity espresso test
+
+commit e9d8b7be6076978fa3a972753bf04617658a0424
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri May 12 11:23:05 2023 +0100
+
+    Include birds.txt asset
+
+commit b49a9d7863ada835fe3761c6efcc5dd2dfa9b88e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Fri May 12 11:06:50 2023 +0100
+
+    MainActivity espresso test
+
+commit 51145e7c197343bbdbb1b7abc4fc6bf518e3fd2c
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 11 18:27:07 2023 +0100
+
+    Slide tests
+        * BasicSlide (Covers AbstractSlide)
+        * BirdSlide
+        * DetailSlide
+        * SlideFactory
+
+commit 0e413b9be8c783f191da4f17a4ab5a97d7b7d7dc
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 11 17:28:25 2023 +0100
+
+    RequestMaker test
+
+commit 4c1634207e933be564a9161ee21a46c149f16a0b
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 11 14:29:11 2023 +0100
+
+    UIUtils Test
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit bdda7a2e192f059279ba2facc56d0289cd9ee556
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 11 12:17:01 2023 +0100
+
+    CanvasView test
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 15158530e7656b851ced1aecfbdfe309862fe469
+Merge: 80923c3 beaa139
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu May 11 10:10:53 2023 +0100
+
+    Merge pull request #2 from SWENG-G2/circle-element-test
+    
+    Initial circle element test
+
+commit 64de6f6ca5e3993cab0c3c15b438c8dee0a5a3b1
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Wed May 10 21:54:23 2023 +0100
+
+    Updated verifier tests
+
+commit beaa139d5ce6974a1a09e77e8cb8194b08320b48
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Wed May 10 21:44:06 2023 +0100
+
+    Added tests for fillPaint
+
+commit 80923c31e9fd688c8706459d53a67656bf1f051b
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed May 10 20:11:39 2023 +0100
+
+    VideoElement Layout test
+
+commit 2d9338a54949715c76a9270de9e005767f6dffbb
+Merge: f4dda03 ad65eb8
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 17:03:45 2023 +0000
+
+    Merge pull request #4 from SWENG-G2/line-element-test
+    
+    Initial line element test
+
+commit f4dda034a5258203b940a8c80984f2fd1efe78db
+Merge: db1af97 7cb114e
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Mar 11 17:00:34 2023 +0000
+
+    Merge pull request #5 from SWENG-G2/rectangle-element-test
+    
+    Initial rectangle element test
+
+commit 7cb114ec00fa143a4a2afe664815ef7c92a2cf36
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Mon Mar 6 02:16:10 2023 +0000
+
+    Initial rectangle element test
+
+commit ad65eb83e9888841037906162b102f08684a3681
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Mon Mar 6 01:19:08 2023 +0000
+
+    Initial line element test
+
+commit 15d0e7e4d996faeab75a160271539b871bb69dce
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Mon Mar 6 01:17:18 2023 +0000
+
+    Made syntax more readable
+
+commit 4620d424fdefc8e0bc788c9e18c14b29bd51a83c
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Fri Mar 3 18:18:20 2023 +0000
+
+    Initial circle element test
+
+commit c61a1f7907fc749293a0275876de365ed027e540
+Author: Roman Kulev <rk1126@york.ac.uk>
+Date:   Fri Mar 3 18:16:38 2023 +0000
+
+    Initial audio element test
+
+commit db1af97754326720b28f51bdefb8604d7e819c99
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Feb 11 19:32:56 2023 +0000
+
+    Sample Tests
+        * ElementParserTest
+        * SlidesRecyclerViewAdapterTest
+
+commit ccd5dbb653f4295cac4e998b71def9ab21e42f68
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Sat Feb 11 15:05:31 2023 +0000
+
+    Initial commit
