@@ -1,4 +1,12 @@
-<div class="bg-palette-100 flex flex-col px-2 md:px-8 lg:px-16 py-4 md:py-32">
+---
+import { contributions } from "../data/contributions.json";
+---
+
+<div
+    class="bg-palette-100 flex flex-col px-2 md:px-8 lg:px-16 py-4 md:py-32"
+    id="chartsContainer"
+    data-contributions={JSON.stringify(contributions)}
+>
     <h3
         class="font-bold font-righteous text-3xl md:text-5xl lg:text-6xl uppercase text-palette-600 mx-auto text-center"
     >
@@ -55,33 +63,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    import { contributions } from "../data/contributions.json";
-    import { createChart } from "./charts";
-
-    const penelopeSpike = document.getElementById(
-        "penelopeSpike"
-    ) as HTMLCanvasElement | null;
-    createChart(penelopeSpike, contributions.penelopeSpike);
-
-    const penelope = document.getElementById(
-        "penelope"
-    ) as HTMLCanvasElement | null;
-    createChart(penelope, contributions.penelope);
-
-    const androidSpike = document.getElementById(
-        "androidSpike"
-    ) as HTMLCanvasElement | null;
-    createChart(androidSpike, contributions.androidSpike);
-
-    const android = document.getElementById(
-        "android"
-    ) as HTMLCanvasElement | null;
-    createChart(android, contributions.android);
-
-    const icarius = document.getElementById(
-        "icarius"
-    ) as HTMLCanvasElement | null;
-    createChart(icarius, contributions.icarius);
-</script>

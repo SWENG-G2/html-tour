@@ -8,9 +8,17 @@ interface Props {
   active: "home" | "the team" | "departments" | "faunafinder";
   image?: string;
   includeReact?: boolean;
+  includeChart?: boolean;
 }
 
-const { title, subtitle, active, image, includeReact = false } = Astro.props;
+const {
+  title,
+  subtitle,
+  active,
+  image,
+  includeReact = false,
+  includeChart = false,
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -45,6 +53,14 @@ const { title, subtitle, active, image, includeReact = false } = Astro.props;
             src="https://unpkg.com/babel-standalone@^6/babel.js"
           />
           <script is:inline type="text/babel" src="/fileSelector.js" />
+        </>
+      )
+    }
+    {
+      includeChart && (
+        <>
+          <script is:inline src="https://cdn.jsdelivr.net/npm/chart.js" />
+          <script is:inline src="/chartsCreator.js" />
         </>
       )
     }

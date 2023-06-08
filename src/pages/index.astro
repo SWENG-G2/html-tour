@@ -167,10 +167,8 @@ import ContentBlock from "../components/ContentBlock.astro";
         0 5px 15px rgba(0, 0, 0, 0.08);
     }
   </style>
-  <script>
-    const scrollBtn = document.getElementById(
-      "scrollBtn"
-    ) as HTMLButtonElement | null;
+  <script is:inline>
+    const scrollBtn = document.getElementById("scrollBtn");
 
     if (scrollBtn) {
       scrollBtn.addEventListener("click", () => {

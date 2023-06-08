@@ -1,12 +1,3 @@
-import { Chart } from "chart.js/auto";
-
-type Contributions = {
-  name: string;
-  commits: number;
-  addittions: number;
-  deletions: number;
-}[];
-
 const additionsColour = "#84cc166F";
 const additionsBorderColour = "#4d7c0f";
 
@@ -16,7 +7,7 @@ const deletionsBorderColour = "#b91c1c";
 const commitsColour = "#6366f16F";
 const commitsBorderColour = "#4338ca";
 
-const getData = (contributions: Contributions) => {
+const getData = (contributions) => {
   const data = {
     labels: contributions.map((person) => person.name),
     datasets: [
@@ -47,10 +38,7 @@ const getData = (contributions: Contributions) => {
   return data;
 };
 
-const createChart = (
-  canvas: HTMLCanvasElement | null,
-  contributions: Contributions
-) => {
+const createChart = (canvas, contributions) => {
   if (canvas) {
     new Chart(canvas, {
       type: "bar",
@@ -69,4 +57,25 @@ const createChart = (
     });
   }
 };
-export { createChart };
+
+window.addEventListener("load", () => {
+  const container = document.getElementById("chartsContainer");
+
+  if (container) {
+    const contributions = JSON.parse(container.dataset.contributions);
+    const penelopeSpike = document.getElementById("penelopeSpike");
+    createChart(penelopeSpike, contributions.penelopeSpike);
+
+    const penelope = document.getElementById("penelope");
+    createChart(penelope, contributions.penelope);
+
+    const androidSpike = document.getElementById("androidSpike");
+    createChart(androidSpike, contributions.androidSpike);
+
+    const android = document.getElementById("android");
+    createChart(android, contributions.android);
+
+    const icarius = document.getElementById("icarius");
+    createChart(icarius, contributions.icarius);
+  }
+});

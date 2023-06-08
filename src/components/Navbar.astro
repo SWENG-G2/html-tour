@@ -92,7 +92,8 @@ const { active } = Astro.props;
   </ul>
 </div>
 
-<script>
+<script is:inline>
+window.addEventListener("load", () => {
   // Nav colour change start
   const content = document.getElementById("content");
   const nav = document.querySelector("nav");
@@ -101,7 +102,7 @@ const { active } = Astro.props;
   let navHeight = nav ? nav.offsetHeight : 0;
   let intersectionMargin = `-${window.innerHeight - navHeight}px`;
 
-  const detectIntersection: IntersectionObserverCallback = (entries, _) => {
+  const detectIntersection = (entries, _) => {
     entries.forEach((entry) => {
       if (navBg && nav) {
         if (entry.isIntersecting) {
@@ -117,7 +118,7 @@ const { active } = Astro.props;
     });
   };
 
-  let options: IntersectionObserverInit = {
+  let options = {
     rootMargin: `0px 0px ${intersectionMargin} 0px`,
   };
   let observer = new IntersectionObserver(detectIntersection, options);
@@ -155,4 +156,5 @@ const { active } = Astro.props;
     });
   }
   // Mobile nav end
+});
 </script>

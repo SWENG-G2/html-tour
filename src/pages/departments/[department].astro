@@ -39,6 +39,7 @@ const { name, imageUrl, content, items } = Astro.props;
   active="departments"
   image={imageUrl}
   includeReact={true}
+  includeChart={name === "Software"}
 >
   <div class="bg-palette-150 flex flex-col px-2 md:px-8 lg:px-16 py-4 md:py-32">
     <div
