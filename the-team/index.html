@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/html-tour/_astro/departments.51950bd3.css" />
-<link rel="stylesheet" href="/html-tour/_astro/the-team.5afa097f.css" /><script type="module" src="/html-tour/_astro/hoisted.c90146e0.js"></script></head>
+    
+    
+  <link rel="stylesheet" href="/html-tour/_astro/departments.28a10e0b.css" />
+<link rel="stylesheet" href="/html-tour/_astro/the-team.5afa097f.css" /></head>
   <body class="bg-palette-100">
     <nav class="bg-transparent fixed top-0 left-0 w-full text-white font-roboto font-black px-2 md:px-8 z-10">
   <div class="hidden md:flex w-full flex-row justify-between">
@@ -75,6 +77,73 @@
         </li>
   </ul>
 </div>
+
+<script>
+window.addEventListener("load", () => {
+  // Nav colour change start
+  const content = document.getElementById("content");
+  const nav = document.querySelector("nav");
+  const navBg = document.getElementById("nav-bg");
+
+  let navHeight = nav ? nav.offsetHeight : 0;
+  let intersectionMargin = `-${window.innerHeight - navHeight}px`;
+
+  const detectIntersection = (entries, _) => {
+    entries.forEach((entry) => {
+      if (navBg && nav) {
+        if (entry.isIntersecting) {
+          navBg.classList.remove("opacity-0");
+          navBg.classList.add("opacity-100");
+          nav.classList.add("shadow-md");
+        } else {
+          navBg.classList.remove("opacity-100");
+          nav.classList.remove("shadow-md");
+          navBg.classList.add("opacity-0");
+        }
+      }
+    });
+  };
+
+  let options = {
+    rootMargin: `0px 0px ${intersectionMargin} 0px`,
+  };
+  let observer = new IntersectionObserver(detectIntersection, options);
+  if (content) observer.observe(content);
+
+  window.addEventListener("resize", () => {
+    // Adjust trigger point when window size changes
+    navHeight = nav ? nav.offsetHeight : 0;
+    intersectionMargin = `-${window.innerHeight - navHeight}px`;
+
+    options = {
+      rootMargin: `0px 0px ${intersectionMargin} 0px`,
+    };
+
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver(detectIntersection, options);
+
+    if (content) observer.observe(content);
+  });
+  // Nav colour change end
+
+  // Mobile nav start
+  const navTgl = document.getElementById("navTgl");
+  const closeTgl = document.getElementById("closeTgl");
+  const mobileLinks = document.getElementById("mobileLinks");
+
+  if (navTgl && closeTgl && mobileLinks) {
+    navTgl.addEventListener("click", () => {
+      mobileLinks.classList.remove("-translate-x-full");
+    });
+
+    closeTgl.addEventListener("click", () => {
+      mobileLinks.classList.add("-translate-x-full");
+    });
+  }
+  // Mobile nav end
+});
+</script>
     <main id="content">
       <div class="relative py-16 md:py-32 bg-palette-600 text-palette-100 uppercase flex flex-col font-roboto">
         <div class="flex flex-col w-full md:w-1/2 lg:w-3/4">

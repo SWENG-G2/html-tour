@@ -9,7 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/html-tour/_astro/departments.51950bd3.css" /><script type="module" src="/html-tour/_astro/hoisted.f304a9da.js"></script></head>
+    
+          <script type="application/javascript" src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+          <script type="application/javascript" src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+          <script type="application/javascript" src="https://unpkg.com/babel-standalone@^6/babel.js"></script>
+          <script type="text/babel" src="/fileSelector.js"></script>
+        
+    
+  <link rel="stylesheet" href="/html-tour/_astro/departments.28a10e0b.css" /></head>
   <body class="bg-palette-100">
     <nav class="bg-transparent fixed top-0 left-0 w-full text-white font-roboto font-black px-2 md:px-8 z-10">
   <div class="hidden md:flex w-full flex-row justify-between">
@@ -74,6 +81,73 @@
         </li>
   </ul>
 </div>
+
+<script>
+window.addEventListener("load", () => {
+  // Nav colour change start
+  const content = document.getElementById("content");
+  const nav = document.querySelector("nav");
+  const navBg = document.getElementById("nav-bg");
+
+  let navHeight = nav ? nav.offsetHeight : 0;
+  let intersectionMargin = `-${window.innerHeight - navHeight}px`;
+
+  const detectIntersection = (entries, _) => {
+    entries.forEach((entry) => {
+      if (navBg && nav) {
+        if (entry.isIntersecting) {
+          navBg.classList.remove("opacity-0");
+          navBg.classList.add("opacity-100");
+          nav.classList.add("shadow-md");
+        } else {
+          navBg.classList.remove("opacity-100");
+          nav.classList.remove("shadow-md");
+          navBg.classList.add("opacity-0");
+        }
+      }
+    });
+  };
+
+  let options = {
+    rootMargin: `0px 0px ${intersectionMargin} 0px`,
+  };
+  let observer = new IntersectionObserver(detectIntersection, options);
+  if (content) observer.observe(content);
+
+  window.addEventListener("resize", () => {
+    // Adjust trigger point when window size changes
+    navHeight = nav ? nav.offsetHeight : 0;
+    intersectionMargin = `-${window.innerHeight - navHeight}px`;
+
+    options = {
+      rootMargin: `0px 0px ${intersectionMargin} 0px`,
+    };
+
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver(detectIntersection, options);
+
+    if (content) observer.observe(content);
+  });
+  // Nav colour change end
+
+  // Mobile nav start
+  const navTgl = document.getElementById("navTgl");
+  const closeTgl = document.getElementById("closeTgl");
+  const mobileLinks = document.getElementById("mobileLinks");
+
+  if (navTgl && closeTgl && mobileLinks) {
+    navTgl.addEventListener("click", () => {
+      mobileLinks.classList.remove("-translate-x-full");
+    });
+
+    closeTgl.addEventListener("click", () => {
+      mobileLinks.classList.add("-translate-x-full");
+    });
+  }
+  // Mobile nav end
+});
+</script>
     <main id="content">
       <div class="relative py-16 md:py-32 bg-palette-600 text-palette-100 uppercase flex flex-col font-roboto">
         <div class="flex flex-col w-full md:w-1/2 lg:w-3/4">
@@ -100,7 +174,8 @@
     <h3 class="font-bold font-righteous text-xl md:text-3xl lg:text-4xl uppercase text-palette-500 mx-auto mb-4 md:mb-10 text-center">
       Explore this department's work
     </h3>
-    <style>astro-island,astro-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var l;{let c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;let[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(let r of n){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of s){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}let a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){let s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}})();</script><astro-island uid="1CwLM6" component-url="/html-tour/_astro/FileSelector.fede4f6c.js" component-export="default" renderer-url="/html-tour/_astro/client.2ce19805.js" props="{&quot;items&quot;:[1,&quot;[[0,{\&quot;title\&quot;:[0,\&quot;Design Update Log\&quot;],\&quot;versions\&quot;:[1,\&quot;[[0,\\\&quot;1.0.pdf\\\&quot;]]\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;FaunaFinder Final Mock\&quot;],\&quot;versions\&quot;:[1,\&quot;[[0,\\\&quot;1.0.pdf\\\&quot;]]\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Media And Content Creation Plan\&quot;],\&quot;versions\&quot;:[1,\&quot;[[0,\\\&quot;1.0.pdf\\\&quot;]]\&quot;]}]]&quot;],&quot;department&quot;:[0,&quot;Design &amp; Media&quot;],&quot;baseUrl&quot;:[0,&quot;/html-tour/&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;FileSelector&quot;,&quot;value&quot;:true}"></astro-island>
+    <div id="reactRoot" data-items="[{&#34;title&#34;:&#34;Design Update Log&#34;,&#34;versions&#34;:[&#34;1.0.pdf&#34;]},{&#34;title&#34;:&#34;FaunaFinder Final Mock&#34;,&#34;versions&#34;:[&#34;1.0.pdf&#34;]},{&#34;title&#34;:&#34;Media And Content Creation Plan&#34;,&#34;versions&#34;:[&#34;1.0.pdf&#34;]}]" data-department="Design &#38; Media" class="flex flex-col">
+    </div>
   </div>
   
     </main>
