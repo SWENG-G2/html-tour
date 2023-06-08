@@ -7,9 +7,10 @@ interface Props {
   subtitle: string;
   active: "home" | "the team" | "departments" | "faunafinder";
   image?: string;
+  includeReact?: boolean;
 }
 
-const { title, subtitle, active, image } = Astro.props;
+const { title, subtitle, active, image, includeReact = false } = Astro.props;
 ---
 
 <html lang="en">
@@ -25,6 +26,28 @@ const { title, subtitle, active, image } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    {
+      includeReact && (
+        <>
+          <script
+            is:inline
+            type="application/javascript"
+            src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"
+          />
+          <script
+            is:inline
+            type="application/javascript"
+            src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"
+          />
+          <script
+            is:inline
+            type="application/javascript"
+            src="https://unpkg.com/babel-standalone@^6/babel.js"
+          />
+          <script is:inline type="text/babel" src="/fileSelector.js" />
+        </>
+      )
+    }
   </head>
   <body class="bg-palette-100">
     <Navbar active={active} />

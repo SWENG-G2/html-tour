@@ -1,25 +1,14 @@
-import type React from "react";
-import { useEffect, useState } from "react";
-import type { itemT } from "../types/item";
+const FileSelector = (props) => {
+  const items = props.items;
+  const department = props.department;
 
-interface Props {
-  department: string;
-  items: itemT[];
-  baseUrl: string;
-}
-
-const FileSelector: React.FunctionComponent<Props> = ({
-  items,
-  department,
-  baseUrl,
-}) => {
-  const [currentFile, setCurrentFile] = useState<string>();
-  const [currentVersions, setCurrentVersions] = useState<string[]>();
-  const [selectedVersion, setSelectedVersion] = useState<string>();
-  const [currentLink, setCurrentLink] = useState<string>();
+  const [currentFile, setCurrentFile] = React.useState();
+  const [currentVersions, setCurrentVersions] = React.useState();
+  const [selectedVersion, setSelectedVersion] = React.useState();
+  const [currentLink, setCurrentLink] = React.useState();
 
   // Document selector effect
-  useEffect(() => {
+  React.useEffect(() => {
     if (currentFile === undefined) setCurrentVersions(undefined);
     else {
       const versions = items.find((item) => item.title === currentFile);
@@ -32,8 +21,9 @@ const FileSelector: React.FunctionComponent<Props> = ({
     }
   }, [currentFile]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (selectedVersion !== undefined && currentFile !== undefined) {
+      const baseUrl = window.location.href.includes(".html") ? "../../" : "../";
       setCurrentLink(
         `${baseUrl}documents/${encodeURIComponent(
           department
@@ -45,7 +35,7 @@ const FileSelector: React.FunctionComponent<Props> = ({
   }, [selectedVersion]);
 
   return (
-    <>
+    <React.Fragment>
       <label
         htmlFor="documentSelect"
         className="mx-auto font-righteous text-xl text-center md:text-3xl"
@@ -93,14 +83,14 @@ const FileSelector: React.FunctionComponent<Props> = ({
           {currentVersions === undefined ? (
             <option value="">Please select document first</option>
           ) : (
-            <>
+            <React.Fragment>
               <option value="">Select document version</option>
               {currentVersions.map((version) => (
                 <option key={version} value={version}>
                   {version.substring(0, version.lastIndexOf("."))}
                 </option>
               ))}
-            </>
+            </React.Fragment>
           )}
         </select>
       </div>
@@ -114,8 +104,18 @@ const FileSelector: React.FunctionComponent<Props> = ({
           View document
         </a>
       )}
-    </>
+    </React.Fragment>
   );
 };
 
-export default FileSelector;
+window.addEventListener("load", () => {
+  const rootElement = document.getElementById("reactRoot");
+
+  const items = JSON.parse(rootElement.dataset.items);
+  const department = rootElement.dataset.department;
+
+  ReactDOM.render(
+    <FileSelector items={items} department={department} />,
+    rootElement
+  );
+});

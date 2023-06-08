@@ -1,5 +1,4 @@
 ---
-import FileSelector from "../../components/FileSelector";
 import ProjectManagement from "../../components/ProjectManagement.astro";
 import Software from "../../components/Software.astro";
 import { departments } from "../../data/departments.json";
@@ -34,7 +33,13 @@ interface Props {
 const { name, imageUrl, content, items } = Astro.props;
 ---
 
-<PageLayout title={`${name}`} subtitle="" active="departments" image={imageUrl}>
+<PageLayout
+  title={`${name}`}
+  subtitle=""
+  active="departments"
+  image={imageUrl}
+  includeReact={true}
+>
   <div class="bg-palette-150 flex flex-col px-2 md:px-8 lg:px-16 py-4 md:py-32">
     <div
       class="mx:auto my-auto md:mx-0 flex flex-col text-justify bg-palette-100 w-full md:max-w-[60%] p-4 rounded-lg shadow-md"
@@ -56,12 +61,13 @@ const { name, imageUrl, content, items } = Astro.props;
     >
       Explore this department's work
     </h3>
-    <FileSelector
-      items={items}
-      department={name}
-      baseUrl={import.meta.env.BASE_URL}
-      client:only
-    />
+    <div
+      id="reactRoot"
+      data-items={JSON.stringify(items)}
+      data-department={name}
+      class="flex flex-col"
+    >
+    </div>
   </div>
   {name === "Project Management" && <ProjectManagement />}
   {name === "Software" && <Software />}
