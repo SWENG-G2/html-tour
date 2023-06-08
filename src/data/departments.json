@@ -134,7 +134,21 @@
         },
         {
           "title": "Time Sheets",
-          "versions": ["Alan.pdf", "Ana.pdf", "Connall.pdf", "Dawid.pdf", "Ethan.pdf", "Giuseppe.pdf", "Harry.pdf", "Ophelia.pdf", "Oscar.pdf", "Roman.pdf", "Thomas.pdf", "Meetings.pdf", "Timesheet.xlsx"]
+          "versions": [
+            "Alan.pdf",
+            "Ana.pdf",
+            "Connall.pdf",
+            "Dawid.pdf",
+            "Ethan.pdf",
+            "Giuseppe.pdf",
+            "Harry.pdf",
+            "Ophelia.pdf",
+            "Oscar.pdf",
+            "Roman.pdf",
+            "Thomas.pdf",
+            "Meetings.pdf",
+            "Timesheet.xlsx"
+          ]
         },
         {
           "title": "Time Sheet Summaries",
@@ -165,6 +179,14 @@
         {
           "title": "Development Notes",
           "versions": ["1.0.pdf"]
+        },
+        {
+          "title": "Example Multimedia Presentation",
+          "versions": ["1.0.xml"]
+        },
+        {
+          "title": "Project Wide Standard",
+          "versions": ["1.0.xsd"]
         },
         {
           "title": "Fauna Finder User Manual",

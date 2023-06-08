@@ -1,3 +1,19 @@
+commit 7652fa563dedc458ec6062a378ffb1609d05bf81
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Thu Jun 8 04:00:59 2023 +0100
+
+    Update XML schema location
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
+commit 6e6ede5ed908ffdb22a2ef27e8dd7d7608b64dd8
+Author: Giuseppe Barillari <joe2k01dev@gmail.com>
+Date:   Wed Jun 7 21:50:16 2023 +0100
+
+    Add marking profile to make it easier for markers to run the server
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
 commit dd37e31b1944307899aa74092ebd3dfb1b8c1418
 Author: Giuseppe Barillari <joe2k01dev@gmail.com>
 Date:   Mon Jun 5 17:32:44 2023 +0100
