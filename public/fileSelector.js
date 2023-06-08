@@ -1,6 +1,7 @@
 const FileSelector = (props) => {
   const items = props.items;
   const department = props.department;
+  const baseUrl = "../../";
 
   const [currentFile, setCurrentFile] = React.useState();
   const [currentVersions, setCurrentVersions] = React.useState();
@@ -23,7 +24,6 @@ const FileSelector = (props) => {
 
   React.useEffect(() => {
     if (selectedVersion !== undefined && currentFile !== undefined) {
-      const baseUrl = window.location.href.includes(".html") ? "../../" : "../";
       setCurrentLink(
         `${baseUrl}documents/${encodeURIComponent(
           department
