@@ -52,7 +52,11 @@ const {
             type="application/javascript"
             src="https://unpkg.com/babel-standalone@^6/babel.js"
           />
-          <script is:inline type="text/babel" src="/fileSelector.js" />
+          <script
+            is:inline
+            type="text/babel"
+            src={`${import.meta.env.BASE_URL}fileSelector.js`}
+          />
         </>
       )
     }
@@ -60,7 +64,10 @@ const {
       includeChart && (
         <>
           <script is:inline src="https://cdn.jsdelivr.net/npm/chart.js" />
-          <script is:inline src="/chartsCreator.js" />
+          <script
+            is:inline
+            src={`${import.meta.env.BASE_URL}chartsCreator.js`}
+          />
         </>
       )
     }
