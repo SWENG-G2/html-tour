@@ -1,7 +1,7 @@
 const FileSelector = (props) => {
   const items = props.items;
   const department = props.department;
-  const baseUrl = "../../";
+  const baseUrl = window.location.href.includes(".html") ? "../" : "../../";
 
   const [currentFile, setCurrentFile] = React.useState();
   const [currentVersions, setCurrentVersions] = React.useState();
