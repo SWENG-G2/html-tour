@@ -243,6 +243,18 @@
         {
           "title": "Icarius Source Code",
           "versions": ["Icarius-main.zip"]
+        },
+        {
+          "title": "Penelope Javadoc",
+          "versions": ["1.0.zip"]
+        },
+        {
+          "title": "Icarius Javadoc",
+          "versions": ["1.0.zip"]
+        },
+        {
+          "title": "Fauna Finder Javadoc",
+          "versions": ["1.0.zip"]
         }
       ]
     }
