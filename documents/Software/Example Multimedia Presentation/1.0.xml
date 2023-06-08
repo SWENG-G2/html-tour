@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<presentation xmlns="urn:SWENG" xmlns:SWENG="https://raw.githubusercontent.com/SWENG-G2/xml_standard/proposal-1/standard.xsd">
+<presentation xmlns="urn:SWENG" xmlns:SWENG="https://raw.githubusercontent.com/SWENG-G2/xml_standard/main/standard.xsd">
   <info>
     <title>Snow Goose (White)</title>
     <author>a</author>
-    <date>2023-06-06</date>
+    <date>2023-06-08</date>
     <numSlides>4</numSlides>
   </info>
   <slide width="1920" height="485" title="heroSlide">
