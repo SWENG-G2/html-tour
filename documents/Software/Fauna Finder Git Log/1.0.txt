@@ -1,3 +1,11 @@
+commit c8874c3824aa72613d88134950a0a211787dca6d
+Author: fltodd <fraser.todd.501@gmail.com>
+Date:   Wed Jun 7 21:00:59 2023 +0100
+
+    Import contracts tests
+    
+    Signed-off-by: Giuseppe Barillari <joe2k01dev@gmail.com>
+
 commit 4734a9e9e65bdba3eddc3b8cd249b90cbc42d903
 Author: Giuseppe Barillari <joe2k01dev@gmail.com>
 Date:   Tue Jun 6 21:27:01 2023 +0100

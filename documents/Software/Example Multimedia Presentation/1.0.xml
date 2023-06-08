@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<presentation xmlns="urn:SWENG" xmlns:SWENG="https://raw.githubusercontent.com/SWENG-G2/xml_standard/proposal-1/standard.xsd">
+  <info>
+    <title>Snow Goose (White)</title>
+    <author>a</author>
+    <date>2023-06-06</date>
+    <numSlides>4</numSlides>
+  </info>
+  <slide width="1920" height="485" title="heroSlide">
+    <rectangle width="1920" height="100" xCoordinate="0" yCoordinate="0" colour="#E89266FF"/>
+    <text xCoordinate="20" yCoordinate="25" colour="#000000FF" fontName="mono" fontSize="28" width="-4" height="-5">Snow Goose (White)</text>
+    <audio url="https://penelope.barillari.me:8080/audio/4/Snow Goose-7437694461.wav" loop="false" xCoordinate="-3" yCoordinate="0"/>
+    <image url="https://penelope.barillari.me:8080/image/4/Main image-5185866903_processed.png" width="1700" height="360" xCoordinate="-2" yCoordinate="115"/>
+    <circle radius="175" xCoordinate="-2" yCoordinate="-120" colour="#00000000" borderWidth="15" borderColour="#8A8178FF"/>
+  </slide>
+  <slide width="1920" height="-1" title="About me">
+    <video xCoordinate="-2" yCoordinate="0" width="1820" height="250" loop="false" url="https://penelope.barillari.me:8080/video/4/Snow Goose video (smaller size)-7791348759.mp4"/>
+    <text xCoordinate="20" yCoordinate="250" colour="#000000FF" fontName="mono" fontSize="18" width="1880" height="-5">The snow goose is a very special bird, due to the fact that it is estimated that there are only about 75 of them in the UK in the autumn, winter and spring months. They are very pretty birds which are easily identifiable through their arctic white body and black wing feathers which become more obvious during flight. These geese also come in a second colour (blue morph), a bluish-grey body with a white head. The colour of the goose is actually controlled by a single gene, with dark being partially dominant over white!</text>
+  </slide>
+  <slide width="1920" height="-1" title="Diet">
+    <image url="https://penelope.barillari.me:8080/image/4/Diet image-5261724505.JPG" width="1700" height="200" xCoordinate="-2" yCoordinate="0"/>
+    <text xCoordinate="20" yCoordinate="210" colour="#000000FF" fontName="mono" fontSize="18" width="1880" height="-5">Snow geese are herbivores, usually found feasting on leaves, roots, seeds and grass. Young goslings can sometimes be also found feeding on small insect larvae. In the autumn months, snow geese also enjoy various types of berries too. Like most other birds, these geese thoroughly enjoy munching on campus bird food, and will take advantage of any opportunity to scavenge some from passers by!</text>
+  </slide>
+  <slide width="1920" height="-1" title="Location">
+    <image url="https://penelope.barillari.me:8080/image/4/Location image-8019345934.JPG" width="1700" height="200" xCoordinate="-2" yCoordinate="0"/>
+    <text xCoordinate="20" yCoordinate="210" colour="#000000FF" fontName="mono" fontSize="18" width="1880" height="-5">The snow goose is a species native to North-America, but commonly breed in Greenland and Siberia too! Some snow geese migrate south, and spend the winter months on the Atlantic coast of the United States. They are a rare bird to see in the UK, with the University campus being one of very few places where visitors can set their eyes on these wonderful birds without having to cross the Atlantic! On campus, these birds are most commonly found grazing in the grassy area over the far side of the Derwent lake.</text>
+  </slide>
+</presentation>
